@@ -433,3 +433,257 @@ h2 { font-size: 22px; }
   .video-label { text-align: left; }
   .lesson-pagination .button { min-height: 44px; padding: 8px 10px; font-size: 11px; }
 }
+
+
+/* ──────────────────────────────────────────────────────────────────────────── */
+/* World Map (Phase 5A) */
+/* ──────────────────────────────────────────────────────────────────────────── */
+.realm-map { position: relative; width: 100%; aspect-ratio: 1 / 0.75; background: linear-gradient(135deg, #1a4d5c 0%, #0f3a47 50%, #1a5c4d 100%); border: 3px solid var(--gold-dark); box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.6), 6px 6px 0 #070c19; }
+.scene-map { min-height: 360px; }
+
+.realm-marker { position: absolute; transform: translate(-50%, -50%); padding: 0; border: none; background: none; width: 100px; height: 120px; cursor: pointer; opacity: 1; transition: opacity 0.2s, transform 0.2s; }
+.realm-marker:disabled { cursor: not-allowed; }
+.realm-marker:not(:disabled):hover { transform: translate(-50%, -50%) scale(1.08); }
+.realm-marker:not(:disabled):active { transform: translate(-50%, -50%) scale(0.98); }
+.realm-marker.dimmed { opacity: 0.5; filter: grayscale(1); }
+.realm-marker.locked { opacity: 0.7; }
+.realm-marker.completed { opacity: 0.8; }
+.realm-marker.current { animation: marker-pulse 2s ease-in-out infinite; }
+
+@keyframes marker-pulse {
+  0%, 100% { filter: drop-shadow(0 0 0 rgba(242, 185, 47, 0)); }
+  50% { filter: drop-shadow(0 0 8px rgba(242, 185, 47, 0.8)); }
+}
+
+.marker-thumbnail { position: relative; width: 80px; height: 80px; margin: 0 auto 8px; border: 2px solid var(--gold-dark); background: #162749; overflow: hidden; display: flex; align-items: center; justify-content: center; }
+.marker-art { width: 100%; height: 100%; object-fit: cover; }
+.marker-info { text-align: center; font-size: 11px; }
+.marker-icon { display: block; font-size: 16px; margin-bottom: 4px; }
+.marker-name { display: block; color: var(--gold-light); font-size: 12px; font-weight: bold; text-shadow: 1px 1px #0d1732; }
+.marker-stars { display: block; color: #d4af37; font-size: 10px; margin-top: 4px; }
+
+.map-player { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); padding: 4px 8px; text-align: center; font-size: 14px; opacity: 0.8; }
+.map-player small { display: block; font-size: 10px; color: var(--gold-light); }
+
+.map-traveling-hero { position: absolute; transform: translate(-50%, -50%); font-size: 20px; animation: hero-bob 0.4s ease-in-out infinite; }
+
+@keyframes hero-bob {
+  0%, 100% { transform: translate(-50%, -50%) translateY(0); }
+  50% { transform: translate(-50%, -50%) translateY(-4px); }
+}
+
+.map-route { position: absolute; inset: 0; pointer-events: none; }
+
+.map-legend { position: absolute; bottom: 12px; left: 12px; display: flex; flex-direction: column; gap: 6px; font-size: 11px; background: rgba(16, 26, 58, 0.8); padding: 8px 12px; border: 1px solid var(--gold-dark); }
+.map-legend span { white-space: nowrap; }
+
+.art-slot-fallback { display: flex; flex-direction: column; align-items: center; justify-content: center; width: 100%; height: 100%; background: #0f2a35; border: 1px dashed #3a5a6a; }
+.art-slot-fallback span { font-size: 28px; margin-bottom: 4px; }
+.art-slot-fallback small { font-size: 9px; text-align: center; color: #6fa8b8; }
+
+@media (max-width: 600px) {
+  .realm-map { aspect-ratio: 1 / 1.2; min-height: 300px; }
+  .realm-marker { width: 80px; height: 100px; }
+  .marker-thumbnail { width: 60px; height: 60px; }
+  .map-legend { font-size: 10px; }
+}
+
+
+/* ──────────────────────────────────────────────────────────────────────────── */
+/* Hero Creation Flow (Phase 5B) */
+/* ──────────────────────────────────────────────────────────────────────────── */
+.hero-creation-flow { max-width: 600px; margin: 0 auto; padding: 32px 24px; }
+.creation-step { animation: fade-in 0.2s ease-out; }
+
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(-4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.creation-input { display: block; width: 100%; margin-top: 12px; padding: 12px; border: 2px solid var(--gold-dark); background: var(--panel); color: #f8f2dc; font-family: var(--font-readable); font-size: 16px; }
+.creation-input:focus { outline: none; box-shadow: 0 0 0 3px rgba(242, 185, 47, 0.3); }
+
+.style-choices { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 20px 0; }
+.style-choice { padding: 16px; border: 2px solid var(--gold-dark); background: var(--panel-2); color: #f8f2dc; font-size: 14px; font-weight: bold; cursor: pointer; transition: all 0.15s; }
+.style-choice:hover { filter: brightness(1.12); }
+.style-choice.selected { background: var(--btn-green); border-color: #f2cf65; }
+
+.hero-cards { display: grid; gap: 16px; margin: 20px 0; }
+.hero-card { position: relative; display: grid; grid-template-columns: 100px 1fr; gap: 16px; padding: 16px; border: 2px solid var(--gold-dark); background: var(--panel); cursor: pointer; text-align: left; transition: all 0.15s; }
+.hero-card:hover { filter: brightness(1.08); }
+.hero-card.selected { background: var(--panel-2); border-color: #f2cf65; box-shadow: 0 0 12px rgba(242, 185, 47, 0.4); }
+.hero-card-header { display: contents; }
+.hero-portrait-frame { width: 100px; height: 100px; border: 1px solid var(--gold-dark); background: #162749; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+.hero-portrait { width: 100%; height: 100%; object-fit: cover; }
+.hero-card-title { display: flex; flex-direction: column; justify-content: center; }
+.hero-card-title h3 { margin: 0 0 4px; font-size: 18px; color: var(--gold-light); }
+.hero-card-title p { margin: 0; font-size: 13px; color: #9ca3af; }
+.hero-card-details { grid-column: 1 / -1; font-size: 12px; line-height: 1.4; color: #c3cbe0; }
+.hero-card-details p { margin: 4px 0; }
+.hero-card-details strong { color: var(--gold-light); }
+.hero-card-details .small { font-size: 11px; }
+
+.field-label { display: block; margin-bottom: 8px; color: var(--gold-light); font-size: 12px; text-transform: uppercase; }
+
+.hero-class-label { font-size: 14px; color: var(--gold-light); margin: 4px 0; font-weight: 600; }
+.hero-class-badge { display: inline-block; padding: 2px 8px; background: rgba(242, 185, 47, 0.2); border: 1px solid var(--gold-light); border-radius: 3px; font-size: 11px; color: var(--gold-light); margin-top: 4px; }
+
+@media (max-width: 480px) {
+  .hero-creation-flow { padding: 20px 16px; }
+  .style-choices { grid-template-columns: 1fr; }
+  .hero-card { grid-template-columns: 80px 1fr; gap: 12px; padding: 12px; }
+  .hero-portrait-frame { width: 80px; height: 80px; }
+}
+
+/* ──────────────────────────────────────────────────────────────────────────── */
+/* Hero Battle UI (Phase 5C) */
+/* ──────────────────────────────────────────────────────────────────────────── */
+.hero-passive-badge {
+  display: inline-block;
+  font-size: 10px;
+  color: #c0d8f0;
+  padding: 1px 6px;
+  border: 1px solid #4a6382;
+  border-radius: 2px;
+  cursor: help;
+  margin-top: 2px;
+}
+.favoured-banner {
+  color: #ffd866;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 4px 8px;
+  background: rgba(255, 216, 102, 0.12);
+  border: 1px solid rgba(255, 216, 102, 0.4);
+  margin: 6px auto;
+  border-radius: 3px;
+  display: inline-block;
+}
+.hero-fx-banner {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+.hero-fx-chip {
+  padding: 4px 10px;
+  background: #2a3a5c;
+  color: #ffde70;
+  border: 1px solid #f2b92f;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  animation: hero-fx-pop 0.3s steps(3, end);
+}
+@keyframes hero-fx-pop {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.special-button {
+  background: #4a3418;
+  color: #f7e6b8;
+  border-color: #8b6826;
+  font-weight: bold;
+}
+.special-button.special-ready {
+  background: #7a5518;
+  color: #fff6d6;
+  border-color: #f2cf65;
+  box-shadow: 0 0 10px rgba(242, 207, 101, 0.6);
+  animation: special-pulse 1s infinite alternate;
+}
+@keyframes special-pulse {
+  from { filter: brightness(1); }
+  to { filter: brightness(1.25); }
+}
+
+.arena.special-armed .hero-fighter {
+  filter: drop-shadow(0 0 8px #f2b92f);
+}
+
+/* Attack animations */
+.enemy-fighter.attack-sword {
+  position: relative;
+}
+.enemy-fighter.attack-sword::after {
+  content: "";
+  position: absolute;
+  top: 10%;
+  left: -20%;
+  width: 140%;
+  height: 80%;
+  background: linear-gradient(135deg, transparent 40%, #ffffff 48%, #c9b27c 52%, transparent 60%);
+  clip-path: polygon(0 0, 100% 100%, 80% 100%, 0 20%);
+  animation: slash-arc 0.25s steps(3, end) forwards;
+  pointer-events: none;
+}
+@keyframes slash-arc {
+  0% { transform: scale(0.4) rotate(-30deg); opacity: 0; }
+  50% { transform: scale(1.1) rotate(0deg); opacity: 1; }
+  100% { transform: scale(1.3) rotate(20deg); opacity: 0; }
+}
+
+.enemy-fighter.attack-staff {
+  position: relative;
+}
+.enemy-fighter.attack-staff::after {
+  content: "";
+  position: absolute;
+  top: 30%;
+  left: -60px;
+  width: 80px;
+  height: 20px;
+  background: radial-gradient(circle, #8bc34a 20%, #2e7d32 60%, transparent 80%);
+  animation: bolt-fly 0.25s ease-out forwards;
+  pointer-events: none;
+}
+@keyframes bolt-fly {
+  0% { transform: translateX(-40px) scale(0.5); opacity: 0; }
+  50% { transform: translateX(20px) scale(1.2); opacity: 1; }
+  100% { transform: translateX(50px) scale(1.5); opacity: 0; }
+}
+
+.enemy-fighter.attack-bow {
+  position: relative;
+}
+.enemy-fighter.attack-bow::after {
+  content: "";
+  position: absolute;
+  top: 40%;
+  left: -50px;
+  width: 60px;
+  height: 4px;
+  background: #e8d060;
+  box-shadow: 0 0 6px #fff;
+  animation: arrow-fly 0.22s ease-in forwards;
+  pointer-events: none;
+}
+@keyframes arrow-fly {
+  0% { transform: translateX(-60px); opacity: 0; }
+  60% { transform: translateX(20px); opacity: 1; }
+  100% { transform: translateX(30px); opacity: 0; }
+}
+
+.results-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin: 12px auto;
+}
+
+:root[data-readable="true"] .hero-fx-chip,
+:root[data-readable="true"] .special-button.special-ready,
+:root[data-readable="true"] .enemy-fighter[class*="attack-"]::after {
+  animation: none !important;
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-fx-chip,
+  .special-button.special-ready,
+  .enemy-fighter[class*="attack-"]::after {
+    animation: none !important;
+  }
+}
+

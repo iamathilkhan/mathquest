@@ -26,6 +26,8 @@ function createInitialBattleState(player: Player, realmId: string, stageIndex: n
     startTier,
     loadout,
     hearts: heartsFor(player.level),
+    hero: player.hero ?? undefined,
+    realmId,
   });
   return next;
 }
@@ -42,6 +44,8 @@ export function useBattle({ player, realmId, stageIndex, pools, mode = stageInde
       startTier: startTierFor(startingPlayer.skill?.[realmId], stageIndex),
       loadout: buildLoadout(startingPlayer),
       hearts: heartsFor(startingPlayer.level),
+      hero: startingPlayer.hero ?? undefined,
+      realmId,
     });
   }, [mode, realmId, stageIndex, pools, startingPlayer]);
 

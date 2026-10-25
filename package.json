@@ -16,6 +16,8 @@
     "art:gen": "tsx scripts/gen-images.ts",
     "art:process": "tsx scripts/art-process.ts",
     "eval": "node --conditions=react-server --import tsx scripts/eval-generation.ts",
+    "diagnose:art": "node --conditions=react-server --import tsx scripts/diagnose-art.ts",
+    "balance": "node --import tsx scripts/balance-sim.ts",
     "release-check": "node --conditions=react-server --import tsx scripts/release-check.ts"
   },
   "dependencies": {

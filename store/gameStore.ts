@@ -7,8 +7,9 @@ import { useEffect } from "react";
 import { createFreshPlayer, applyStageResult, buildLoadout, commitUsedItems } from "@/lib/game/progress";
 import type { Player, PlayerSettings, StageResult } from "@/lib/schemas";
 import { PlayerSchema } from "@/lib/schemas";
+import type { Hero } from "@/data/heroes";
 
-const STORAGE_KEY = "mathquest:v1";
+const STORAGE_KEY = "mathquest:v2";
 const DEFAULT_SETTINGS = {
   sound: true,
   music: false,
@@ -50,10 +51,22 @@ function normalizePlayer(raw: unknown): Player {
     if (!result.success) return createFreshPlayer("");
     const player = result.data;
     const grade = player.grade ?? player.profile?.grade ?? 5;
+
+    // Initialize mapNode to first unlocked realm if not set
+    let mapNode = player.mapNode;
+    if (!mapNode) {
+      // Default to first realm of the player's grade
+      const enabledRealms = ["g5-fractions", "g5-decimals", "g5-volume", "g6-ratios", "g6-fracdiv", "g6-area"];
+      const gradeRealms = enabledRealms.filter((id) => id.startsWith(`g${grade}`));
+      mapNode = gradeRealms[0];
+    }
+
     return {
       ...createFreshPlayer(player.profile?.name ?? ""),
       ...player,
       grade,
+      mapNode,
+      hero: player.hero ?? undefined,
       profile: { name: player.profile?.name ?? "", grade },
       retreatedStages: player.retreatedStages ?? [],
       inventory: player.inventory ?? { hint: 0, shield: 1, fifty: 1 },
@@ -71,12 +84,17 @@ interface GameStoreState {
   player: Player;
   hydrated: boolean;
   saveExists: boolean;
+  redirectedToCreateOnce: boolean;
   startNewGame: (name: string) => void;
   setGrade: (grade: 5 | 6) => void;
   applyResult: (result: StageResult, now?: Date) => void;
   commitItems: (used: { hint: number; shield: number; fifty: number }) => void;
   markLessonFinished: (subSkillId: string) => void;
   updateSettings: (next: Partial<PlayerSettings>) => void;
+  setMapNode: (realmId: string) => void;
+  setHero: (hero: Hero) => void;
+  changeHero: (hero: Hero) => void;
+  markRedirectedToCreate: () => void;
   resetAll: () => void;
   hydrate: () => void;
 }
@@ -87,6 +105,7 @@ export const useGameStore = create<GameStoreState>()(
       player: createFreshPlayer(""),
       hydrated: false,
       saveExists: false,
+      redirectedToCreateOnce: false,
       hydrate: () => set({ hydrated: true }),
       startNewGame: (name: string) => {
         set({ player: createFreshPlayer(name), saveExists: true });
@@ -131,15 +150,60 @@ export const useGameStore = create<GameStoreState>()(
           },
         }));
       },
+      setMapNode: (realmId: string) => {
+        set((state) => ({
+          saveExists: true,
+          player: {
+            ...state.player,
+            mapNode: realmId,
+          },
+        }));
+      },
+      setHero: (hero: Hero) => {
+        set((state) => ({
+          saveExists: true,
+          player: {
+            ...state.player,
+            hero,
+          },
+        }));
+      },
+      changeHero: (hero: Hero) => {
+        set((state) => ({
+          saveExists: true,
+          player: {
+            ...state.player,
+            hero,
+          },
+        }));
+      },
+      markRedirectedToCreate: () => {
+        set({ redirectedToCreateOnce: true });
+      },
       resetAll: () => {
         set({ player: createFreshPlayer(""), saveExists: false });
       },
     }),
     {
       name: STORAGE_KEY,
-      version: 1,
+      version: 2,
       skipHydration: true,
       storage: createJSONStorage(() => safeStorage),
+      migrate: (persisted: unknown, fromVersion: number): GameStoreState => {
+        if (fromVersion === 0 || fromVersion === 1) {
+          // v1 -> v2 migration: keep everything, add hero: undefined
+          const v1State = persisted as unknown as GameStoreState;
+          return {
+            ...v1State,
+            player: {
+              ...v1State.player,
+              hero: undefined,
+            },
+            redirectedToCreateOnce: false,
+          };
+        }
+        return persisted as unknown as GameStoreState;
+      },
       merge: (persisted, current) => {
         if (!persisted || typeof persisted !== "object") {
           return current;
@@ -150,6 +214,8 @@ export const useGameStore = create<GameStoreState>()(
         const priorSaveFlag = "saveExists" in persisted && typeof persisted.saveExists === "boolean"
           ? persisted.saveExists
           : false;
+        const redirectedOnce = "redirectedToCreateOnce" in persisted && persisted.redirectedToCreateOnce === true;
+
         return {
           ...current,
           player: validPlayer ?? createFreshPlayer(""),
@@ -157,6 +223,7 @@ export const useGameStore = create<GameStoreState>()(
             validPlayer?.lastPlayed || validPlayer?.profile?.name || validPlayer?.lifetime?.answered ||
             Object.keys(validPlayer?.realms ?? {}).length
           )),
+          redirectedToCreateOnce: redirectedOnce,
           hydrated: true,
         };
       },

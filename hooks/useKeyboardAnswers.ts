@@ -33,6 +33,7 @@ export function useKeyboardAnswers(dispatch: React.Dispatch<BattleAction>, onAns
       if (key === "h") dispatch({ type: "POWER", item: "hint" });
       if (key === "s") dispatch({ type: "POWER", item: "shield" });
       if (key === "f") dispatch({ type: "POWER", item: "fifty" });
+      if (key === "p") dispatch({ type: "SPECIAL" });
     };
 
     window.addEventListener("keydown", onKeyDown);

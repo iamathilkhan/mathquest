@@ -18,7 +18,7 @@ describe("art slot manifest", () => {
       expect(slots).toContain(`boss-${realmId}`);
       expect(slots).toContain(`plate-${realmId}`);
     }
-    expect(slots).toHaveLength(33);
+    expect(slots).toHaveLength(45);
   });
 
   it("has a local path, alt text, and fallback label for every slot", () => {

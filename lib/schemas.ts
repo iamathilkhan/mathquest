@@ -244,6 +244,15 @@ export const PlayerSchema = z.object({
   retreats: z.number().int().min(0).optional(),
   lifetime: LifetimeStatsSchema.optional(),
   settings: PlayerSettingsSchema.optional(),
+  /** Current realm position on the map (realmId or null) */
+  mapNode: z.string().optional(),
+  /** Player's chosen hero {classId, variant} or null */
+  hero: z
+    .object({
+      classId: z.enum(["knight", "mage", "ranger"]),
+      variant: z.enum(["boy", "girl"]),
+    })
+    .optional(),
 });
 export type Player = z.infer<typeof PlayerSchema>;
 

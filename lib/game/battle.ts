@@ -19,6 +19,9 @@ import {
 } from "./adaptive";
 import { xpForAnswer, damageFor } from "./xp";
 import { MINION_Q, BOSS_Q, MINION_HP, BOSS_HP, COMBO_REWARDS } from "@/lib/config";
+import type { ClassId } from "@/data/heroes";
+import { HERO_CLASSES } from "@/data/heroes";
+import { favouredMultiplier, xpMultiplier } from "./heroes";
 
 // ─── State ────────────────────────────────────────────────────────────────────────
 
@@ -41,6 +44,7 @@ export interface BattleState {
   pools: Pools;
   mode: BattleMode;
   hearts: number;
+  maxHearts: number;
   enemyHp: number;
   enemyMax: number;
   qIndex: number;
@@ -65,6 +69,13 @@ export interface BattleState {
   /** True if the most recent ANSWER crossed a boss HP phase boundary */
   phaseJustChanged: boolean;
   hardCorrect: number;
+  hero?: { classId: ClassId };
+  realmId?: string;
+  specialCharge: number;
+  specialUsesLeft: number;
+  specialArmed: boolean;
+  passiveSpent: boolean;
+  heroFx: string[];
 }
 
 // ─── Actions ─────────────────────────────────────────────────────────────────────
@@ -77,10 +88,13 @@ export type BattleAction =
       startTier: Tier;
       loadout: Loadout;
       hearts: number;
+      hero?: { classId: ClassId };
+      realmId?: string;
     }
   | { type: "ANSWER"; picked: number }
   | { type: "NEXT" }
-  | { type: "POWER"; item: PowerItem };
+  | { type: "POWER"; item: PowerItem }
+  | { type: "SPECIAL" };
 
 // ─── Reducer ─────────────────────────────────────────────────────────────────────
 
@@ -94,6 +108,10 @@ export function battleReducer(state: BattleState, action: BattleAction): BattleS
       const enemyMax = mode === "boss" ? BOSS_HP : MINION_HP;
       const adaptive = initialAdaptive(action.startTier);
       const takeResult = takeQuestion(action.pools, action.startTier);
+      const loadout = { ...action.loadout };
+      if (action.hero?.classId === "mage") {
+        loadout.hint += 1;
+      }
       if (!takeResult) {
         return {
           ...emptyState(),
@@ -103,11 +121,14 @@ export function battleReducer(state: BattleState, action: BattleAction): BattleS
           enemyMax,
           enemyHp: enemyMax,
           hearts: action.hearts,
-          loadout: { ...action.loadout },
+          maxHearts: action.hearts,
+          loadout,
           used: { ...EMPTY_LOADOUT },
           mode,
           pools: action.pools,
           adaptive,
+          hero: action.hero,
+          realmId: action.realmId,
         };
       }
       return {
@@ -115,6 +136,7 @@ export function battleReducer(state: BattleState, action: BattleAction): BattleS
         pools: takeResult.pools,
         mode,
         hearts: action.hearts,
+        maxHearts: action.hearts,
         enemyHp: enemyMax,
         enemyMax,
         qIndex: 0,
@@ -122,8 +144,15 @@ export function battleReducer(state: BattleState, action: BattleAction): BattleS
         adaptive,
         currentQuestion: takeResult.q,
         phase: "question",
-        loadout: { ...action.loadout },
+        loadout,
         used: { ...EMPTY_LOADOUT },
+        hero: action.hero,
+        realmId: action.realmId,
+        specialCharge: 0,
+        specialUsesLeft: 2,
+        specialArmed: false,
+        passiveSpent: false,
+        heroFx: [],
       };
     }
 
@@ -145,6 +174,10 @@ export function battleReducer(state: BattleState, action: BattleAction): BattleS
       let shieldActive = state.shieldActive;
       let hardCorrect = state.hardCorrect;
       let loadout = { ...state.loadout };
+      let specialCharge = state.specialCharge;
+      let specialArmed = state.specialArmed;
+      let passiveSpent = state.passiveSpent;
+      const heroFx: string[] = [];
 
       // Boss phase before this answer
       const phaseBefore = bossPhaseOf(state.enemyHp, state.enemyMax);
@@ -152,15 +185,45 @@ export function battleReducer(state: BattleState, action: BattleAction): BattleS
       if (verdict.correct) {
         combo += 1;
         bestCombo = Math.max(bestCombo, combo);
-        const dmg = damageFor(state.currentQuestion.tier, combo);
-        enemyHp = Math.max(0, enemyHp - dmg);
-        xp += xpForAnswer(state.currentQuestion.tier, combo);
+        specialCharge += 1;
+
+        const baseDmg = damageFor(state.currentQuestion.tier, combo);
+        const mult =
+          state.hero && state.realmId
+            ? favouredMultiplier(state.hero.classId, state.realmId)
+            : 1;
+        const isFavoured = mult > 1;
+
+        let totalDmg = baseDmg;
+        if (specialArmed) {
+          totalDmg = baseDmg * 2;
+          specialArmed = false;
+          heroFx.push("POWER STRIKE ×2");
+        }
+        if (isFavoured) {
+          totalDmg = Math.round(totalDmg * mult);
+          heroFx.push("FAVOURED FOE +50% DAMAGE");
+        }
+
+        enemyHp = Math.max(0, enemyHp - totalDmg);
+
+        let earnedXp = xpForAnswer(state.currentQuestion.tier, combo);
+        if (state.hero && state.hero.classId === "ranger") {
+          earnedXp = Math.round(earnedXp * xpMultiplier(state.hero.classId));
+        }
+        xp += earnedXp;
+
         correctCount += 1;
         if (state.currentQuestion.tier === "hard") hardCorrect += 1;
       } else {
         combo = 0;
+        specialCharge = 0;
         wrongCount += 1;
-        if (shieldActive) {
+
+        if (state.hero?.classId === "knight" && !passiveSpent) {
+          passiveSpent = true;
+          heroFx.push("STALWART: heart saved");
+        } else if (shieldActive) {
           // Shield absorbs one wrong answer
           shieldActive = false;
         } else {
@@ -208,6 +271,10 @@ export function battleReducer(state: BattleState, action: BattleAction): BattleS
         phaseJustChanged,
         history: [...state.history, record],
         phase: "feedback",
+        specialCharge,
+        specialArmed,
+        passiveSpent,
+        heroFx,
       };
     }
 
@@ -215,18 +282,18 @@ export function battleReducer(state: BattleState, action: BattleAction): BattleS
       if (state.phase !== "feedback") return state;
 
       if (state.enemyHp === 0) {
-        return { ...state, phase: "won", endReason: "enemy_defeated" };
+        return { ...state, phase: "won", endReason: "enemy_defeated", heroFx: [] };
       }
       if (state.hearts <= 0) {
-        return { ...state, phase: "lost", endReason: "out_of_hearts" };
+        return { ...state, phase: "lost", endReason: "out_of_hearts", heroFx: [] };
       }
       if (state.qIndex + 1 >= state.total) {
-        return { ...state, phase: "lost", endReason: "out_of_questions" };
+        return { ...state, phase: "lost", endReason: "out_of_questions", heroFx: [] };
       }
 
       const takeResult = takeQuestion(state.pools, state.adaptive.tier);
       if (!takeResult) {
-        return { ...state, phase: "lost", endReason: "pool_exhausted" };
+        return { ...state, phase: "lost", endReason: "pool_exhausted", heroFx: [] };
       }
 
       return {
@@ -239,6 +306,7 @@ export function battleReducer(state: BattleState, action: BattleAction): BattleS
         hintShown: false,
         hidden: [],
         phaseJustChanged: false,
+        heroFx: [],
       };
     }
 
@@ -281,6 +349,50 @@ export function battleReducer(state: BattleState, action: BattleAction): BattleS
         default:
           return state;
       }
+    }
+
+    case "SPECIAL": {
+      if (state.phase !== "question") return state;
+      if (!state.currentQuestion) return state;
+      if (!state.hero) return state;
+      if (state.specialUsesLeft <= 0) return state;
+      const heroClass = HERO_CLASSES[state.hero.classId];
+      if (!heroClass) return state;
+      if (state.specialCharge < heroClass.special.chargeNeeded) return state;
+
+      if (state.hero.classId === "knight") {
+        return {
+          ...state,
+          specialArmed: true,
+          specialCharge: 0,
+          specialUsesLeft: state.specialUsesLeft - 1,
+        };
+      }
+
+      if (state.hero.classId === "mage") {
+        if (state.hidden.length > 0) return state;
+        const hidden = pickFiftyFiftyHidden(
+          state.currentQuestion,
+          state.currentQuestion.correctIndex
+        );
+        return {
+          ...state,
+          hidden,
+          specialCharge: 0,
+          specialUsesLeft: state.specialUsesLeft - 1,
+        };
+      }
+
+      if (state.hero.classId === "ranger") {
+        return {
+          ...state,
+          hearts: Math.min(state.maxHearts, state.hearts + 1),
+          specialCharge: 0,
+          specialUsesLeft: state.specialUsesLeft - 1,
+        };
+      }
+
+      return state;
     }
 
     default:
@@ -340,6 +452,7 @@ function emptyState(): BattleState {
     pools: { easy: [], medium: [], hard: [] },
     mode: "minion",
     hearts: 3,
+    maxHearts: 3,
     enemyHp: MINION_HP,
     enemyMax: MINION_HP,
     qIndex: 0,
@@ -362,5 +475,10 @@ function emptyState(): BattleState {
     hidden: [],
     phaseJustChanged: false,
     hardCorrect: 0,
+    specialCharge: 0,
+    specialUsesLeft: 2,
+    specialArmed: false,
+    passiveSpent: false,
+    heroFx: [],
   };
 }

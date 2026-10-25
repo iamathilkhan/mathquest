@@ -13,13 +13,13 @@ function memoryStorage(initial: Record<string, string>) {
 
 afterEach(() => {
   vi.unstubAllGlobals();
-  useGameStore.setState({ player: createFreshPlayer(""), saveExists: false, hydrated: false });
+  useGameStore.setState({ player: createFreshPlayer(""), saveExists: false, hydrated: false, redirectedToCreateOnce: false });
 });
 
 describe("game store hydration", () => {
   it("recovers from corrupt localStorage JSON without throwing", async () => {
     vi.stubGlobal("window", {
-      localStorage: memoryStorage({ "mathquest:v1": "{broken-json" }),
+      localStorage: memoryStorage({ "mathquest:v2": "{broken-json" }),
     });
 
     await expect(useGameStore.persist.rehydrate()).resolves.toBeUndefined();
@@ -30,7 +30,7 @@ describe("game store hydration", () => {
   it("resets a schema-invalid persisted player", async () => {
     vi.stubGlobal("window", {
       localStorage: memoryStorage({
-        "mathquest:v1": JSON.stringify({ state: { player: { xp: -5 } }, version: 1 }),
+        "mathquest:v2": JSON.stringify({ state: { player: { xp: -5 } }, version: 2 }),
       }),
     });
 
@@ -44,9 +44,9 @@ describe("game store hydration", () => {
     savedPlayer.realms["g5-fractions"] = { stars: [3, 2, -1, -1, -1], bossDefeated: false };
     vi.stubGlobal("window", {
       localStorage: memoryStorage({
-        "mathquest:v1": JSON.stringify({
-          state: { player: savedPlayer, saveExists: true },
-          version: 1,
+        "mathquest:v2": JSON.stringify({
+          state: { player: savedPlayer, saveExists: true, redirectedToCreateOnce: false },
+          version: 2,
         }),
       }),
     });

@@ -31,8 +31,9 @@ Browser (Next.js App Router, React 19)
   │
   ├── lib/                      (pure logic and server utilities)
   │     ├── game/               NO React, NO network — pure functions only
-  │     │     adaptive.ts, battle.ts, badges.ts, copy.ts, evaluate.ts
-  │     │     progress.ts, skill.ts, streak.ts, unlock.ts, xp.ts
+  │     │     adaptive.ts, battle.ts, badges.ts, copy.ts, createGate.ts, evaluate.ts
+  │     │     heroes.ts, progress.ts, skill.ts, streak.ts, unlock.ts, xp.ts
+  │     ├── map/                island.ts, pathfinding.ts, travel.ts
   │     ├── verify/             SERVER-ONLY (imports server-only package)
   │     │     expression.ts, question.ts, lesson.ts
   │     ├── llm/                SERVER-ONLY
@@ -46,10 +47,10 @@ Browser (Next.js App Router, React 19)
   │     ├── diagramData.ts      shared (pure, no I/O)
   │     └── schemas.ts          Zod schemas + inferred types
   │
-  ├── store/gameStore.ts        Zustand persist (localStorage key mathquest:v1)
+  ├── store/gameStore.ts        Zustand persist (localStorage key mathquest:v2, v1 migration)
   ├── hooks/                    useBattle, useLesson, useQuestions, useNarration, useSfx, …
   └── data/
-        curriculum.ts, layout.ts, artManifest.ts
+        curriculum.ts, heroes.ts, layout.ts, artManifest.ts
         lessons/{realm}__{sub}.json     (seed lessons, committed)
         seed-questions/{realm}__{sub}.json  (seed questions, committed)
 ```
@@ -263,6 +264,34 @@ visual data never reaches an SVG renderer.
 
 `sharp` is a dev dependency. It is never imported from app code; `eslint` and
 `release-check` both verify this.
+
+---
+
+## Hero System & Battle Mechanics
+
+Phase 5 introduced hero classes, passives, active special abilities, and weapon tiers:
+
+### Hero Classes & Passives
+- **Knight**: Weapon `sword`. Passive `Stalwart` absorbs the first wrong answer damage in a battle (`passiveSpent: true`, shields hearts). Special `Power Strike` charges in 3 correct answers (max 2 uses/battle), dealing 2x base damage on the next correct hit (stacks multiplicatively with favoured multiplier to 3x). Favoured against *Fraction Forest* and *Decimal Dunes*.
+- **Mage**: Weapon `staff`. Passive `Insight` grants +1 hint charge on battle initialization. Special `Arcane Clarity` charges in 2 correct answers (max 3 uses/battle), immediately eliminating 2 incorrect choices for the active question. Favoured against *Coordinate Canyon* and *Algebra Archipelago*.
+- **Ranger**: Weapon `bow`. Passive `Quick Study` confers a +15% XP multiplier on all XP rewards. Special `Second Wind` charges in 4 correct answers (max 1 use/battle), restoring 1 heart clamped to maximum hearts. Favoured against *Measurement Mountain* and *Data Depths*.
+
+### Favoured Realms & Weapon Scaling
+- **Favoured Multiplier**: Attacking in a class's favoured realm deals 1.5x damage on correct answers.
+- **Weapon Tiers**: Weapon names scale dynamically with player level (`Trainee` Lv1-2, `Apprentice` Lv3-4, `Master` Lv5-7, `Grandmaster` Lv8+), surfacing in HUD, battle arena, and profile view.
+
+### Pure Reducer Purity & Testing
+`lib/game/battle.ts` remains 100% deterministic and pure. Actions `INIT`, `ANSWER`, `USE_HINT`, `USE_SHIELD`, `USE_FIFTY_FIFTY`, `SPECIAL`, and `NEXT` never perform side effects or mutate state. Deep freezing verifies that no inputs or state trees are mutated.
+
+---
+
+## Balance Simulation
+
+The balance simulation suite (`scripts/balance-sim.ts`, tested in `scripts/balance-sim.test.ts`) simulates 288,000 battles across all 144 configurations:
+- **3 Hero Classes** × **2 Modes** (Minion, Boss) × **6 Realms** × **4 Skill Bands** (Struggling: 40%, Target: 70%, Advanced: 90%, Control: 0%).
+- **Deterministic PRNG**: Uses Mulberry32 seeded per configuration, allowing exact reproducibility across CI environments.
+- **Bot Decision Model**: Simulates realistic player behavior (uses Arcane Clarity when armed, picks among visible options, fires Power Strike immediately, reserves Second Wind until heart loss).
+- **Target Bands**: Evaluates overall win rates, favoured realm spread, inter-class parity, and zero-win control checks, automatically generating `docs/BALANCE.md`.
 
 ---
 
