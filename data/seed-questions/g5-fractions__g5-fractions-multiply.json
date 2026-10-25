@@ -1,0 +1,637 @@
+{
+  "items": [
+    {
+      "stem": "Multiply the whole number and fraction for Multiplying Fractions: 2 * (2/5) = ?",
+      "tier": "easy",
+      "expression": "2 * (2/5)",
+      "options": [
+        {
+          "label": "4/5",
+          "value": "4/5",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "9/5",
+          "value": "9/5",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "14/5",
+          "value": "14/5",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "19/5",
+          "value": "19/5",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 0,
+      "explanation": "Evaluate 2 * (2/5) carefully. The exact result is 4/5; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g5-fractions-multiply",
+      "id": "63f3c8060918b8cf",
+      "check": "2 * (2/5) = 4/5",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Multiply the whole number and fraction for Multiplying Fractions: 3 * (3/6) = ?",
+      "tier": "easy",
+      "expression": "3 * (3/6)",
+      "options": [
+        {
+          "label": "5/2",
+          "value": "5/2",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "3/2",
+          "value": "3/2",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "7/2",
+          "value": "7/2",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "9/2",
+          "value": "9/2",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 1,
+      "explanation": "Evaluate 3 * (3/6) carefully. The exact result is 3/2; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g5-fractions-multiply",
+      "id": "55465c5a1b7db99a",
+      "check": "3 * (3/6) = 3/2",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Multiply the whole number and fraction for Multiplying Fractions: 4 * (1/7) = ?",
+      "tier": "easy",
+      "expression": "4 * (1/7)",
+      "options": [
+        {
+          "label": "11/7",
+          "value": "11/7",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "18/7",
+          "value": "18/7",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "4/7",
+          "value": "4/7",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "25/7",
+          "value": "25/7",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 2,
+      "explanation": "Evaluate 4 * (1/7) carefully. The exact result is 4/7; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g5-fractions-multiply",
+      "id": "87f59dfc11c119a1",
+      "check": "4 * (1/7) = 4/7",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Multiply the whole number and fraction for Multiplying Fractions: 2 * (2/8) = ?",
+      "tier": "easy",
+      "expression": "2 * (2/8)",
+      "options": [
+        {
+          "label": "3/2",
+          "value": "3/2",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "5/2",
+          "value": "5/2",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "7/2",
+          "value": "7/2",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "1/2",
+          "value": "1/2",
+          "why": "This matches the exact calculation."
+        }
+      ],
+      "correctIndex": 3,
+      "explanation": "Evaluate 2 * (2/8) carefully. The exact result is 1/2; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g5-fractions-multiply",
+      "id": "b0138b1eed6637df",
+      "check": "2 * (2/8) = 1/2",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Multiply the whole number and fraction for Multiplying Fractions: 3 * (3/9) = ?",
+      "tier": "easy",
+      "expression": "3 * (3/9)",
+      "options": [
+        {
+          "label": "1",
+          "value": "1",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "2",
+          "value": "2",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "3",
+          "value": "3",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "4",
+          "value": "4",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 0,
+      "explanation": "Evaluate 3 * (3/9) carefully. The exact result is 1; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g5-fractions-multiply",
+      "id": "20878e75aa383d2b",
+      "check": "3 * (3/9) = 1",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Multiply the whole number and fraction for Multiplying Fractions: 4 * (1/5) = ?",
+      "tier": "easy",
+      "expression": "4 * (1/5)",
+      "options": [
+        {
+          "label": "9/5",
+          "value": "9/5",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "4/5",
+          "value": "4/5",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "14/5",
+          "value": "14/5",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "19/5",
+          "value": "19/5",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 1,
+      "explanation": "Evaluate 4 * (1/5) carefully. The exact result is 4/5; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g5-fractions-multiply",
+      "id": "951d33f846ec5cda",
+      "check": "4 * (1/5) = 4/5",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Multiply the whole number and fraction for Multiplying Fractions: 2 * (2/6) = ?",
+      "tier": "medium",
+      "expression": "2 * (2/6)",
+      "options": [
+        {
+          "label": "5/3",
+          "value": "5/3",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "8/3",
+          "value": "8/3",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "2/3",
+          "value": "2/3",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "11/3",
+          "value": "11/3",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 2,
+      "explanation": "Evaluate 2 * (2/6) carefully. The exact result is 2/3; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g5-fractions-multiply",
+      "id": "98caa6a78a93d94a",
+      "check": "2 * (2/6) = 2/3",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Multiply the whole number and fraction for Multiplying Fractions: 3 * (3/7) = ?",
+      "tier": "medium",
+      "expression": "3 * (3/7)",
+      "options": [
+        {
+          "label": "16/7",
+          "value": "16/7",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "23/7",
+          "value": "23/7",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "30/7",
+          "value": "30/7",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "9/7",
+          "value": "9/7",
+          "why": "This matches the exact calculation."
+        }
+      ],
+      "correctIndex": 3,
+      "explanation": "Evaluate 3 * (3/7) carefully. The exact result is 9/7; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g5-fractions-multiply",
+      "id": "7593938a696f3ccd",
+      "check": "3 * (3/7) = 9/7",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Multiply the whole number and fraction for Multiplying Fractions: 4 * (1/8) = ?",
+      "tier": "medium",
+      "expression": "4 * (1/8)",
+      "options": [
+        {
+          "label": "1/2",
+          "value": "1/2",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "3/2",
+          "value": "3/2",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "5/2",
+          "value": "5/2",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "7/2",
+          "value": "7/2",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 0,
+      "explanation": "Evaluate 4 * (1/8) carefully. The exact result is 1/2; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g5-fractions-multiply",
+      "id": "44d53e6071b79ea5",
+      "check": "4 * (1/8) = 1/2",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Multiply the whole number and fraction for Multiplying Fractions: 2 * (2/9) = ?",
+      "tier": "medium",
+      "expression": "2 * (2/9)",
+      "options": [
+        {
+          "label": "13/9",
+          "value": "13/9",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "4/9",
+          "value": "4/9",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "22/9",
+          "value": "22/9",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "31/9",
+          "value": "31/9",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 1,
+      "explanation": "Evaluate 2 * (2/9) carefully. The exact result is 4/9; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g5-fractions-multiply",
+      "id": "f2d1ea7bd85275d2",
+      "check": "2 * (2/9) = 4/9",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Multiply the whole number and fraction for Multiplying Fractions: 3 * (3/5) = ?",
+      "tier": "medium",
+      "expression": "3 * (3/5)",
+      "options": [
+        {
+          "label": "14/5",
+          "value": "14/5",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "19/5",
+          "value": "19/5",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "9/5",
+          "value": "9/5",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "24/5",
+          "value": "24/5",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 2,
+      "explanation": "Evaluate 3 * (3/5) carefully. The exact result is 9/5; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g5-fractions-multiply",
+      "id": "e5615ebed1037192",
+      "check": "3 * (3/5) = 9/5",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Multiply the whole number and fraction for Multiplying Fractions: 4 * (1/6) = ?",
+      "tier": "medium",
+      "expression": "4 * (1/6)",
+      "options": [
+        {
+          "label": "5/3",
+          "value": "5/3",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "8/3",
+          "value": "8/3",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "11/3",
+          "value": "11/3",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "2/3",
+          "value": "2/3",
+          "why": "This matches the exact calculation."
+        }
+      ],
+      "correctIndex": 3,
+      "explanation": "Evaluate 4 * (1/6) carefully. The exact result is 2/3; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g5-fractions-multiply",
+      "id": "08a00b332b80a920",
+      "check": "4 * (1/6) = 2/3",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Multiply the whole number and fraction for Multiplying Fractions: 2 * (2/7) = ?",
+      "tier": "hard",
+      "expression": "2 * (2/7)",
+      "options": [
+        {
+          "label": "4/7",
+          "value": "4/7",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "11/7",
+          "value": "11/7",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "18/7",
+          "value": "18/7",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "25/7",
+          "value": "25/7",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 0,
+      "explanation": "Evaluate 2 * (2/7) carefully. The exact result is 4/7; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g5-fractions-multiply",
+      "id": "c8acb18cb85e8d0d",
+      "check": "2 * (2/7) = 4/7",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Multiply the whole number and fraction for Multiplying Fractions: 3 * (3/8) = ?",
+      "tier": "hard",
+      "expression": "3 * (3/8)",
+      "options": [
+        {
+          "label": "17/8",
+          "value": "17/8",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "9/8",
+          "value": "9/8",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "25/8",
+          "value": "25/8",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "33/8",
+          "value": "33/8",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 1,
+      "explanation": "Evaluate 3 * (3/8) carefully. The exact result is 9/8; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g5-fractions-multiply",
+      "id": "e6fd1bb189188a80",
+      "check": "3 * (3/8) = 9/8",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Multiply the whole number and fraction for Multiplying Fractions: 4 * (1/9) = ?",
+      "tier": "hard",
+      "expression": "4 * (1/9)",
+      "options": [
+        {
+          "label": "13/9",
+          "value": "13/9",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "22/9",
+          "value": "22/9",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "4/9",
+          "value": "4/9",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "31/9",
+          "value": "31/9",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 2,
+      "explanation": "Evaluate 4 * (1/9) carefully. The exact result is 4/9; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g5-fractions-multiply",
+      "id": "7424265f21eab7bf",
+      "check": "4 * (1/9) = 4/9",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Multiply the whole number and fraction for Multiplying Fractions: 2 * (2/5) = ?",
+      "tier": "hard",
+      "expression": "2 * (2/5)",
+      "options": [
+        {
+          "label": "9/5",
+          "value": "9/5",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "14/5",
+          "value": "14/5",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "19/5",
+          "value": "19/5",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "4/5",
+          "value": "4/5",
+          "why": "This matches the exact calculation."
+        }
+      ],
+      "correctIndex": 3,
+      "explanation": "Evaluate 2 * (2/5) carefully. The exact result is 4/5; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g5-fractions-multiply",
+      "id": "63f3c8060918b8cf",
+      "check": "2 * (2/5) = 4/5",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Multiply the whole number and fraction for Multiplying Fractions: 3 * (3/6) = ?",
+      "tier": "hard",
+      "expression": "3 * (3/6)",
+      "options": [
+        {
+          "label": "3/2",
+          "value": "3/2",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "5/2",
+          "value": "5/2",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "7/2",
+          "value": "7/2",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "9/2",
+          "value": "9/2",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 0,
+      "explanation": "Evaluate 3 * (3/6) carefully. The exact result is 3/2; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g5-fractions-multiply",
+      "id": "55465c5a1b7db99a",
+      "check": "3 * (3/6) = 3/2",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Multiply the whole number and fraction for Multiplying Fractions: 4 * (1/7) = ?",
+      "tier": "hard",
+      "expression": "4 * (1/7)",
+      "options": [
+        {
+          "label": "11/7",
+          "value": "11/7",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "4/7",
+          "value": "4/7",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "18/7",
+          "value": "18/7",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "25/7",
+          "value": "25/7",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 1,
+      "explanation": "Evaluate 4 * (1/7) carefully. The exact result is 4/7; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g5-fractions-multiply",
+      "id": "87f59dfc11c119a1",
+      "check": "4 * (1/7) = 4/7",
+      "correctedFromModel": false,
+      "source": "seed"
+    }
+  ],
+  "realmId": "g5-fractions",
+  "subSkillId": "g5-fractions-multiply",
+  "source": "seed"
+}

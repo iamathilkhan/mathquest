@@ -1,0 +1,637 @@
+{
+  "items": [
+    {
+      "stem": "Add the areas of rectangles 1 by 2 and 1 by 2: (1 * 2) + (1 * 2) = ?",
+      "tier": "easy",
+      "expression": "(1 * 2) + (1 * 2)",
+      "options": [
+        {
+          "label": "4",
+          "value": "4",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "5",
+          "value": "5",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "6",
+          "value": "6",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "7",
+          "value": "7",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 0,
+      "explanation": "Evaluate (1 * 2) + (1 * 2) carefully. The exact result is 4; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-area-composite",
+      "id": "71e3a0bc8119763a",
+      "check": "(1 * 2) + (1 * 2) = 4",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Add the areas of rectangles 2 by 3 and 2 by 2: (2 * 3) + (2 * 2) = ?",
+      "tier": "easy",
+      "expression": "(2 * 3) + (2 * 2)",
+      "options": [
+        {
+          "label": "11",
+          "value": "11",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "10",
+          "value": "10",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "12",
+          "value": "12",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "13",
+          "value": "13",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 1,
+      "explanation": "Evaluate (2 * 3) + (2 * 2) carefully. The exact result is 10; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-area-composite",
+      "id": "19a6beabd502cd62",
+      "check": "(2 * 3) + (2 * 2) = 10",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Add the areas of rectangles 3 by 1 and 3 by 2: (3 * 1) + (3 * 2) = ?",
+      "tier": "easy",
+      "expression": "(3 * 1) + (3 * 2)",
+      "options": [
+        {
+          "label": "10",
+          "value": "10",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "11",
+          "value": "11",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "9",
+          "value": "9",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "12",
+          "value": "12",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 2,
+      "explanation": "Evaluate (3 * 1) + (3 * 2) carefully. The exact result is 9; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-area-composite",
+      "id": "2478eb66e464f354",
+      "check": "(3 * 1) + (3 * 2) = 9",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Add the areas of rectangles 1 by 2 and 4 by 2: (1 * 2) + (4 * 2) = ?",
+      "tier": "easy",
+      "expression": "(1 * 2) + (4 * 2)",
+      "options": [
+        {
+          "label": "11",
+          "value": "11",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "12",
+          "value": "12",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "13",
+          "value": "13",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "10",
+          "value": "10",
+          "why": "This matches the exact calculation."
+        }
+      ],
+      "correctIndex": 3,
+      "explanation": "Evaluate (1 * 2) + (4 * 2) carefully. The exact result is 10; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-area-composite",
+      "id": "a09de93cd2128213",
+      "check": "(1 * 2) + (4 * 2) = 10",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Add the areas of rectangles 2 by 3 and 5 by 2: (2 * 3) + (5 * 2) = ?",
+      "tier": "easy",
+      "expression": "(2 * 3) + (5 * 2)",
+      "options": [
+        {
+          "label": "16",
+          "value": "16",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "17",
+          "value": "17",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "18",
+          "value": "18",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "19",
+          "value": "19",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 0,
+      "explanation": "Evaluate (2 * 3) + (5 * 2) carefully. The exact result is 16; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-area-composite",
+      "id": "a60b251e92ba694d",
+      "check": "(2 * 3) + (5 * 2) = 16",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Add the areas of rectangles 3 by 1 and 6 by 2: (3 * 1) + (6 * 2) = ?",
+      "tier": "easy",
+      "expression": "(3 * 1) + (6 * 2)",
+      "options": [
+        {
+          "label": "16",
+          "value": "16",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "15",
+          "value": "15",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "17",
+          "value": "17",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "18",
+          "value": "18",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 1,
+      "explanation": "Evaluate (3 * 1) + (6 * 2) carefully. The exact result is 15; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-area-composite",
+      "id": "7c80cf2e334eab9a",
+      "check": "(3 * 1) + (6 * 2) = 15",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Add the areas of rectangles 1 by 2 and 7 by 2: (1 * 2) + (7 * 2) = ?",
+      "tier": "medium",
+      "expression": "(1 * 2) + (7 * 2)",
+      "options": [
+        {
+          "label": "17",
+          "value": "17",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "18",
+          "value": "18",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "16",
+          "value": "16",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "19",
+          "value": "19",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 2,
+      "explanation": "Evaluate (1 * 2) + (7 * 2) carefully. The exact result is 16; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-area-composite",
+      "id": "c73322f2dd00f3de",
+      "check": "(1 * 2) + (7 * 2) = 16",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Add the areas of rectangles 2 by 3 and 8 by 2: (2 * 3) + (8 * 2) = ?",
+      "tier": "medium",
+      "expression": "(2 * 3) + (8 * 2)",
+      "options": [
+        {
+          "label": "23",
+          "value": "23",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "24",
+          "value": "24",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "25",
+          "value": "25",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "22",
+          "value": "22",
+          "why": "This matches the exact calculation."
+        }
+      ],
+      "correctIndex": 3,
+      "explanation": "Evaluate (2 * 3) + (8 * 2) carefully. The exact result is 22; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-area-composite",
+      "id": "46cd5ed835bad5d5",
+      "check": "(2 * 3) + (8 * 2) = 22",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Add the areas of rectangles 3 by 1 and 9 by 2: (3 * 1) + (9 * 2) = ?",
+      "tier": "medium",
+      "expression": "(3 * 1) + (9 * 2)",
+      "options": [
+        {
+          "label": "21",
+          "value": "21",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "22",
+          "value": "22",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "23",
+          "value": "23",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "24",
+          "value": "24",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 0,
+      "explanation": "Evaluate (3 * 1) + (9 * 2) carefully. The exact result is 21; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-area-composite",
+      "id": "4c580b60ce84c81c",
+      "check": "(3 * 1) + (9 * 2) = 21",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Add the areas of rectangles 1 by 2 and 10 by 2: (1 * 2) + (10 * 2) = ?",
+      "tier": "medium",
+      "expression": "(1 * 2) + (10 * 2)",
+      "options": [
+        {
+          "label": "23",
+          "value": "23",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "22",
+          "value": "22",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "24",
+          "value": "24",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "25",
+          "value": "25",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 1,
+      "explanation": "Evaluate (1 * 2) + (10 * 2) carefully. The exact result is 22; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-area-composite",
+      "id": "5b76befe0e7bfac5",
+      "check": "(1 * 2) + (10 * 2) = 22",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Add the areas of rectangles 2 by 3 and 11 by 2: (2 * 3) + (11 * 2) = ?",
+      "tier": "medium",
+      "expression": "(2 * 3) + (11 * 2)",
+      "options": [
+        {
+          "label": "29",
+          "value": "29",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "30",
+          "value": "30",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "28",
+          "value": "28",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "31",
+          "value": "31",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 2,
+      "explanation": "Evaluate (2 * 3) + (11 * 2) carefully. The exact result is 28; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-area-composite",
+      "id": "79816eb92dde5dc6",
+      "check": "(2 * 3) + (11 * 2) = 28",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Add the areas of rectangles 3 by 1 and 12 by 2: (3 * 1) + (12 * 2) = ?",
+      "tier": "medium",
+      "expression": "(3 * 1) + (12 * 2)",
+      "options": [
+        {
+          "label": "28",
+          "value": "28",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "29",
+          "value": "29",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "30",
+          "value": "30",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "27",
+          "value": "27",
+          "why": "This matches the exact calculation."
+        }
+      ],
+      "correctIndex": 3,
+      "explanation": "Evaluate (3 * 1) + (12 * 2) carefully. The exact result is 27; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-area-composite",
+      "id": "79922a6174a173c3",
+      "check": "(3 * 1) + (12 * 2) = 27",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Add the areas of rectangles 1 by 2 and 13 by 2: (1 * 2) + (13 * 2) = ?",
+      "tier": "hard",
+      "expression": "(1 * 2) + (13 * 2)",
+      "options": [
+        {
+          "label": "28",
+          "value": "28",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "29",
+          "value": "29",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "30",
+          "value": "30",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "31",
+          "value": "31",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 0,
+      "explanation": "Evaluate (1 * 2) + (13 * 2) carefully. The exact result is 28; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-area-composite",
+      "id": "5a3726943992522d",
+      "check": "(1 * 2) + (13 * 2) = 28",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Add the areas of rectangles 2 by 3 and 14 by 2: (2 * 3) + (14 * 2) = ?",
+      "tier": "hard",
+      "expression": "(2 * 3) + (14 * 2)",
+      "options": [
+        {
+          "label": "35",
+          "value": "35",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "34",
+          "value": "34",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "36",
+          "value": "36",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "37",
+          "value": "37",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 1,
+      "explanation": "Evaluate (2 * 3) + (14 * 2) carefully. The exact result is 34; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-area-composite",
+      "id": "1f227b7ac555021c",
+      "check": "(2 * 3) + (14 * 2) = 34",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Add the areas of rectangles 3 by 1 and 15 by 2: (3 * 1) + (15 * 2) = ?",
+      "tier": "hard",
+      "expression": "(3 * 1) + (15 * 2)",
+      "options": [
+        {
+          "label": "34",
+          "value": "34",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "35",
+          "value": "35",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "33",
+          "value": "33",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "36",
+          "value": "36",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 2,
+      "explanation": "Evaluate (3 * 1) + (15 * 2) carefully. The exact result is 33; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-area-composite",
+      "id": "91a8349b2077b3e9",
+      "check": "(3 * 1) + (15 * 2) = 33",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Add the areas of rectangles 1 by 2 and 16 by 2: (1 * 2) + (16 * 2) = ?",
+      "tier": "hard",
+      "expression": "(1 * 2) + (16 * 2)",
+      "options": [
+        {
+          "label": "35",
+          "value": "35",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "36",
+          "value": "36",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "37",
+          "value": "37",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "34",
+          "value": "34",
+          "why": "This matches the exact calculation."
+        }
+      ],
+      "correctIndex": 3,
+      "explanation": "Evaluate (1 * 2) + (16 * 2) carefully. The exact result is 34; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-area-composite",
+      "id": "35a1a8287539e559",
+      "check": "(1 * 2) + (16 * 2) = 34",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Add the areas of rectangles 2 by 3 and 17 by 2: (2 * 3) + (17 * 2) = ?",
+      "tier": "hard",
+      "expression": "(2 * 3) + (17 * 2)",
+      "options": [
+        {
+          "label": "40",
+          "value": "40",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "41",
+          "value": "41",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "42",
+          "value": "42",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "43",
+          "value": "43",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 0,
+      "explanation": "Evaluate (2 * 3) + (17 * 2) carefully. The exact result is 40; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-area-composite",
+      "id": "2818ec5dccfc79a1",
+      "check": "(2 * 3) + (17 * 2) = 40",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Add the areas of rectangles 3 by 1 and 18 by 2: (3 * 1) + (18 * 2) = ?",
+      "tier": "hard",
+      "expression": "(3 * 1) + (18 * 2)",
+      "options": [
+        {
+          "label": "40",
+          "value": "40",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "39",
+          "value": "39",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "41",
+          "value": "41",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "42",
+          "value": "42",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 1,
+      "explanation": "Evaluate (3 * 1) + (18 * 2) carefully. The exact result is 39; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-area-composite",
+      "id": "88189e6bddf25bb0",
+      "check": "(3 * 1) + (18 * 2) = 39",
+      "correctedFromModel": false,
+      "source": "seed"
+    }
+  ],
+  "realmId": "g6-area",
+  "subSkillId": "g6-area-composite",
+  "source": "seed"
+}

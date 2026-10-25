@@ -1,0 +1,77 @@
+{
+  "title": "Volume Formula (V = l × w × h)",
+  "hook": "Imagine using volume formula (v = l × w × h) to solve a puzzle in Volume Volcano.",
+  "bigIdea": "Volume Formula (V = l × w × h) helps you describe and solve number relationships. Choose the operation that matches the question, keep track of units, and check that your answer makes sense.",
+  "vocabulary": [
+    {
+      "term": "Expression",
+      "definition": "A number sentence that shows the operations in a problem."
+    },
+    {
+      "term": "Estimate",
+      "definition": "A nearby value used to decide whether an answer is reasonable."
+    }
+  ],
+  "workedExamples": [
+    {
+      "problem": "Find the volume of a prism with length 4, width 2, and height 3 units.",
+      "expression": "4 * 2 * 3",
+      "answerValue": "24",
+      "steps": [
+        "Use V = length × width × height.",
+        "Substitute the dimensions: 4 × 2 × 3.",
+        "The volume is 24 cubic units."
+      ]
+    },
+    {
+      "problem": "Find the volume of a prism with length 2, width 2, and height 5 units.",
+      "expression": "2 * 2 * 5",
+      "answerValue": "20",
+      "steps": [
+        "Use V = length × width × height.",
+        "Multiply 2 × 2 × 5.",
+        "The volume is 20 cubic units."
+      ]
+    }
+  ],
+  "commonMistakes": [
+    "Using the wrong operation for volume formula (v = l × w × h).",
+    "Forgetting to label the answer with the correct units or simplify it when needed."
+  ],
+  "realWorld": "People use volume formula (v = l × w × h) when measuring, comparing, planning, and checking quantities in everyday tasks.",
+  "scenes": [
+    {
+      "narration": "Welcome to Volume Volcano. Today we are exploring Volume Formula (V = l × w × h).",
+      "visual": "text"
+    },
+    {
+      "narration": "Look for the quantities and relationships described by Volume Formula (V = l × w × h).",
+      "visual": "areaGrid",
+      "visualData": {
+        "rows": 4,
+        "cols": 4,
+        "shaded": 8
+      }
+    },
+    {
+      "narration": "Work carefully through each step, then check the result.",
+      "visual": "steps"
+    },
+    {
+      "narration": "You can use this idea in real measurements and comparisons.",
+      "visual": "text"
+    }
+  ],
+  "infographic": {
+    "headline": "Volume Formula (V = l × w × h): the key idea",
+    "keyPoints": [
+      "Read the quantities and identify what is being asked.",
+      "Choose an operation that matches the relationship.",
+      "Check the calculation and include units in the answer."
+    ],
+    "diagram": "areaGrid"
+  },
+  "realmId": "g5-volume",
+  "subSkillId": "g5-volume-formula",
+  "source": "seed"
+}

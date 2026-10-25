@@ -1,0 +1,637 @@
+{
+  "items": [
+    {
+      "stem": "How many groups of 1/5 fit into 2/5? (2/5) / (1/5) = ?",
+      "tier": "easy",
+      "expression": "(2/5) / (1/5)",
+      "options": [
+        {
+          "label": "2",
+          "value": "2",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "3",
+          "value": "3",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "4",
+          "value": "4",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "5",
+          "value": "5",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 0,
+      "explanation": "Evaluate (2/5) / (1/5) carefully. The exact result is 2; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-fracdiv-meaning",
+      "id": "381ff7455263394c",
+      "check": "(2/5) / (1/5) = 2",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "How many groups of 1/6 fit into 3/6? (3/6) / (1/6) = ?",
+      "tier": "easy",
+      "expression": "(3/6) / (1/6)",
+      "options": [
+        {
+          "label": "4",
+          "value": "4",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "3",
+          "value": "3",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "5",
+          "value": "5",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "6",
+          "value": "6",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 1,
+      "explanation": "Evaluate (3/6) / (1/6) carefully. The exact result is 3; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-fracdiv-meaning",
+      "id": "bd84b90abecfca00",
+      "check": "(3/6) / (1/6) = 3",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "How many groups of 1/7 fit into 4/7? (4/7) / (1/7) = ?",
+      "tier": "easy",
+      "expression": "(4/7) / (1/7)",
+      "options": [
+        {
+          "label": "5",
+          "value": "5",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "6",
+          "value": "6",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "4",
+          "value": "4",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "7",
+          "value": "7",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 2,
+      "explanation": "Evaluate (4/7) / (1/7) carefully. The exact result is 4; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-fracdiv-meaning",
+      "id": "ebf88219fe5d3373",
+      "check": "(4/7) / (1/7) = 4",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "How many groups of 1/8 fit into 2/8? (2/8) / (1/8) = ?",
+      "tier": "easy",
+      "expression": "(2/8) / (1/8)",
+      "options": [
+        {
+          "label": "3",
+          "value": "3",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "4",
+          "value": "4",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "5",
+          "value": "5",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "2",
+          "value": "2",
+          "why": "This matches the exact calculation."
+        }
+      ],
+      "correctIndex": 3,
+      "explanation": "Evaluate (2/8) / (1/8) carefully. The exact result is 2; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-fracdiv-meaning",
+      "id": "47f6f28cf9f0e4ac",
+      "check": "(2/8) / (1/8) = 2",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "How many groups of 1/9 fit into 3/9? (3/9) / (1/9) = ?",
+      "tier": "easy",
+      "expression": "(3/9) / (1/9)",
+      "options": [
+        {
+          "label": "3",
+          "value": "3",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "4",
+          "value": "4",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "5",
+          "value": "5",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "6",
+          "value": "6",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 0,
+      "explanation": "Evaluate (3/9) / (1/9) carefully. The exact result is 3; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-fracdiv-meaning",
+      "id": "cb1fb171b314750c",
+      "check": "(3/9) / (1/9) = 3",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "How many groups of 1/5 fit into 4/5? (4/5) / (1/5) = ?",
+      "tier": "easy",
+      "expression": "(4/5) / (1/5)",
+      "options": [
+        {
+          "label": "5",
+          "value": "5",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "4",
+          "value": "4",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "6",
+          "value": "6",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "7",
+          "value": "7",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 1,
+      "explanation": "Evaluate (4/5) / (1/5) carefully. The exact result is 4; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-fracdiv-meaning",
+      "id": "9ac577ceaba6e632",
+      "check": "(4/5) / (1/5) = 4",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "How many groups of 1/6 fit into 2/6? (2/6) / (1/6) = ?",
+      "tier": "medium",
+      "expression": "(2/6) / (1/6)",
+      "options": [
+        {
+          "label": "3",
+          "value": "3",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "4",
+          "value": "4",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "2",
+          "value": "2",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "5",
+          "value": "5",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 2,
+      "explanation": "Evaluate (2/6) / (1/6) carefully. The exact result is 2; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-fracdiv-meaning",
+      "id": "102f5099df835c90",
+      "check": "(2/6) / (1/6) = 2",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "How many groups of 1/7 fit into 3/7? (3/7) / (1/7) = ?",
+      "tier": "medium",
+      "expression": "(3/7) / (1/7)",
+      "options": [
+        {
+          "label": "4",
+          "value": "4",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "5",
+          "value": "5",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "6",
+          "value": "6",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "3",
+          "value": "3",
+          "why": "This matches the exact calculation."
+        }
+      ],
+      "correctIndex": 3,
+      "explanation": "Evaluate (3/7) / (1/7) carefully. The exact result is 3; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-fracdiv-meaning",
+      "id": "3fc9136f8365056d",
+      "check": "(3/7) / (1/7) = 3",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "How many groups of 1/8 fit into 4/8? (4/8) / (1/8) = ?",
+      "tier": "medium",
+      "expression": "(4/8) / (1/8)",
+      "options": [
+        {
+          "label": "4",
+          "value": "4",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "5",
+          "value": "5",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "6",
+          "value": "6",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "7",
+          "value": "7",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 0,
+      "explanation": "Evaluate (4/8) / (1/8) carefully. The exact result is 4; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-fracdiv-meaning",
+      "id": "fb610f429a7b37c2",
+      "check": "(4/8) / (1/8) = 4",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "How many groups of 1/9 fit into 2/9? (2/9) / (1/9) = ?",
+      "tier": "medium",
+      "expression": "(2/9) / (1/9)",
+      "options": [
+        {
+          "label": "3",
+          "value": "3",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "2",
+          "value": "2",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "4",
+          "value": "4",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "5",
+          "value": "5",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 1,
+      "explanation": "Evaluate (2/9) / (1/9) carefully. The exact result is 2; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-fracdiv-meaning",
+      "id": "3fcee8de6f65222b",
+      "check": "(2/9) / (1/9) = 2",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "How many groups of 1/5 fit into 3/5? (3/5) / (1/5) = ?",
+      "tier": "medium",
+      "expression": "(3/5) / (1/5)",
+      "options": [
+        {
+          "label": "4",
+          "value": "4",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "5",
+          "value": "5",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "3",
+          "value": "3",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "6",
+          "value": "6",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 2,
+      "explanation": "Evaluate (3/5) / (1/5) carefully. The exact result is 3; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-fracdiv-meaning",
+      "id": "699882a92329e5aa",
+      "check": "(3/5) / (1/5) = 3",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "How many groups of 1/6 fit into 4/6? (4/6) / (1/6) = ?",
+      "tier": "medium",
+      "expression": "(4/6) / (1/6)",
+      "options": [
+        {
+          "label": "5",
+          "value": "5",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "6",
+          "value": "6",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "7",
+          "value": "7",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "4",
+          "value": "4",
+          "why": "This matches the exact calculation."
+        }
+      ],
+      "correctIndex": 3,
+      "explanation": "Evaluate (4/6) / (1/6) carefully. The exact result is 4; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-fracdiv-meaning",
+      "id": "05f70d2423adff0b",
+      "check": "(4/6) / (1/6) = 4",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "How many groups of 1/7 fit into 2/7? (2/7) / (1/7) = ?",
+      "tier": "hard",
+      "expression": "(2/7) / (1/7)",
+      "options": [
+        {
+          "label": "2",
+          "value": "2",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "3",
+          "value": "3",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "4",
+          "value": "4",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "5",
+          "value": "5",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 0,
+      "explanation": "Evaluate (2/7) / (1/7) carefully. The exact result is 2; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-fracdiv-meaning",
+      "id": "c0e310c80ab3a850",
+      "check": "(2/7) / (1/7) = 2",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "How many groups of 1/8 fit into 3/8? (3/8) / (1/8) = ?",
+      "tier": "hard",
+      "expression": "(3/8) / (1/8)",
+      "options": [
+        {
+          "label": "4",
+          "value": "4",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "3",
+          "value": "3",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "5",
+          "value": "5",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "6",
+          "value": "6",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 1,
+      "explanation": "Evaluate (3/8) / (1/8) carefully. The exact result is 3; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-fracdiv-meaning",
+      "id": "39f350b61213d183",
+      "check": "(3/8) / (1/8) = 3",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "How many groups of 1/9 fit into 4/9? (4/9) / (1/9) = ?",
+      "tier": "hard",
+      "expression": "(4/9) / (1/9)",
+      "options": [
+        {
+          "label": "5",
+          "value": "5",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "6",
+          "value": "6",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "4",
+          "value": "4",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "7",
+          "value": "7",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 2,
+      "explanation": "Evaluate (4/9) / (1/9) carefully. The exact result is 4; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-fracdiv-meaning",
+      "id": "0291aee0fad51515",
+      "check": "(4/9) / (1/9) = 4",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "How many groups of 1/5 fit into 2/5? (2/5) / (1/5) = ?",
+      "tier": "hard",
+      "expression": "(2/5) / (1/5)",
+      "options": [
+        {
+          "label": "3",
+          "value": "3",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "4",
+          "value": "4",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "5",
+          "value": "5",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "2",
+          "value": "2",
+          "why": "This matches the exact calculation."
+        }
+      ],
+      "correctIndex": 3,
+      "explanation": "Evaluate (2/5) / (1/5) carefully. The exact result is 2; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-fracdiv-meaning",
+      "id": "381ff7455263394c",
+      "check": "(2/5) / (1/5) = 2",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "How many groups of 1/6 fit into 3/6? (3/6) / (1/6) = ?",
+      "tier": "hard",
+      "expression": "(3/6) / (1/6)",
+      "options": [
+        {
+          "label": "3",
+          "value": "3",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "4",
+          "value": "4",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "5",
+          "value": "5",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "6",
+          "value": "6",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 0,
+      "explanation": "Evaluate (3/6) / (1/6) carefully. The exact result is 3; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-fracdiv-meaning",
+      "id": "bd84b90abecfca00",
+      "check": "(3/6) / (1/6) = 3",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "How many groups of 1/7 fit into 4/7? (4/7) / (1/7) = ?",
+      "tier": "hard",
+      "expression": "(4/7) / (1/7)",
+      "options": [
+        {
+          "label": "5",
+          "value": "5",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "4",
+          "value": "4",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "6",
+          "value": "6",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "7",
+          "value": "7",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 1,
+      "explanation": "Evaluate (4/7) / (1/7) carefully. The exact result is 4; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-fracdiv-meaning",
+      "id": "ebf88219fe5d3373",
+      "check": "(4/7) / (1/7) = 4",
+      "correctedFromModel": false,
+      "source": "seed"
+    }
+  ],
+  "realmId": "g6-fracdiv",
+  "subSkillId": "g6-fracdiv-meaning",
+  "source": "seed"
+}

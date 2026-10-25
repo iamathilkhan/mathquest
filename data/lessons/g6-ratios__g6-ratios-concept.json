@@ -1,0 +1,77 @@
+{
+  "title": "Ratio Concepts & Notation",
+  "hook": "Imagine using ratio concepts & notation to solve a puzzle in Ratio Reef.",
+  "bigIdea": "Ratio Concepts & Notation helps you describe and solve number relationships. Choose the operation that matches the question, keep track of units, and check that your answer makes sense.",
+  "vocabulary": [
+    {
+      "term": "Expression",
+      "definition": "A number sentence that shows the operations in a problem."
+    },
+    {
+      "term": "Estimate",
+      "definition": "A nearby value used to decide whether an answer is reasonable."
+    }
+  ],
+  "workedExamples": [
+    {
+      "problem": "There are 4 blue tiles and 2 gold tiles. Find blue tiles per gold tile.",
+      "expression": "4 / 2",
+      "answerValue": "2",
+      "steps": [
+        "Compare blue tiles to gold tiles: 4 to 2.",
+        "Write the comparison as 4 divided by 2.",
+        "There are 2 blue tiles per gold tile."
+      ]
+    },
+    {
+      "problem": "There are 6 red tiles and 3 blue tiles. Find red tiles per blue tile.",
+      "expression": "6 / 3",
+      "answerValue": "2",
+      "steps": [
+        "Compare red tiles to blue tiles: 6 to 3.",
+        "Write the comparison as 6 divided by 3.",
+        "The unit ratio is 2 to 1."
+      ]
+    }
+  ],
+  "commonMistakes": [
+    "Using the wrong operation for ratio concepts & notation.",
+    "Forgetting to label the answer with the correct units or simplify it when needed."
+  ],
+  "realWorld": "People use ratio concepts & notation when measuring, comparing, planning, and checking quantities in everyday tasks.",
+  "scenes": [
+    {
+      "narration": "Welcome to Ratio Reef. Today we are exploring Ratio Concepts & Notation.",
+      "visual": "text"
+    },
+    {
+      "narration": "Look for the quantities and relationships described by Ratio Concepts & Notation.",
+      "visual": "ratioTable",
+      "visualData": {
+        "a": 2,
+        "b": 3,
+        "mult": 2
+      }
+    },
+    {
+      "narration": "Work carefully through each step, then check the result.",
+      "visual": "steps"
+    },
+    {
+      "narration": "You can use this idea in real measurements and comparisons.",
+      "visual": "text"
+    }
+  ],
+  "infographic": {
+    "headline": "Ratio Concepts & Notation: the key idea",
+    "keyPoints": [
+      "Read the quantities and identify what is being asked.",
+      "Choose an operation that matches the relationship.",
+      "Check the calculation and include units in the answer."
+    ],
+    "diagram": "ratioTable"
+  },
+  "realmId": "g6-ratios",
+  "subSkillId": "g6-ratios-concept",
+  "source": "seed"
+}

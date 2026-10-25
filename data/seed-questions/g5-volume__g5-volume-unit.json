@@ -1,0 +1,637 @@
+{
+  "items": [
+    {
+      "stem": "Find the volume of a 2 by 4 by 2 unit prism: 2 * 4 * 2 = ?",
+      "tier": "easy",
+      "expression": "2 * 4 * 2",
+      "options": [
+        {
+          "label": "16",
+          "value": "16",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "17",
+          "value": "17",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "18",
+          "value": "18",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "19",
+          "value": "19",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 0,
+      "explanation": "Evaluate 2 * 4 * 2 carefully. The exact result is 16; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g5-volume-unit",
+      "id": "ecdebc6c6b52adc8",
+      "check": "2 * 4 * 2 = 16",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Find the volume of a 3 by 5 by 3 unit prism: 3 * 5 * 3 = ?",
+      "tier": "easy",
+      "expression": "3 * 5 * 3",
+      "options": [
+        {
+          "label": "46",
+          "value": "46",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "45",
+          "value": "45",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "47",
+          "value": "47",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "48",
+          "value": "48",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 1,
+      "explanation": "Evaluate 3 * 5 * 3 carefully. The exact result is 45; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g5-volume-unit",
+      "id": "6184116af3554c24",
+      "check": "3 * 5 * 3 = 45",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Find the volume of a 4 by 3 by 4 unit prism: 4 * 3 * 4 = ?",
+      "tier": "easy",
+      "expression": "4 * 3 * 4",
+      "options": [
+        {
+          "label": "49",
+          "value": "49",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "50",
+          "value": "50",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "48",
+          "value": "48",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "51",
+          "value": "51",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 2,
+      "explanation": "Evaluate 4 * 3 * 4 carefully. The exact result is 48; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g5-volume-unit",
+      "id": "b1f52605e1b64bb7",
+      "check": "4 * 3 * 4 = 48",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Find the volume of a 2 by 4 by 5 unit prism: 2 * 4 * 5 = ?",
+      "tier": "easy",
+      "expression": "2 * 4 * 5",
+      "options": [
+        {
+          "label": "41",
+          "value": "41",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "42",
+          "value": "42",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "43",
+          "value": "43",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "40",
+          "value": "40",
+          "why": "This matches the exact calculation."
+        }
+      ],
+      "correctIndex": 3,
+      "explanation": "Evaluate 2 * 4 * 5 carefully. The exact result is 40; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g5-volume-unit",
+      "id": "e44e31264f6b2af1",
+      "check": "2 * 4 * 5 = 40",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Find the volume of a 3 by 5 by 6 unit prism: 3 * 5 * 6 = ?",
+      "tier": "easy",
+      "expression": "3 * 5 * 6",
+      "options": [
+        {
+          "label": "90",
+          "value": "90",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "91",
+          "value": "91",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "92",
+          "value": "92",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "93",
+          "value": "93",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 0,
+      "explanation": "Evaluate 3 * 5 * 6 carefully. The exact result is 90; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g5-volume-unit",
+      "id": "29f8ddd2b15ebbf1",
+      "check": "3 * 5 * 6 = 90",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Find the volume of a 4 by 3 by 7 unit prism: 4 * 3 * 7 = ?",
+      "tier": "easy",
+      "expression": "4 * 3 * 7",
+      "options": [
+        {
+          "label": "85",
+          "value": "85",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "84",
+          "value": "84",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "86",
+          "value": "86",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "87",
+          "value": "87",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 1,
+      "explanation": "Evaluate 4 * 3 * 7 carefully. The exact result is 84; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g5-volume-unit",
+      "id": "9b96b1f69bf29f05",
+      "check": "4 * 3 * 7 = 84",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Find the volume of a 2 by 4 by 8 unit prism: 2 * 4 * 8 = ?",
+      "tier": "medium",
+      "expression": "2 * 4 * 8",
+      "options": [
+        {
+          "label": "65",
+          "value": "65",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "66",
+          "value": "66",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "64",
+          "value": "64",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "67",
+          "value": "67",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 2,
+      "explanation": "Evaluate 2 * 4 * 8 carefully. The exact result is 64; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g5-volume-unit",
+      "id": "f559083601b5f40a",
+      "check": "2 * 4 * 8 = 64",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Find the volume of a 3 by 5 by 9 unit prism: 3 * 5 * 9 = ?",
+      "tier": "medium",
+      "expression": "3 * 5 * 9",
+      "options": [
+        {
+          "label": "136",
+          "value": "136",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "137",
+          "value": "137",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "138",
+          "value": "138",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "135",
+          "value": "135",
+          "why": "This matches the exact calculation."
+        }
+      ],
+      "correctIndex": 3,
+      "explanation": "Evaluate 3 * 5 * 9 carefully. The exact result is 135; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g5-volume-unit",
+      "id": "ce5566e816f62d4c",
+      "check": "3 * 5 * 9 = 135",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Find the volume of a 4 by 3 by 10 unit prism: 4 * 3 * 10 = ?",
+      "tier": "medium",
+      "expression": "4 * 3 * 10",
+      "options": [
+        {
+          "label": "120",
+          "value": "120",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "121",
+          "value": "121",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "122",
+          "value": "122",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "123",
+          "value": "123",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 0,
+      "explanation": "Evaluate 4 * 3 * 10 carefully. The exact result is 120; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g5-volume-unit",
+      "id": "282eb17493bd856c",
+      "check": "4 * 3 * 10 = 120",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Find the volume of a 2 by 4 by 11 unit prism: 2 * 4 * 11 = ?",
+      "tier": "medium",
+      "expression": "2 * 4 * 11",
+      "options": [
+        {
+          "label": "89",
+          "value": "89",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "88",
+          "value": "88",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "90",
+          "value": "90",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "91",
+          "value": "91",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 1,
+      "explanation": "Evaluate 2 * 4 * 11 carefully. The exact result is 88; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g5-volume-unit",
+      "id": "015da0a0386a8304",
+      "check": "2 * 4 * 11 = 88",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Find the volume of a 3 by 5 by 12 unit prism: 3 * 5 * 12 = ?",
+      "tier": "medium",
+      "expression": "3 * 5 * 12",
+      "options": [
+        {
+          "label": "181",
+          "value": "181",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "182",
+          "value": "182",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "180",
+          "value": "180",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "183",
+          "value": "183",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 2,
+      "explanation": "Evaluate 3 * 5 * 12 carefully. The exact result is 180; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g5-volume-unit",
+      "id": "7afd7263d29478ce",
+      "check": "3 * 5 * 12 = 180",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Find the volume of a 4 by 3 by 13 unit prism: 4 * 3 * 13 = ?",
+      "tier": "medium",
+      "expression": "4 * 3 * 13",
+      "options": [
+        {
+          "label": "157",
+          "value": "157",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "158",
+          "value": "158",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "159",
+          "value": "159",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "156",
+          "value": "156",
+          "why": "This matches the exact calculation."
+        }
+      ],
+      "correctIndex": 3,
+      "explanation": "Evaluate 4 * 3 * 13 carefully. The exact result is 156; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g5-volume-unit",
+      "id": "dde748612e6e9bbf",
+      "check": "4 * 3 * 13 = 156",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Find the volume of a 2 by 4 by 14 unit prism: 2 * 4 * 14 = ?",
+      "tier": "hard",
+      "expression": "2 * 4 * 14",
+      "options": [
+        {
+          "label": "112",
+          "value": "112",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "113",
+          "value": "113",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "114",
+          "value": "114",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "115",
+          "value": "115",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 0,
+      "explanation": "Evaluate 2 * 4 * 14 carefully. The exact result is 112; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g5-volume-unit",
+      "id": "c86a20e1ca61156c",
+      "check": "2 * 4 * 14 = 112",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Find the volume of a 3 by 5 by 15 unit prism: 3 * 5 * 15 = ?",
+      "tier": "hard",
+      "expression": "3 * 5 * 15",
+      "options": [
+        {
+          "label": "226",
+          "value": "226",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "225",
+          "value": "225",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "227",
+          "value": "227",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "228",
+          "value": "228",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 1,
+      "explanation": "Evaluate 3 * 5 * 15 carefully. The exact result is 225; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g5-volume-unit",
+      "id": "fa46ea18a8c0a224",
+      "check": "3 * 5 * 15 = 225",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Find the volume of a 4 by 3 by 16 unit prism: 4 * 3 * 16 = ?",
+      "tier": "hard",
+      "expression": "4 * 3 * 16",
+      "options": [
+        {
+          "label": "193",
+          "value": "193",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "194",
+          "value": "194",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "192",
+          "value": "192",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "195",
+          "value": "195",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 2,
+      "explanation": "Evaluate 4 * 3 * 16 carefully. The exact result is 192; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g5-volume-unit",
+      "id": "82507cff4dbef665",
+      "check": "4 * 3 * 16 = 192",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Find the volume of a 2 by 4 by 17 unit prism: 2 * 4 * 17 = ?",
+      "tier": "hard",
+      "expression": "2 * 4 * 17",
+      "options": [
+        {
+          "label": "137",
+          "value": "137",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "138",
+          "value": "138",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "139",
+          "value": "139",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "136",
+          "value": "136",
+          "why": "This matches the exact calculation."
+        }
+      ],
+      "correctIndex": 3,
+      "explanation": "Evaluate 2 * 4 * 17 carefully. The exact result is 136; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g5-volume-unit",
+      "id": "0c5966981db5dc74",
+      "check": "2 * 4 * 17 = 136",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Find the volume of a 3 by 5 by 18 unit prism: 3 * 5 * 18 = ?",
+      "tier": "hard",
+      "expression": "3 * 5 * 18",
+      "options": [
+        {
+          "label": "270",
+          "value": "270",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "271",
+          "value": "271",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "272",
+          "value": "272",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "273",
+          "value": "273",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 0,
+      "explanation": "Evaluate 3 * 5 * 18 carefully. The exact result is 270; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g5-volume-unit",
+      "id": "2eb57ec388e0678c",
+      "check": "3 * 5 * 18 = 270",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Find the volume of a 4 by 3 by 19 unit prism: 4 * 3 * 19 = ?",
+      "tier": "hard",
+      "expression": "4 * 3 * 19",
+      "options": [
+        {
+          "label": "229",
+          "value": "229",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "228",
+          "value": "228",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "230",
+          "value": "230",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "231",
+          "value": "231",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 1,
+      "explanation": "Evaluate 4 * 3 * 19 carefully. The exact result is 228; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g5-volume-unit",
+      "id": "64b4f5045025e590",
+      "check": "4 * 3 * 19 = 228",
+      "correctedFromModel": false,
+      "source": "seed"
+    }
+  ],
+  "realmId": "g5-volume",
+  "subSkillId": "g5-volume-unit",
+  "source": "seed"
+}

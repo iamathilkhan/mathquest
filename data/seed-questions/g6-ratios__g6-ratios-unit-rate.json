@@ -1,0 +1,637 @@
+{
+  "items": [
+    {
+      "stem": "A 2 item pack costs 3 coins. What is the cost per item? 3 / 2 = ?",
+      "tier": "easy",
+      "expression": "3 / 2",
+      "options": [
+        {
+          "label": "3/2",
+          "value": "3/2",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "5/2",
+          "value": "5/2",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "7/2",
+          "value": "7/2",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "9/2",
+          "value": "9/2",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 0,
+      "explanation": "Evaluate 3 / 2 carefully. The exact result is 3/2; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-ratios-unit-rate",
+      "id": "c93a224849bf411e",
+      "check": "3 / 2 = 3/2",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "A 6 item pack costs 6 coins. What is the cost per item? 6 / 6 = ?",
+      "tier": "easy",
+      "expression": "6 / 6",
+      "options": [
+        {
+          "label": "2",
+          "value": "2",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "1",
+          "value": "1",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "3",
+          "value": "3",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "4",
+          "value": "4",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 1,
+      "explanation": "Evaluate 6 / 6 carefully. The exact result is 1; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-ratios-unit-rate",
+      "id": "bb73aec55649781d",
+      "check": "6 / 6 = 1",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "A 3 item pack costs 9 coins. What is the cost per item? 9 / 3 = ?",
+      "tier": "easy",
+      "expression": "9 / 3",
+      "options": [
+        {
+          "label": "4",
+          "value": "4",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "5",
+          "value": "5",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "3",
+          "value": "3",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "6",
+          "value": "6",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 2,
+      "explanation": "Evaluate 9 / 3 carefully. The exact result is 3; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-ratios-unit-rate",
+      "id": "3c3aecd278ec10ca",
+      "check": "9 / 3 = 3",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "A 8 item pack costs 12 coins. What is the cost per item? 12 / 8 = ?",
+      "tier": "easy",
+      "expression": "12 / 8",
+      "options": [
+        {
+          "label": "5/2",
+          "value": "5/2",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "7/2",
+          "value": "7/2",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "9/2",
+          "value": "9/2",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "3/2",
+          "value": "3/2",
+          "why": "This matches the exact calculation."
+        }
+      ],
+      "correctIndex": 3,
+      "explanation": "Evaluate 12 / 8 carefully. The exact result is 3/2; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-ratios-unit-rate",
+      "id": "7a59b8a707f399c7",
+      "check": "12 / 8 = 3/2",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "A 15 item pack costs 15 coins. What is the cost per item? 15 / 15 = ?",
+      "tier": "easy",
+      "expression": "15 / 15",
+      "options": [
+        {
+          "label": "1",
+          "value": "1",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "2",
+          "value": "2",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "3",
+          "value": "3",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "4",
+          "value": "4",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 0,
+      "explanation": "Evaluate 15 / 15 carefully. The exact result is 1; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-ratios-unit-rate",
+      "id": "3b0b746b017d656d",
+      "check": "15 / 15 = 1",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "A 6 item pack costs 18 coins. What is the cost per item? 18 / 6 = ?",
+      "tier": "easy",
+      "expression": "18 / 6",
+      "options": [
+        {
+          "label": "4",
+          "value": "4",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "3",
+          "value": "3",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "5",
+          "value": "5",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "6",
+          "value": "6",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 1,
+      "explanation": "Evaluate 18 / 6 carefully. The exact result is 3; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-ratios-unit-rate",
+      "id": "7e6f4e9ed7ccd535",
+      "check": "18 / 6 = 3",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "A 14 item pack costs 21 coins. What is the cost per item? 21 / 14 = ?",
+      "tier": "medium",
+      "expression": "21 / 14",
+      "options": [
+        {
+          "label": "5/2",
+          "value": "5/2",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "7/2",
+          "value": "7/2",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "3/2",
+          "value": "3/2",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "9/2",
+          "value": "9/2",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 2,
+      "explanation": "Evaluate 21 / 14 carefully. The exact result is 3/2; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-ratios-unit-rate",
+      "id": "1f51851a6f3d7468",
+      "check": "21 / 14 = 3/2",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "A 24 item pack costs 24 coins. What is the cost per item? 24 / 24 = ?",
+      "tier": "medium",
+      "expression": "24 / 24",
+      "options": [
+        {
+          "label": "2",
+          "value": "2",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "3",
+          "value": "3",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "4",
+          "value": "4",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "1",
+          "value": "1",
+          "why": "This matches the exact calculation."
+        }
+      ],
+      "correctIndex": 3,
+      "explanation": "Evaluate 24 / 24 carefully. The exact result is 1; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-ratios-unit-rate",
+      "id": "48e00460abc545ce",
+      "check": "24 / 24 = 1",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "A 9 item pack costs 27 coins. What is the cost per item? 27 / 9 = ?",
+      "tier": "medium",
+      "expression": "27 / 9",
+      "options": [
+        {
+          "label": "3",
+          "value": "3",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "4",
+          "value": "4",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "5",
+          "value": "5",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "6",
+          "value": "6",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 0,
+      "explanation": "Evaluate 27 / 9 carefully. The exact result is 3; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-ratios-unit-rate",
+      "id": "4971a56623a2cbd1",
+      "check": "27 / 9 = 3",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "A 20 item pack costs 30 coins. What is the cost per item? 30 / 20 = ?",
+      "tier": "medium",
+      "expression": "30 / 20",
+      "options": [
+        {
+          "label": "5/2",
+          "value": "5/2",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "3/2",
+          "value": "3/2",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "7/2",
+          "value": "7/2",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "9/2",
+          "value": "9/2",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 1,
+      "explanation": "Evaluate 30 / 20 carefully. The exact result is 3/2; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-ratios-unit-rate",
+      "id": "835d7642c541c0c3",
+      "check": "30 / 20 = 3/2",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "A 33 item pack costs 33 coins. What is the cost per item? 33 / 33 = ?",
+      "tier": "medium",
+      "expression": "33 / 33",
+      "options": [
+        {
+          "label": "2",
+          "value": "2",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "3",
+          "value": "3",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "1",
+          "value": "1",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "4",
+          "value": "4",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 2,
+      "explanation": "Evaluate 33 / 33 carefully. The exact result is 1; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-ratios-unit-rate",
+      "id": "ce091db30d7d98d0",
+      "check": "33 / 33 = 1",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "A 12 item pack costs 36 coins. What is the cost per item? 36 / 12 = ?",
+      "tier": "medium",
+      "expression": "36 / 12",
+      "options": [
+        {
+          "label": "4",
+          "value": "4",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "5",
+          "value": "5",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "6",
+          "value": "6",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "3",
+          "value": "3",
+          "why": "This matches the exact calculation."
+        }
+      ],
+      "correctIndex": 3,
+      "explanation": "Evaluate 36 / 12 carefully. The exact result is 3; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-ratios-unit-rate",
+      "id": "1fdee3ff3e9d9d53",
+      "check": "36 / 12 = 3",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "A 26 item pack costs 39 coins. What is the cost per item? 39 / 26 = ?",
+      "tier": "hard",
+      "expression": "39 / 26",
+      "options": [
+        {
+          "label": "3/2",
+          "value": "3/2",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "5/2",
+          "value": "5/2",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "7/2",
+          "value": "7/2",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "9/2",
+          "value": "9/2",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 0,
+      "explanation": "Evaluate 39 / 26 carefully. The exact result is 3/2; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-ratios-unit-rate",
+      "id": "adfdca0be9b2ae19",
+      "check": "39 / 26 = 3/2",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "A 42 item pack costs 42 coins. What is the cost per item? 42 / 42 = ?",
+      "tier": "hard",
+      "expression": "42 / 42",
+      "options": [
+        {
+          "label": "2",
+          "value": "2",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "1",
+          "value": "1",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "3",
+          "value": "3",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "4",
+          "value": "4",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 1,
+      "explanation": "Evaluate 42 / 42 carefully. The exact result is 1; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-ratios-unit-rate",
+      "id": "8f10ab103a89543c",
+      "check": "42 / 42 = 1",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "A 15 item pack costs 45 coins. What is the cost per item? 45 / 15 = ?",
+      "tier": "hard",
+      "expression": "45 / 15",
+      "options": [
+        {
+          "label": "4",
+          "value": "4",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "5",
+          "value": "5",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "3",
+          "value": "3",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "6",
+          "value": "6",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 2,
+      "explanation": "Evaluate 45 / 15 carefully. The exact result is 3; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-ratios-unit-rate",
+      "id": "fc7b63e460286e6d",
+      "check": "45 / 15 = 3",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "A 32 item pack costs 48 coins. What is the cost per item? 48 / 32 = ?",
+      "tier": "hard",
+      "expression": "48 / 32",
+      "options": [
+        {
+          "label": "5/2",
+          "value": "5/2",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "7/2",
+          "value": "7/2",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "9/2",
+          "value": "9/2",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "3/2",
+          "value": "3/2",
+          "why": "This matches the exact calculation."
+        }
+      ],
+      "correctIndex": 3,
+      "explanation": "Evaluate 48 / 32 carefully. The exact result is 3/2; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-ratios-unit-rate",
+      "id": "5191cec287a8f0f1",
+      "check": "48 / 32 = 3/2",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "A 51 item pack costs 51 coins. What is the cost per item? 51 / 51 = ?",
+      "tier": "hard",
+      "expression": "51 / 51",
+      "options": [
+        {
+          "label": "1",
+          "value": "1",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "2",
+          "value": "2",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "3",
+          "value": "3",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "4",
+          "value": "4",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 0,
+      "explanation": "Evaluate 51 / 51 carefully. The exact result is 1; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-ratios-unit-rate",
+      "id": "0f98fe36211c1033",
+      "check": "51 / 51 = 1",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "A 18 item pack costs 54 coins. What is the cost per item? 54 / 18 = ?",
+      "tier": "hard",
+      "expression": "54 / 18",
+      "options": [
+        {
+          "label": "4",
+          "value": "4",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "3",
+          "value": "3",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "5",
+          "value": "5",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "6",
+          "value": "6",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 1,
+      "explanation": "Evaluate 54 / 18 carefully. The exact result is 3; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-ratios-unit-rate",
+      "id": "8b6ecd58a6702cda",
+      "check": "54 / 18 = 3",
+      "correctedFromModel": false,
+      "source": "seed"
+    }
+  ],
+  "realmId": "g6-ratios",
+  "subSkillId": "g6-ratios-unit-rate",
+  "source": "seed"
+}

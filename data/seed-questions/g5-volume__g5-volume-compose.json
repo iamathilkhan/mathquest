@@ -1,0 +1,637 @@
+{
+  "items": [
+    {
+      "stem": "Add the volumes of prisms 1 by 2 by 2 and 2 by 2 by 1: (1 * 2 * 2) + (2 * 2 * 1) = ?",
+      "tier": "easy",
+      "expression": "(1 * 2 * 2) + (2 * 2 * 1)",
+      "options": [
+        {
+          "label": "8",
+          "value": "8",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "9",
+          "value": "9",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "10",
+          "value": "10",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "11",
+          "value": "11",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 0,
+      "explanation": "Evaluate (1 * 2 * 2) + (2 * 2 * 1) carefully. The exact result is 8; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g5-volume-compose",
+      "id": "89a67b2e678984fe",
+      "check": "(1 * 2 * 2) + (2 * 2 * 1) = 8",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Add the volumes of prisms 2 by 3 by 2 and 2 by 2 by 2: (2 * 3 * 2) + (2 * 2 * 2) = ?",
+      "tier": "easy",
+      "expression": "(2 * 3 * 2) + (2 * 2 * 2)",
+      "options": [
+        {
+          "label": "21",
+          "value": "21",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "20",
+          "value": "20",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "22",
+          "value": "22",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "23",
+          "value": "23",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 1,
+      "explanation": "Evaluate (2 * 3 * 2) + (2 * 2 * 2) carefully. The exact result is 20; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g5-volume-compose",
+      "id": "591ffcf2b9e5f5d6",
+      "check": "(2 * 3 * 2) + (2 * 2 * 2) = 20",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Add the volumes of prisms 3 by 1 by 2 and 2 by 2 by 3: (3 * 1 * 2) + (2 * 2 * 3) = ?",
+      "tier": "easy",
+      "expression": "(3 * 1 * 2) + (2 * 2 * 3)",
+      "options": [
+        {
+          "label": "19",
+          "value": "19",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "20",
+          "value": "20",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "18",
+          "value": "18",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "21",
+          "value": "21",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 2,
+      "explanation": "Evaluate (3 * 1 * 2) + (2 * 2 * 3) carefully. The exact result is 18; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g5-volume-compose",
+      "id": "01d182c28f788e43",
+      "check": "(3 * 1 * 2) + (2 * 2 * 3) = 18",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Add the volumes of prisms 1 by 2 by 2 and 2 by 2 by 4: (1 * 2 * 2) + (2 * 2 * 4) = ?",
+      "tier": "easy",
+      "expression": "(1 * 2 * 2) + (2 * 2 * 4)",
+      "options": [
+        {
+          "label": "21",
+          "value": "21",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "22",
+          "value": "22",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "23",
+          "value": "23",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "20",
+          "value": "20",
+          "why": "This matches the exact calculation."
+        }
+      ],
+      "correctIndex": 3,
+      "explanation": "Evaluate (1 * 2 * 2) + (2 * 2 * 4) carefully. The exact result is 20; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g5-volume-compose",
+      "id": "5482abc59a03aaf7",
+      "check": "(1 * 2 * 2) + (2 * 2 * 4) = 20",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Add the volumes of prisms 2 by 3 by 2 and 2 by 2 by 5: (2 * 3 * 2) + (2 * 2 * 5) = ?",
+      "tier": "easy",
+      "expression": "(2 * 3 * 2) + (2 * 2 * 5)",
+      "options": [
+        {
+          "label": "32",
+          "value": "32",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "33",
+          "value": "33",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "34",
+          "value": "34",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "35",
+          "value": "35",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 0,
+      "explanation": "Evaluate (2 * 3 * 2) + (2 * 2 * 5) carefully. The exact result is 32; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g5-volume-compose",
+      "id": "739783dd398c470b",
+      "check": "(2 * 3 * 2) + (2 * 2 * 5) = 32",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Add the volumes of prisms 3 by 1 by 2 and 2 by 2 by 6: (3 * 1 * 2) + (2 * 2 * 6) = ?",
+      "tier": "easy",
+      "expression": "(3 * 1 * 2) + (2 * 2 * 6)",
+      "options": [
+        {
+          "label": "31",
+          "value": "31",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "30",
+          "value": "30",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "32",
+          "value": "32",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "33",
+          "value": "33",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 1,
+      "explanation": "Evaluate (3 * 1 * 2) + (2 * 2 * 6) carefully. The exact result is 30; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g5-volume-compose",
+      "id": "e56156e8bb782c24",
+      "check": "(3 * 1 * 2) + (2 * 2 * 6) = 30",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Add the volumes of prisms 1 by 2 by 2 and 2 by 2 by 7: (1 * 2 * 2) + (2 * 2 * 7) = ?",
+      "tier": "medium",
+      "expression": "(1 * 2 * 2) + (2 * 2 * 7)",
+      "options": [
+        {
+          "label": "33",
+          "value": "33",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "34",
+          "value": "34",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "32",
+          "value": "32",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "35",
+          "value": "35",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 2,
+      "explanation": "Evaluate (1 * 2 * 2) + (2 * 2 * 7) carefully. The exact result is 32; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g5-volume-compose",
+      "id": "537421c964712f7c",
+      "check": "(1 * 2 * 2) + (2 * 2 * 7) = 32",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Add the volumes of prisms 2 by 3 by 2 and 2 by 2 by 8: (2 * 3 * 2) + (2 * 2 * 8) = ?",
+      "tier": "medium",
+      "expression": "(2 * 3 * 2) + (2 * 2 * 8)",
+      "options": [
+        {
+          "label": "45",
+          "value": "45",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "46",
+          "value": "46",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "47",
+          "value": "47",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "44",
+          "value": "44",
+          "why": "This matches the exact calculation."
+        }
+      ],
+      "correctIndex": 3,
+      "explanation": "Evaluate (2 * 3 * 2) + (2 * 2 * 8) carefully. The exact result is 44; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g5-volume-compose",
+      "id": "a7c277a07d3866ec",
+      "check": "(2 * 3 * 2) + (2 * 2 * 8) = 44",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Add the volumes of prisms 3 by 1 by 2 and 2 by 2 by 9: (3 * 1 * 2) + (2 * 2 * 9) = ?",
+      "tier": "medium",
+      "expression": "(3 * 1 * 2) + (2 * 2 * 9)",
+      "options": [
+        {
+          "label": "42",
+          "value": "42",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "43",
+          "value": "43",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "44",
+          "value": "44",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "45",
+          "value": "45",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 0,
+      "explanation": "Evaluate (3 * 1 * 2) + (2 * 2 * 9) carefully. The exact result is 42; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g5-volume-compose",
+      "id": "3ed0abab7d7f3b93",
+      "check": "(3 * 1 * 2) + (2 * 2 * 9) = 42",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Add the volumes of prisms 1 by 2 by 2 and 2 by 2 by 10: (1 * 2 * 2) + (2 * 2 * 10) = ?",
+      "tier": "medium",
+      "expression": "(1 * 2 * 2) + (2 * 2 * 10)",
+      "options": [
+        {
+          "label": "45",
+          "value": "45",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "44",
+          "value": "44",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "46",
+          "value": "46",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "47",
+          "value": "47",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 1,
+      "explanation": "Evaluate (1 * 2 * 2) + (2 * 2 * 10) carefully. The exact result is 44; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g5-volume-compose",
+      "id": "765f79adf82cdb76",
+      "check": "(1 * 2 * 2) + (2 * 2 * 10) = 44",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Add the volumes of prisms 2 by 3 by 2 and 2 by 2 by 11: (2 * 3 * 2) + (2 * 2 * 11) = ?",
+      "tier": "medium",
+      "expression": "(2 * 3 * 2) + (2 * 2 * 11)",
+      "options": [
+        {
+          "label": "57",
+          "value": "57",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "58",
+          "value": "58",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "56",
+          "value": "56",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "59",
+          "value": "59",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 2,
+      "explanation": "Evaluate (2 * 3 * 2) + (2 * 2 * 11) carefully. The exact result is 56; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g5-volume-compose",
+      "id": "5be9f1d709886da8",
+      "check": "(2 * 3 * 2) + (2 * 2 * 11) = 56",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Add the volumes of prisms 3 by 1 by 2 and 2 by 2 by 12: (3 * 1 * 2) + (2 * 2 * 12) = ?",
+      "tier": "medium",
+      "expression": "(3 * 1 * 2) + (2 * 2 * 12)",
+      "options": [
+        {
+          "label": "55",
+          "value": "55",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "56",
+          "value": "56",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "57",
+          "value": "57",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "54",
+          "value": "54",
+          "why": "This matches the exact calculation."
+        }
+      ],
+      "correctIndex": 3,
+      "explanation": "Evaluate (3 * 1 * 2) + (2 * 2 * 12) carefully. The exact result is 54; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g5-volume-compose",
+      "id": "3a0eb6805308b33e",
+      "check": "(3 * 1 * 2) + (2 * 2 * 12) = 54",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Add the volumes of prisms 1 by 2 by 2 and 2 by 2 by 13: (1 * 2 * 2) + (2 * 2 * 13) = ?",
+      "tier": "hard",
+      "expression": "(1 * 2 * 2) + (2 * 2 * 13)",
+      "options": [
+        {
+          "label": "56",
+          "value": "56",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "57",
+          "value": "57",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "58",
+          "value": "58",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "59",
+          "value": "59",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 0,
+      "explanation": "Evaluate (1 * 2 * 2) + (2 * 2 * 13) carefully. The exact result is 56; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g5-volume-compose",
+      "id": "b1e8db66540b6123",
+      "check": "(1 * 2 * 2) + (2 * 2 * 13) = 56",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Add the volumes of prisms 2 by 3 by 2 and 2 by 2 by 14: (2 * 3 * 2) + (2 * 2 * 14) = ?",
+      "tier": "hard",
+      "expression": "(2 * 3 * 2) + (2 * 2 * 14)",
+      "options": [
+        {
+          "label": "69",
+          "value": "69",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "68",
+          "value": "68",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "70",
+          "value": "70",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "71",
+          "value": "71",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 1,
+      "explanation": "Evaluate (2 * 3 * 2) + (2 * 2 * 14) carefully. The exact result is 68; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g5-volume-compose",
+      "id": "9b0633e0519e93cc",
+      "check": "(2 * 3 * 2) + (2 * 2 * 14) = 68",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Add the volumes of prisms 3 by 1 by 2 and 2 by 2 by 15: (3 * 1 * 2) + (2 * 2 * 15) = ?",
+      "tier": "hard",
+      "expression": "(3 * 1 * 2) + (2 * 2 * 15)",
+      "options": [
+        {
+          "label": "67",
+          "value": "67",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "68",
+          "value": "68",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "66",
+          "value": "66",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "69",
+          "value": "69",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 2,
+      "explanation": "Evaluate (3 * 1 * 2) + (2 * 2 * 15) carefully. The exact result is 66; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g5-volume-compose",
+      "id": "9d756f8558ddc53c",
+      "check": "(3 * 1 * 2) + (2 * 2 * 15) = 66",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Add the volumes of prisms 1 by 2 by 2 and 2 by 2 by 16: (1 * 2 * 2) + (2 * 2 * 16) = ?",
+      "tier": "hard",
+      "expression": "(1 * 2 * 2) + (2 * 2 * 16)",
+      "options": [
+        {
+          "label": "69",
+          "value": "69",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "70",
+          "value": "70",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "71",
+          "value": "71",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "68",
+          "value": "68",
+          "why": "This matches the exact calculation."
+        }
+      ],
+      "correctIndex": 3,
+      "explanation": "Evaluate (1 * 2 * 2) + (2 * 2 * 16) carefully. The exact result is 68; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g5-volume-compose",
+      "id": "63b3d89e3ad7ac22",
+      "check": "(1 * 2 * 2) + (2 * 2 * 16) = 68",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Add the volumes of prisms 2 by 3 by 2 and 2 by 2 by 17: (2 * 3 * 2) + (2 * 2 * 17) = ?",
+      "tier": "hard",
+      "expression": "(2 * 3 * 2) + (2 * 2 * 17)",
+      "options": [
+        {
+          "label": "80",
+          "value": "80",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "81",
+          "value": "81",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "82",
+          "value": "82",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "83",
+          "value": "83",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 0,
+      "explanation": "Evaluate (2 * 3 * 2) + (2 * 2 * 17) carefully. The exact result is 80; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g5-volume-compose",
+      "id": "3add1d1d877cae6c",
+      "check": "(2 * 3 * 2) + (2 * 2 * 17) = 80",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Add the volumes of prisms 3 by 1 by 2 and 2 by 2 by 18: (3 * 1 * 2) + (2 * 2 * 18) = ?",
+      "tier": "hard",
+      "expression": "(3 * 1 * 2) + (2 * 2 * 18)",
+      "options": [
+        {
+          "label": "79",
+          "value": "79",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "78",
+          "value": "78",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "80",
+          "value": "80",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "81",
+          "value": "81",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 1,
+      "explanation": "Evaluate (3 * 1 * 2) + (2 * 2 * 18) carefully. The exact result is 78; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g5-volume-compose",
+      "id": "b3ac7a7edefa353e",
+      "check": "(3 * 1 * 2) + (2 * 2 * 18) = 78",
+      "correctedFromModel": false,
+      "source": "seed"
+    }
+  ],
+  "realmId": "g5-volume",
+  "subSkillId": "g5-volume-compose",
+  "source": "seed"
+}

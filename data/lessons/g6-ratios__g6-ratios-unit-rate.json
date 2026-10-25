@@ -1,0 +1,77 @@
+{
+  "title": "Unit Rates & Proportions",
+  "hook": "Imagine using unit rates & proportions to solve a puzzle in Ratio Reef.",
+  "bigIdea": "Unit Rates & Proportions helps you describe and solve number relationships. Choose the operation that matches the question, keep track of units, and check that your answer makes sense.",
+  "vocabulary": [
+    {
+      "term": "Expression",
+      "definition": "A number sentence that shows the operations in a problem."
+    },
+    {
+      "term": "Estimate",
+      "definition": "A nearby value used to decide whether an answer is reasonable."
+    }
+  ],
+  "workedExamples": [
+    {
+      "problem": "A 3-pack costs 6 coins. Find the cost per item.",
+      "expression": "6 / 3",
+      "answerValue": "2",
+      "steps": [
+        "Divide total cost by number of items.",
+        "6 coins divided by 3 items is 2.",
+        "The unit rate is 2 coins per item."
+      ]
+    },
+    {
+      "problem": "A 4-pack costs 12 coins. Find the cost per item.",
+      "expression": "12 / 4",
+      "answerValue": "3",
+      "steps": [
+        "Divide total cost by number of items.",
+        "12 coins divided by 4 items is 3.",
+        "The unit rate is 3 coins per item."
+      ]
+    }
+  ],
+  "commonMistakes": [
+    "Using the wrong operation for unit rates & proportions.",
+    "Forgetting to label the answer with the correct units or simplify it when needed."
+  ],
+  "realWorld": "People use unit rates & proportions when measuring, comparing, planning, and checking quantities in everyday tasks.",
+  "scenes": [
+    {
+      "narration": "Welcome to Ratio Reef. Today we are exploring Unit Rates & Proportions.",
+      "visual": "text"
+    },
+    {
+      "narration": "Look for the quantities and relationships described by Unit Rates & Proportions.",
+      "visual": "ratioTable",
+      "visualData": {
+        "a": 2,
+        "b": 3,
+        "mult": 2
+      }
+    },
+    {
+      "narration": "Work carefully through each step, then check the result.",
+      "visual": "steps"
+    },
+    {
+      "narration": "You can use this idea in real measurements and comparisons.",
+      "visual": "text"
+    }
+  ],
+  "infographic": {
+    "headline": "Unit Rates & Proportions: the key idea",
+    "keyPoints": [
+      "Read the quantities and identify what is being asked.",
+      "Choose an operation that matches the relationship.",
+      "Check the calculation and include units in the answer."
+    ],
+    "diagram": "ratioTable"
+  },
+  "realmId": "g6-ratios",
+  "subSkillId": "g6-ratios-unit-rate",
+  "source": "seed"
+}

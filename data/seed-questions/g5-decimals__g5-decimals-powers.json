@@ -1,0 +1,637 @@
+{
+  "items": [
+    {
+      "stem": "Multiply by ten to find the next place value: 0.12 * 10 = ?",
+      "tier": "easy",
+      "expression": "0.12 * 10",
+      "options": [
+        {
+          "label": "6/5",
+          "value": "6/5",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "11/5",
+          "value": "11/5",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "16/5",
+          "value": "16/5",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "21/5",
+          "value": "21/5",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 0,
+      "explanation": "Evaluate 0.12 * 10 carefully. The exact result is 6/5; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g5-decimals-powers",
+      "id": "c06992347c1dd652",
+      "check": "0.12 * 10 = 6/5",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Multiply by ten to find the next place value: 0.23 * 10 = ?",
+      "tier": "easy",
+      "expression": "0.23 * 10",
+      "options": [
+        {
+          "label": "33/10",
+          "value": "33/10",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "23/10",
+          "value": "23/10",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "43/10",
+          "value": "43/10",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "53/10",
+          "value": "53/10",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 1,
+      "explanation": "Evaluate 0.23 * 10 carefully. The exact result is 23/10; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g5-decimals-powers",
+      "id": "c7645b66b9054ab6",
+      "check": "0.23 * 10 = 23/10",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Multiply by ten to find the next place value: 0.31 * 10 = ?",
+      "tier": "easy",
+      "expression": "0.31 * 10",
+      "options": [
+        {
+          "label": "41/10",
+          "value": "41/10",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "51/10",
+          "value": "51/10",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "31/10",
+          "value": "31/10",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "61/10",
+          "value": "61/10",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 2,
+      "explanation": "Evaluate 0.31 * 10 carefully. The exact result is 31/10; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g5-decimals-powers",
+      "id": "f27d0c2ac592ddc2",
+      "check": "0.31 * 10 = 31/10",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Multiply by ten to find the next place value: 0.42 * 10 = ?",
+      "tier": "easy",
+      "expression": "0.42 * 10",
+      "options": [
+        {
+          "label": "26/5",
+          "value": "26/5",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "31/5",
+          "value": "31/5",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "36/5",
+          "value": "36/5",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "21/5",
+          "value": "21/5",
+          "why": "This matches the exact calculation."
+        }
+      ],
+      "correctIndex": 3,
+      "explanation": "Evaluate 0.42 * 10 carefully. The exact result is 21/5; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g5-decimals-powers",
+      "id": "138e74ea3ce3b3d9",
+      "check": "0.42 * 10 = 21/5",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Multiply by ten to find the next place value: 0.53 * 10 = ?",
+      "tier": "easy",
+      "expression": "0.53 * 10",
+      "options": [
+        {
+          "label": "53/10",
+          "value": "53/10",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "63/10",
+          "value": "63/10",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "73/10",
+          "value": "73/10",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "83/10",
+          "value": "83/10",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 0,
+      "explanation": "Evaluate 0.53 * 10 carefully. The exact result is 53/10; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g5-decimals-powers",
+      "id": "849ade743ef8dfed",
+      "check": "0.53 * 10 = 53/10",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Multiply by ten to find the next place value: 0.61 * 10 = ?",
+      "tier": "easy",
+      "expression": "0.61 * 10",
+      "options": [
+        {
+          "label": "71/10",
+          "value": "71/10",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "61/10",
+          "value": "61/10",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "81/10",
+          "value": "81/10",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "91/10",
+          "value": "91/10",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 1,
+      "explanation": "Evaluate 0.61 * 10 carefully. The exact result is 61/10; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g5-decimals-powers",
+      "id": "0dc9db6cd34a61b5",
+      "check": "0.61 * 10 = 61/10",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Multiply by ten to find the next place value: 0.72 * 10 = ?",
+      "tier": "medium",
+      "expression": "0.72 * 10",
+      "options": [
+        {
+          "label": "41/5",
+          "value": "41/5",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "46/5",
+          "value": "46/5",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "36/5",
+          "value": "36/5",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "51/5",
+          "value": "51/5",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 2,
+      "explanation": "Evaluate 0.72 * 10 carefully. The exact result is 36/5; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g5-decimals-powers",
+      "id": "39dab91048b5559e",
+      "check": "0.72 * 10 = 36/5",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Multiply by ten to find the next place value: 0.83 * 10 = ?",
+      "tier": "medium",
+      "expression": "0.83 * 10",
+      "options": [
+        {
+          "label": "93/10",
+          "value": "93/10",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "103/10",
+          "value": "103/10",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "113/10",
+          "value": "113/10",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "83/10",
+          "value": "83/10",
+          "why": "This matches the exact calculation."
+        }
+      ],
+      "correctIndex": 3,
+      "explanation": "Evaluate 0.83 * 10 carefully. The exact result is 83/10; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g5-decimals-powers",
+      "id": "c74610ab41e8f3d9",
+      "check": "0.83 * 10 = 83/10",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Multiply by ten to find the next place value: 0.91 * 10 = ?",
+      "tier": "medium",
+      "expression": "0.91 * 10",
+      "options": [
+        {
+          "label": "91/10",
+          "value": "91/10",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "101/10",
+          "value": "101/10",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "111/10",
+          "value": "111/10",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "121/10",
+          "value": "121/10",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 0,
+      "explanation": "Evaluate 0.91 * 10 carefully. The exact result is 91/10; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g5-decimals-powers",
+      "id": "5c5838c43d96e1ec",
+      "check": "0.91 * 10 = 91/10",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Multiply by ten to find the next place value: 0.102 * 10 = ?",
+      "tier": "medium",
+      "expression": "0.102 * 10",
+      "options": [
+        {
+          "label": "101/50",
+          "value": "101/50",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "51/50",
+          "value": "51/50",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "151/50",
+          "value": "151/50",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "201/50",
+          "value": "201/50",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 1,
+      "explanation": "Evaluate 0.102 * 10 carefully. The exact result is 51/50; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g5-decimals-powers",
+      "id": "49dc249497c0a4d6",
+      "check": "0.102 * 10 = 51/50",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Multiply by ten to find the next place value: 0.113 * 10 = ?",
+      "tier": "medium",
+      "expression": "0.113 * 10",
+      "options": [
+        {
+          "label": "213/100",
+          "value": "213/100",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "313/100",
+          "value": "313/100",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "113/100",
+          "value": "113/100",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "413/100",
+          "value": "413/100",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 2,
+      "explanation": "Evaluate 0.113 * 10 carefully. The exact result is 113/100; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g5-decimals-powers",
+      "id": "001e51ddd2e97132",
+      "check": "0.113 * 10 = 113/100",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Multiply by ten to find the next place value: 0.121 * 10 = ?",
+      "tier": "medium",
+      "expression": "0.121 * 10",
+      "options": [
+        {
+          "label": "221/100",
+          "value": "221/100",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "321/100",
+          "value": "321/100",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "421/100",
+          "value": "421/100",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "121/100",
+          "value": "121/100",
+          "why": "This matches the exact calculation."
+        }
+      ],
+      "correctIndex": 3,
+      "explanation": "Evaluate 0.121 * 10 carefully. The exact result is 121/100; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g5-decimals-powers",
+      "id": "9f9e850074ed87ea",
+      "check": "0.121 * 10 = 121/100",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Multiply by ten to find the next place value: 0.132 * 10 = ?",
+      "tier": "hard",
+      "expression": "0.132 * 10",
+      "options": [
+        {
+          "label": "33/25",
+          "value": "33/25",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "58/25",
+          "value": "58/25",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "83/25",
+          "value": "83/25",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "108/25",
+          "value": "108/25",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 0,
+      "explanation": "Evaluate 0.132 * 10 carefully. The exact result is 33/25; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g5-decimals-powers",
+      "id": "a5822ca18c873d41",
+      "check": "0.132 * 10 = 33/25",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Multiply by ten to find the next place value: 0.143 * 10 = ?",
+      "tier": "hard",
+      "expression": "0.143 * 10",
+      "options": [
+        {
+          "label": "243/100",
+          "value": "243/100",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "143/100",
+          "value": "143/100",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "343/100",
+          "value": "343/100",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "443/100",
+          "value": "443/100",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 1,
+      "explanation": "Evaluate 0.143 * 10 carefully. The exact result is 143/100; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g5-decimals-powers",
+      "id": "8d7817d52854cdaf",
+      "check": "0.143 * 10 = 143/100",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Multiply by ten to find the next place value: 0.151 * 10 = ?",
+      "tier": "hard",
+      "expression": "0.151 * 10",
+      "options": [
+        {
+          "label": "251/100",
+          "value": "251/100",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "351/100",
+          "value": "351/100",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "151/100",
+          "value": "151/100",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "451/100",
+          "value": "451/100",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 2,
+      "explanation": "Evaluate 0.151 * 10 carefully. The exact result is 151/100; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g5-decimals-powers",
+      "id": "aa755ca2a6e52827",
+      "check": "0.151 * 10 = 151/100",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Multiply by ten to find the next place value: 0.162 * 10 = ?",
+      "tier": "hard",
+      "expression": "0.162 * 10",
+      "options": [
+        {
+          "label": "131/50",
+          "value": "131/50",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "181/50",
+          "value": "181/50",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "231/50",
+          "value": "231/50",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "81/50",
+          "value": "81/50",
+          "why": "This matches the exact calculation."
+        }
+      ],
+      "correctIndex": 3,
+      "explanation": "Evaluate 0.162 * 10 carefully. The exact result is 81/50; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g5-decimals-powers",
+      "id": "2e93e4b020df9273",
+      "check": "0.162 * 10 = 81/50",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Multiply by ten to find the next place value: 0.173 * 10 = ?",
+      "tier": "hard",
+      "expression": "0.173 * 10",
+      "options": [
+        {
+          "label": "173/100",
+          "value": "173/100",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "273/100",
+          "value": "273/100",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "373/100",
+          "value": "373/100",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "473/100",
+          "value": "473/100",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 0,
+      "explanation": "Evaluate 0.173 * 10 carefully. The exact result is 173/100; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g5-decimals-powers",
+      "id": "eec2aaf67a211091",
+      "check": "0.173 * 10 = 173/100",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Multiply by ten to find the next place value: 0.181 * 10 = ?",
+      "tier": "hard",
+      "expression": "0.181 * 10",
+      "options": [
+        {
+          "label": "281/100",
+          "value": "281/100",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "181/100",
+          "value": "181/100",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "381/100",
+          "value": "381/100",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "481/100",
+          "value": "481/100",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 1,
+      "explanation": "Evaluate 0.181 * 10 carefully. The exact result is 181/100; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g5-decimals-powers",
+      "id": "d62630a37bf804be",
+      "check": "0.181 * 10 = 181/100",
+      "correctedFromModel": false,
+      "source": "seed"
+    }
+  ],
+  "realmId": "g5-decimals",
+  "subSkillId": "g5-decimals-powers",
+  "source": "seed"
+}

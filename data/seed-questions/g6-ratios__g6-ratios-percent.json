@@ -1,0 +1,637 @@
+{
+  "items": [
+    {
+      "stem": "Find 10% of 40: 10 / 100 * 40 = ?",
+      "tier": "easy",
+      "expression": "10 / 100 * 40",
+      "options": [
+        {
+          "label": "4",
+          "value": "4",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "5",
+          "value": "5",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "6",
+          "value": "6",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "7",
+          "value": "7",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 0,
+      "explanation": "Evaluate 10 / 100 * 40 carefully. The exact result is 4; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-ratios-percent",
+      "id": "ecca6ea8b3421939",
+      "check": "10 / 100 * 40 = 4",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Find 15% of 60: 15 / 100 * 60 = ?",
+      "tier": "easy",
+      "expression": "15 / 100 * 60",
+      "options": [
+        {
+          "label": "10",
+          "value": "10",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "9",
+          "value": "9",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "11",
+          "value": "11",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "12",
+          "value": "12",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 1,
+      "explanation": "Evaluate 15 / 100 * 60 carefully. The exact result is 9; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-ratios-percent",
+      "id": "b7858ef887452f81",
+      "check": "15 / 100 * 60 = 9",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Find 20% of 20: 20 / 100 * 20 = ?",
+      "tier": "easy",
+      "expression": "20 / 100 * 20",
+      "options": [
+        {
+          "label": "5",
+          "value": "5",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "6",
+          "value": "6",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "4",
+          "value": "4",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "7",
+          "value": "7",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 2,
+      "explanation": "Evaluate 20 / 100 * 20 carefully. The exact result is 4; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-ratios-percent",
+      "id": "3d3c97b9a120c2aa",
+      "check": "20 / 100 * 20 = 4",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Find 25% of 40: 25 / 100 * 40 = ?",
+      "tier": "easy",
+      "expression": "25 / 100 * 40",
+      "options": [
+        {
+          "label": "11",
+          "value": "11",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "12",
+          "value": "12",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "13",
+          "value": "13",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "10",
+          "value": "10",
+          "why": "This matches the exact calculation."
+        }
+      ],
+      "correctIndex": 3,
+      "explanation": "Evaluate 25 / 100 * 40 carefully. The exact result is 10; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-ratios-percent",
+      "id": "ee1134b9ae1066ba",
+      "check": "25 / 100 * 40 = 10",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Find 30% of 60: 30 / 100 * 60 = ?",
+      "tier": "easy",
+      "expression": "30 / 100 * 60",
+      "options": [
+        {
+          "label": "18",
+          "value": "18",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "19",
+          "value": "19",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "20",
+          "value": "20",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "21",
+          "value": "21",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 0,
+      "explanation": "Evaluate 30 / 100 * 60 carefully. The exact result is 18; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-ratios-percent",
+      "id": "242cf23da856f793",
+      "check": "30 / 100 * 60 = 18",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Find 35% of 20: 35 / 100 * 20 = ?",
+      "tier": "easy",
+      "expression": "35 / 100 * 20",
+      "options": [
+        {
+          "label": "8",
+          "value": "8",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "7",
+          "value": "7",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "9",
+          "value": "9",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "10",
+          "value": "10",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 1,
+      "explanation": "Evaluate 35 / 100 * 20 carefully. The exact result is 7; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-ratios-percent",
+      "id": "f09ca144df6c5f95",
+      "check": "35 / 100 * 20 = 7",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Find 40% of 40: 40 / 100 * 40 = ?",
+      "tier": "medium",
+      "expression": "40 / 100 * 40",
+      "options": [
+        {
+          "label": "17",
+          "value": "17",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "18",
+          "value": "18",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "16",
+          "value": "16",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "19",
+          "value": "19",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 2,
+      "explanation": "Evaluate 40 / 100 * 40 carefully. The exact result is 16; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-ratios-percent",
+      "id": "8d30fdc0358b4915",
+      "check": "40 / 100 * 40 = 16",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Find 45% of 60: 45 / 100 * 60 = ?",
+      "tier": "medium",
+      "expression": "45 / 100 * 60",
+      "options": [
+        {
+          "label": "28",
+          "value": "28",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "29",
+          "value": "29",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "30",
+          "value": "30",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "27",
+          "value": "27",
+          "why": "This matches the exact calculation."
+        }
+      ],
+      "correctIndex": 3,
+      "explanation": "Evaluate 45 / 100 * 60 carefully. The exact result is 27; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-ratios-percent",
+      "id": "4e56660d2b76fdd5",
+      "check": "45 / 100 * 60 = 27",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Find 50% of 20: 50 / 100 * 20 = ?",
+      "tier": "medium",
+      "expression": "50 / 100 * 20",
+      "options": [
+        {
+          "label": "10",
+          "value": "10",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "11",
+          "value": "11",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "12",
+          "value": "12",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "13",
+          "value": "13",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 0,
+      "explanation": "Evaluate 50 / 100 * 20 carefully. The exact result is 10; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-ratios-percent",
+      "id": "119eb81752f25deb",
+      "check": "50 / 100 * 20 = 10",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Find 55% of 40: 55 / 100 * 40 = ?",
+      "tier": "medium",
+      "expression": "55 / 100 * 40",
+      "options": [
+        {
+          "label": "23",
+          "value": "23",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "22",
+          "value": "22",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "24",
+          "value": "24",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "25",
+          "value": "25",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 1,
+      "explanation": "Evaluate 55 / 100 * 40 carefully. The exact result is 22; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-ratios-percent",
+      "id": "fc82787d7960d03a",
+      "check": "55 / 100 * 40 = 22",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Find 60% of 60: 60 / 100 * 60 = ?",
+      "tier": "medium",
+      "expression": "60 / 100 * 60",
+      "options": [
+        {
+          "label": "37",
+          "value": "37",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "38",
+          "value": "38",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "36",
+          "value": "36",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "39",
+          "value": "39",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 2,
+      "explanation": "Evaluate 60 / 100 * 60 carefully. The exact result is 36; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-ratios-percent",
+      "id": "4f55e9fc6a457817",
+      "check": "60 / 100 * 60 = 36",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Find 65% of 20: 65 / 100 * 20 = ?",
+      "tier": "medium",
+      "expression": "65 / 100 * 20",
+      "options": [
+        {
+          "label": "14",
+          "value": "14",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "15",
+          "value": "15",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "16",
+          "value": "16",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "13",
+          "value": "13",
+          "why": "This matches the exact calculation."
+        }
+      ],
+      "correctIndex": 3,
+      "explanation": "Evaluate 65 / 100 * 20 carefully. The exact result is 13; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-ratios-percent",
+      "id": "25f90b06ab6e76fa",
+      "check": "65 / 100 * 20 = 13",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Find 70% of 40: 70 / 100 * 40 = ?",
+      "tier": "hard",
+      "expression": "70 / 100 * 40",
+      "options": [
+        {
+          "label": "28",
+          "value": "28",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "29",
+          "value": "29",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "30",
+          "value": "30",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "31",
+          "value": "31",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 0,
+      "explanation": "Evaluate 70 / 100 * 40 carefully. The exact result is 28; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-ratios-percent",
+      "id": "cdf3dcef219cd550",
+      "check": "70 / 100 * 40 = 28",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Find 75% of 60: 75 / 100 * 60 = ?",
+      "tier": "hard",
+      "expression": "75 / 100 * 60",
+      "options": [
+        {
+          "label": "46",
+          "value": "46",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "45",
+          "value": "45",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "47",
+          "value": "47",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "48",
+          "value": "48",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 1,
+      "explanation": "Evaluate 75 / 100 * 60 carefully. The exact result is 45; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-ratios-percent",
+      "id": "20b63ef1943db93a",
+      "check": "75 / 100 * 60 = 45",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Find 80% of 20: 80 / 100 * 20 = ?",
+      "tier": "hard",
+      "expression": "80 / 100 * 20",
+      "options": [
+        {
+          "label": "17",
+          "value": "17",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "18",
+          "value": "18",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "16",
+          "value": "16",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "19",
+          "value": "19",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 2,
+      "explanation": "Evaluate 80 / 100 * 20 carefully. The exact result is 16; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-ratios-percent",
+      "id": "bfe2b47b01c94a57",
+      "check": "80 / 100 * 20 = 16",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Find 85% of 40: 85 / 100 * 40 = ?",
+      "tier": "hard",
+      "expression": "85 / 100 * 40",
+      "options": [
+        {
+          "label": "35",
+          "value": "35",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "36",
+          "value": "36",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "37",
+          "value": "37",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "34",
+          "value": "34",
+          "why": "This matches the exact calculation."
+        }
+      ],
+      "correctIndex": 3,
+      "explanation": "Evaluate 85 / 100 * 40 carefully. The exact result is 34; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-ratios-percent",
+      "id": "31237934ab6d8f7f",
+      "check": "85 / 100 * 40 = 34",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Find 90% of 60: 90 / 100 * 60 = ?",
+      "tier": "hard",
+      "expression": "90 / 100 * 60",
+      "options": [
+        {
+          "label": "54",
+          "value": "54",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "55",
+          "value": "55",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "56",
+          "value": "56",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "57",
+          "value": "57",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 0,
+      "explanation": "Evaluate 90 / 100 * 60 carefully. The exact result is 54; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-ratios-percent",
+      "id": "189dc4e0257bae8f",
+      "check": "90 / 100 * 60 = 54",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Find 95% of 20: 95 / 100 * 20 = ?",
+      "tier": "hard",
+      "expression": "95 / 100 * 20",
+      "options": [
+        {
+          "label": "20",
+          "value": "20",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "19",
+          "value": "19",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "21",
+          "value": "21",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "22",
+          "value": "22",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 1,
+      "explanation": "Evaluate 95 / 100 * 20 carefully. The exact result is 19; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-ratios-percent",
+      "id": "b7b6904cf2c99d46",
+      "check": "95 / 100 * 20 = 19",
+      "correctedFromModel": false,
+      "source": "seed"
+    }
+  ],
+  "realmId": "g6-ratios",
+  "subSkillId": "g6-ratios-percent",
+  "source": "seed"
+}

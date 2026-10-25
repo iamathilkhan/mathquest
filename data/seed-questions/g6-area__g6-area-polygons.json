@@ -1,0 +1,637 @@
+{
+  "items": [
+    {
+      "stem": "Find the area of a triangle with base 2 and height 4: 2 * 4 / 2 = ?",
+      "tier": "easy",
+      "expression": "2 * 4 / 2",
+      "options": [
+        {
+          "label": "4",
+          "value": "4",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "5",
+          "value": "5",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "6",
+          "value": "6",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "7",
+          "value": "7",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 0,
+      "explanation": "Evaluate 2 * 4 / 2 carefully. The exact result is 4; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-area-polygons",
+      "id": "3f7f723731231e41",
+      "check": "2 * 4 / 2 = 4",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Find the area of a triangle with base 4 and height 6: 4 * 6 / 2 = ?",
+      "tier": "easy",
+      "expression": "4 * 6 / 2",
+      "options": [
+        {
+          "label": "13",
+          "value": "13",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "12",
+          "value": "12",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "14",
+          "value": "14",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "15",
+          "value": "15",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 1,
+      "explanation": "Evaluate 4 * 6 / 2 carefully. The exact result is 12; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-area-polygons",
+      "id": "652d09f368fa46fb",
+      "check": "4 * 6 / 2 = 12",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Find the area of a triangle with base 6 and height 2: 6 * 2 / 2 = ?",
+      "tier": "easy",
+      "expression": "6 * 2 / 2",
+      "options": [
+        {
+          "label": "7",
+          "value": "7",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "8",
+          "value": "8",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "6",
+          "value": "6",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "9",
+          "value": "9",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 2,
+      "explanation": "Evaluate 6 * 2 / 2 carefully. The exact result is 6; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-area-polygons",
+      "id": "4c6d26117fbf585e",
+      "check": "6 * 2 / 2 = 6",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Find the area of a triangle with base 8 and height 4: 8 * 4 / 2 = ?",
+      "tier": "easy",
+      "expression": "8 * 4 / 2",
+      "options": [
+        {
+          "label": "17",
+          "value": "17",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "18",
+          "value": "18",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "19",
+          "value": "19",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "16",
+          "value": "16",
+          "why": "This matches the exact calculation."
+        }
+      ],
+      "correctIndex": 3,
+      "explanation": "Evaluate 8 * 4 / 2 carefully. The exact result is 16; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-area-polygons",
+      "id": "96d15d7e9919a4cb",
+      "check": "8 * 4 / 2 = 16",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Find the area of a triangle with base 10 and height 6: 10 * 6 / 2 = ?",
+      "tier": "easy",
+      "expression": "10 * 6 / 2",
+      "options": [
+        {
+          "label": "30",
+          "value": "30",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "31",
+          "value": "31",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "32",
+          "value": "32",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "33",
+          "value": "33",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 0,
+      "explanation": "Evaluate 10 * 6 / 2 carefully. The exact result is 30; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-area-polygons",
+      "id": "447d5b62c1ced3b5",
+      "check": "10 * 6 / 2 = 30",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Find the area of a triangle with base 12 and height 2: 12 * 2 / 2 = ?",
+      "tier": "easy",
+      "expression": "12 * 2 / 2",
+      "options": [
+        {
+          "label": "13",
+          "value": "13",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "12",
+          "value": "12",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "14",
+          "value": "14",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "15",
+          "value": "15",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 1,
+      "explanation": "Evaluate 12 * 2 / 2 carefully. The exact result is 12; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-area-polygons",
+      "id": "b2f2587dd1e08a6a",
+      "check": "12 * 2 / 2 = 12",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Find the area of a triangle with base 14 and height 4: 14 * 4 / 2 = ?",
+      "tier": "medium",
+      "expression": "14 * 4 / 2",
+      "options": [
+        {
+          "label": "29",
+          "value": "29",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "30",
+          "value": "30",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "28",
+          "value": "28",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "31",
+          "value": "31",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 2,
+      "explanation": "Evaluate 14 * 4 / 2 carefully. The exact result is 28; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-area-polygons",
+      "id": "636cae0958ee9161",
+      "check": "14 * 4 / 2 = 28",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Find the area of a triangle with base 16 and height 6: 16 * 6 / 2 = ?",
+      "tier": "medium",
+      "expression": "16 * 6 / 2",
+      "options": [
+        {
+          "label": "49",
+          "value": "49",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "50",
+          "value": "50",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "51",
+          "value": "51",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "48",
+          "value": "48",
+          "why": "This matches the exact calculation."
+        }
+      ],
+      "correctIndex": 3,
+      "explanation": "Evaluate 16 * 6 / 2 carefully. The exact result is 48; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-area-polygons",
+      "id": "5bee8f78dac8e55d",
+      "check": "16 * 6 / 2 = 48",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Find the area of a triangle with base 18 and height 2: 18 * 2 / 2 = ?",
+      "tier": "medium",
+      "expression": "18 * 2 / 2",
+      "options": [
+        {
+          "label": "18",
+          "value": "18",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "19",
+          "value": "19",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "20",
+          "value": "20",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "21",
+          "value": "21",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 0,
+      "explanation": "Evaluate 18 * 2 / 2 carefully. The exact result is 18; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-area-polygons",
+      "id": "ada020a94991a907",
+      "check": "18 * 2 / 2 = 18",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Find the area of a triangle with base 20 and height 4: 20 * 4 / 2 = ?",
+      "tier": "medium",
+      "expression": "20 * 4 / 2",
+      "options": [
+        {
+          "label": "41",
+          "value": "41",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "40",
+          "value": "40",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "42",
+          "value": "42",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "43",
+          "value": "43",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 1,
+      "explanation": "Evaluate 20 * 4 / 2 carefully. The exact result is 40; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-area-polygons",
+      "id": "b64b036c2d836e4d",
+      "check": "20 * 4 / 2 = 40",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Find the area of a triangle with base 22 and height 6: 22 * 6 / 2 = ?",
+      "tier": "medium",
+      "expression": "22 * 6 / 2",
+      "options": [
+        {
+          "label": "67",
+          "value": "67",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "68",
+          "value": "68",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "66",
+          "value": "66",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "69",
+          "value": "69",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 2,
+      "explanation": "Evaluate 22 * 6 / 2 carefully. The exact result is 66; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-area-polygons",
+      "id": "19446190e055f69a",
+      "check": "22 * 6 / 2 = 66",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Find the area of a triangle with base 24 and height 2: 24 * 2 / 2 = ?",
+      "tier": "medium",
+      "expression": "24 * 2 / 2",
+      "options": [
+        {
+          "label": "25",
+          "value": "25",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "26",
+          "value": "26",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "27",
+          "value": "27",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "24",
+          "value": "24",
+          "why": "This matches the exact calculation."
+        }
+      ],
+      "correctIndex": 3,
+      "explanation": "Evaluate 24 * 2 / 2 carefully. The exact result is 24; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-area-polygons",
+      "id": "6acff98fa1288579",
+      "check": "24 * 2 / 2 = 24",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Find the area of a triangle with base 26 and height 4: 26 * 4 / 2 = ?",
+      "tier": "hard",
+      "expression": "26 * 4 / 2",
+      "options": [
+        {
+          "label": "52",
+          "value": "52",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "53",
+          "value": "53",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "54",
+          "value": "54",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "55",
+          "value": "55",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 0,
+      "explanation": "Evaluate 26 * 4 / 2 carefully. The exact result is 52; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-area-polygons",
+      "id": "c0cae727cbe9ae0c",
+      "check": "26 * 4 / 2 = 52",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Find the area of a triangle with base 28 and height 6: 28 * 6 / 2 = ?",
+      "tier": "hard",
+      "expression": "28 * 6 / 2",
+      "options": [
+        {
+          "label": "85",
+          "value": "85",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "84",
+          "value": "84",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "86",
+          "value": "86",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "87",
+          "value": "87",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 1,
+      "explanation": "Evaluate 28 * 6 / 2 carefully. The exact result is 84; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-area-polygons",
+      "id": "f178f73b3e5a3b4b",
+      "check": "28 * 6 / 2 = 84",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Find the area of a triangle with base 30 and height 2: 30 * 2 / 2 = ?",
+      "tier": "hard",
+      "expression": "30 * 2 / 2",
+      "options": [
+        {
+          "label": "31",
+          "value": "31",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "32",
+          "value": "32",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "30",
+          "value": "30",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "33",
+          "value": "33",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 2,
+      "explanation": "Evaluate 30 * 2 / 2 carefully. The exact result is 30; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-area-polygons",
+      "id": "11406d7a887ef0a8",
+      "check": "30 * 2 / 2 = 30",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Find the area of a triangle with base 32 and height 4: 32 * 4 / 2 = ?",
+      "tier": "hard",
+      "expression": "32 * 4 / 2",
+      "options": [
+        {
+          "label": "65",
+          "value": "65",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "66",
+          "value": "66",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "67",
+          "value": "67",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "64",
+          "value": "64",
+          "why": "This matches the exact calculation."
+        }
+      ],
+      "correctIndex": 3,
+      "explanation": "Evaluate 32 * 4 / 2 carefully. The exact result is 64; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-area-polygons",
+      "id": "64ab7181924d7666",
+      "check": "32 * 4 / 2 = 64",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Find the area of a triangle with base 34 and height 6: 34 * 6 / 2 = ?",
+      "tier": "hard",
+      "expression": "34 * 6 / 2",
+      "options": [
+        {
+          "label": "102",
+          "value": "102",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "103",
+          "value": "103",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "104",
+          "value": "104",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "105",
+          "value": "105",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 0,
+      "explanation": "Evaluate 34 * 6 / 2 carefully. The exact result is 102; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-area-polygons",
+      "id": "0d9791284f542f06",
+      "check": "34 * 6 / 2 = 102",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Find the area of a triangle with base 36 and height 2: 36 * 2 / 2 = ?",
+      "tier": "hard",
+      "expression": "36 * 2 / 2",
+      "options": [
+        {
+          "label": "37",
+          "value": "37",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "36",
+          "value": "36",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "38",
+          "value": "38",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "39",
+          "value": "39",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 1,
+      "explanation": "Evaluate 36 * 2 / 2 carefully. The exact result is 36; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-area-polygons",
+      "id": "7a32e806e6b32e45",
+      "check": "36 * 2 / 2 = 36",
+      "correctedFromModel": false,
+      "source": "seed"
+    }
+  ],
+  "realmId": "g6-area",
+  "subSkillId": "g6-area-polygons",
+  "source": "seed"
+}

@@ -1,0 +1,637 @@
+{
+  "items": [
+    {
+      "stem": "Divide these fractions for Dividing Fractions by Fractions: (2/5) / (2/5) = ?",
+      "tier": "easy",
+      "expression": "(2/5) / (2/5)",
+      "options": [
+        {
+          "label": "1",
+          "value": "1",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "2",
+          "value": "2",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "3",
+          "value": "3",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "4",
+          "value": "4",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 0,
+      "explanation": "Evaluate (2/5) / (2/5) carefully. The exact result is 1; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-fracdiv-compute",
+      "id": "4489fc63159b4a78",
+      "check": "(2/5) / (2/5) = 1",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Divide these fractions for Dividing Fractions by Fractions: (3/6) / (3/6) = ?",
+      "tier": "easy",
+      "expression": "(3/6) / (3/6)",
+      "options": [
+        {
+          "label": "2",
+          "value": "2",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "1",
+          "value": "1",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "3",
+          "value": "3",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "4",
+          "value": "4",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 1,
+      "explanation": "Evaluate (3/6) / (3/6) carefully. The exact result is 1; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-fracdiv-compute",
+      "id": "ceaad03abeacf59a",
+      "check": "(3/6) / (3/6) = 1",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Divide these fractions for Dividing Fractions by Fractions: (4/7) / (1/7) = ?",
+      "tier": "easy",
+      "expression": "(4/7) / (1/7)",
+      "options": [
+        {
+          "label": "5",
+          "value": "5",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "6",
+          "value": "6",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "4",
+          "value": "4",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "7",
+          "value": "7",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 2,
+      "explanation": "Evaluate (4/7) / (1/7) carefully. The exact result is 4; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-fracdiv-compute",
+      "id": "4c9fb2e39787d8f1",
+      "check": "(4/7) / (1/7) = 4",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Divide these fractions for Dividing Fractions by Fractions: (2/8) / (2/8) = ?",
+      "tier": "easy",
+      "expression": "(2/8) / (2/8)",
+      "options": [
+        {
+          "label": "2",
+          "value": "2",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "3",
+          "value": "3",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "4",
+          "value": "4",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "1",
+          "value": "1",
+          "why": "This matches the exact calculation."
+        }
+      ],
+      "correctIndex": 3,
+      "explanation": "Evaluate (2/8) / (2/8) carefully. The exact result is 1; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-fracdiv-compute",
+      "id": "0bab7d6dab1d60c5",
+      "check": "(2/8) / (2/8) = 1",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Divide these fractions for Dividing Fractions by Fractions: (3/9) / (3/9) = ?",
+      "tier": "easy",
+      "expression": "(3/9) / (3/9)",
+      "options": [
+        {
+          "label": "1",
+          "value": "1",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "2",
+          "value": "2",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "3",
+          "value": "3",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "4",
+          "value": "4",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 0,
+      "explanation": "Evaluate (3/9) / (3/9) carefully. The exact result is 1; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-fracdiv-compute",
+      "id": "c1acc5df2267df90",
+      "check": "(3/9) / (3/9) = 1",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Divide these fractions for Dividing Fractions by Fractions: (4/5) / (1/5) = ?",
+      "tier": "easy",
+      "expression": "(4/5) / (1/5)",
+      "options": [
+        {
+          "label": "5",
+          "value": "5",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "4",
+          "value": "4",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "6",
+          "value": "6",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "7",
+          "value": "7",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 1,
+      "explanation": "Evaluate (4/5) / (1/5) carefully. The exact result is 4; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-fracdiv-compute",
+      "id": "1571a2734f43a80a",
+      "check": "(4/5) / (1/5) = 4",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Divide these fractions for Dividing Fractions by Fractions: (2/6) / (2/6) = ?",
+      "tier": "medium",
+      "expression": "(2/6) / (2/6)",
+      "options": [
+        {
+          "label": "2",
+          "value": "2",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "3",
+          "value": "3",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "1",
+          "value": "1",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "4",
+          "value": "4",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 2,
+      "explanation": "Evaluate (2/6) / (2/6) carefully. The exact result is 1; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-fracdiv-compute",
+      "id": "15b06c3addc080f7",
+      "check": "(2/6) / (2/6) = 1",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Divide these fractions for Dividing Fractions by Fractions: (3/7) / (3/7) = ?",
+      "tier": "medium",
+      "expression": "(3/7) / (3/7)",
+      "options": [
+        {
+          "label": "2",
+          "value": "2",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "3",
+          "value": "3",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "4",
+          "value": "4",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "1",
+          "value": "1",
+          "why": "This matches the exact calculation."
+        }
+      ],
+      "correctIndex": 3,
+      "explanation": "Evaluate (3/7) / (3/7) carefully. The exact result is 1; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-fracdiv-compute",
+      "id": "70bab15172b59e3c",
+      "check": "(3/7) / (3/7) = 1",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Divide these fractions for Dividing Fractions by Fractions: (4/8) / (1/8) = ?",
+      "tier": "medium",
+      "expression": "(4/8) / (1/8)",
+      "options": [
+        {
+          "label": "4",
+          "value": "4",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "5",
+          "value": "5",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "6",
+          "value": "6",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "7",
+          "value": "7",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 0,
+      "explanation": "Evaluate (4/8) / (1/8) carefully. The exact result is 4; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-fracdiv-compute",
+      "id": "0185aa0fc27fa183",
+      "check": "(4/8) / (1/8) = 4",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Divide these fractions for Dividing Fractions by Fractions: (2/9) / (2/9) = ?",
+      "tier": "medium",
+      "expression": "(2/9) / (2/9)",
+      "options": [
+        {
+          "label": "2",
+          "value": "2",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "1",
+          "value": "1",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "3",
+          "value": "3",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "4",
+          "value": "4",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 1,
+      "explanation": "Evaluate (2/9) / (2/9) carefully. The exact result is 1; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-fracdiv-compute",
+      "id": "83fe5571b601a70c",
+      "check": "(2/9) / (2/9) = 1",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Divide these fractions for Dividing Fractions by Fractions: (3/5) / (3/5) = ?",
+      "tier": "medium",
+      "expression": "(3/5) / (3/5)",
+      "options": [
+        {
+          "label": "2",
+          "value": "2",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "3",
+          "value": "3",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "1",
+          "value": "1",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "4",
+          "value": "4",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 2,
+      "explanation": "Evaluate (3/5) / (3/5) carefully. The exact result is 1; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-fracdiv-compute",
+      "id": "f31e42aa26376a9f",
+      "check": "(3/5) / (3/5) = 1",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Divide these fractions for Dividing Fractions by Fractions: (4/6) / (1/6) = ?",
+      "tier": "medium",
+      "expression": "(4/6) / (1/6)",
+      "options": [
+        {
+          "label": "5",
+          "value": "5",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "6",
+          "value": "6",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "7",
+          "value": "7",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "4",
+          "value": "4",
+          "why": "This matches the exact calculation."
+        }
+      ],
+      "correctIndex": 3,
+      "explanation": "Evaluate (4/6) / (1/6) carefully. The exact result is 4; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-fracdiv-compute",
+      "id": "8116cf5f71d92871",
+      "check": "(4/6) / (1/6) = 4",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Divide these fractions for Dividing Fractions by Fractions: (2/7) / (2/7) = ?",
+      "tier": "hard",
+      "expression": "(2/7) / (2/7)",
+      "options": [
+        {
+          "label": "1",
+          "value": "1",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "2",
+          "value": "2",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "3",
+          "value": "3",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "4",
+          "value": "4",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 0,
+      "explanation": "Evaluate (2/7) / (2/7) carefully. The exact result is 1; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-fracdiv-compute",
+      "id": "e9575fd6f8fa933c",
+      "check": "(2/7) / (2/7) = 1",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Divide these fractions for Dividing Fractions by Fractions: (3/8) / (3/8) = ?",
+      "tier": "hard",
+      "expression": "(3/8) / (3/8)",
+      "options": [
+        {
+          "label": "2",
+          "value": "2",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "1",
+          "value": "1",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "3",
+          "value": "3",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "4",
+          "value": "4",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 1,
+      "explanation": "Evaluate (3/8) / (3/8) carefully. The exact result is 1; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-fracdiv-compute",
+      "id": "33954e48fc512a10",
+      "check": "(3/8) / (3/8) = 1",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Divide these fractions for Dividing Fractions by Fractions: (4/9) / (1/9) = ?",
+      "tier": "hard",
+      "expression": "(4/9) / (1/9)",
+      "options": [
+        {
+          "label": "5",
+          "value": "5",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "6",
+          "value": "6",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "4",
+          "value": "4",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "7",
+          "value": "7",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 2,
+      "explanation": "Evaluate (4/9) / (1/9) carefully. The exact result is 4; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-fracdiv-compute",
+      "id": "9aae85330845bb47",
+      "check": "(4/9) / (1/9) = 4",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Divide these fractions for Dividing Fractions by Fractions: (2/5) / (2/5) = ?",
+      "tier": "hard",
+      "expression": "(2/5) / (2/5)",
+      "options": [
+        {
+          "label": "2",
+          "value": "2",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "3",
+          "value": "3",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "4",
+          "value": "4",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "1",
+          "value": "1",
+          "why": "This matches the exact calculation."
+        }
+      ],
+      "correctIndex": 3,
+      "explanation": "Evaluate (2/5) / (2/5) carefully. The exact result is 1; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-fracdiv-compute",
+      "id": "4489fc63159b4a78",
+      "check": "(2/5) / (2/5) = 1",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Divide these fractions for Dividing Fractions by Fractions: (3/6) / (3/6) = ?",
+      "tier": "hard",
+      "expression": "(3/6) / (3/6)",
+      "options": [
+        {
+          "label": "1",
+          "value": "1",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "2",
+          "value": "2",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "3",
+          "value": "3",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "4",
+          "value": "4",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 0,
+      "explanation": "Evaluate (3/6) / (3/6) carefully. The exact result is 1; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-fracdiv-compute",
+      "id": "ceaad03abeacf59a",
+      "check": "(3/6) / (3/6) = 1",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Divide these fractions for Dividing Fractions by Fractions: (4/7) / (1/7) = ?",
+      "tier": "hard",
+      "expression": "(4/7) / (1/7)",
+      "options": [
+        {
+          "label": "5",
+          "value": "5",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "4",
+          "value": "4",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "6",
+          "value": "6",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "7",
+          "value": "7",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 1,
+      "explanation": "Evaluate (4/7) / (1/7) carefully. The exact result is 4; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-fracdiv-compute",
+      "id": "4c9fb2e39787d8f1",
+      "check": "(4/7) / (1/7) = 4",
+      "correctedFromModel": false,
+      "source": "seed"
+    }
+  ],
+  "realmId": "g6-fracdiv",
+  "subSkillId": "g6-fracdiv-compute",
+  "source": "seed"
+}

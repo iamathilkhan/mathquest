@@ -1,0 +1,76 @@
+{
+  "title": "Adding & Subtracting Fractions",
+  "hook": "Imagine using adding & subtracting fractions to solve a puzzle in Fraction Forest.",
+  "bigIdea": "Adding & Subtracting Fractions helps you describe and solve number relationships. Choose the operation that matches the question, keep track of units, and check that your answer makes sense.",
+  "vocabulary": [
+    {
+      "term": "Expression",
+      "definition": "A number sentence that shows the operations in a problem."
+    },
+    {
+      "term": "Estimate",
+      "definition": "A nearby value used to decide whether an answer is reasonable."
+    }
+  ],
+  "workedExamples": [
+    {
+      "problem": "Add 1/4 and 2/4 of a recipe.",
+      "expression": "1/4 + 2/4",
+      "answerValue": "3/4",
+      "steps": [
+        "The denominators are both 4.",
+        "Add the numerators: 1 + 2 = 3.",
+        "The sum is 3/4."
+      ]
+    },
+    {
+      "problem": "Add 1/3 and 1/6 of a trail map.",
+      "expression": "1/3 + 1/6",
+      "answerValue": "1/2",
+      "steps": [
+        "Use sixths: 1/3 is 2/6.",
+        "Add 2/6 + 1/6.",
+        "Simplify 3/6 to 1/2."
+      ]
+    }
+  ],
+  "commonMistakes": [
+    "Using the wrong operation for adding & subtracting fractions.",
+    "Forgetting to label the answer with the correct units or simplify it when needed."
+  ],
+  "realWorld": "People use adding & subtracting fractions when measuring, comparing, planning, and checking quantities in everyday tasks.",
+  "scenes": [
+    {
+      "narration": "Welcome to Fraction Forest. Today we are exploring Adding & Subtracting Fractions.",
+      "visual": "text"
+    },
+    {
+      "narration": "Look for the quantities and relationships described by Adding & Subtracting Fractions.",
+      "visual": "fractionBar",
+      "visualData": {
+        "n": 3,
+        "d": 4
+      }
+    },
+    {
+      "narration": "Work carefully through each step, then check the result.",
+      "visual": "steps"
+    },
+    {
+      "narration": "You can use this idea in real measurements and comparisons.",
+      "visual": "text"
+    }
+  ],
+  "infographic": {
+    "headline": "Adding & Subtracting Fractions: the key idea",
+    "keyPoints": [
+      "Read the quantities and identify what is being asked.",
+      "Choose an operation that matches the relationship.",
+      "Check the calculation and include units in the answer."
+    ],
+    "diagram": "fractionBar"
+  },
+  "realmId": "g5-fractions",
+  "subSkillId": "g5-fractions-add-sub",
+  "source": "seed"
+}

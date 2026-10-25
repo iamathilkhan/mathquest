@@ -1,0 +1,637 @@
+{
+  "items": [
+    {
+      "stem": "Add these like fractions for Adding & Subtracting Fractions: 1/5 + 2/5 = ?",
+      "tier": "easy",
+      "expression": "1/5 + 2/5",
+      "options": [
+        {
+          "label": "3/5",
+          "value": "3/5",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "8/5",
+          "value": "8/5",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "13/5",
+          "value": "13/5",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "18/5",
+          "value": "18/5",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 0,
+      "explanation": "Evaluate 1/5 + 2/5 carefully. The exact result is 3/5; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g5-fractions-add-sub",
+      "id": "b63e39805fcb66f6",
+      "check": "1/5 + 2/5 = 3/5",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Add these like fractions for Adding & Subtracting Fractions: 2/6 + 3/6 = ?",
+      "tier": "easy",
+      "expression": "2/6 + 3/6",
+      "options": [
+        {
+          "label": "11/6",
+          "value": "11/6",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "5/6",
+          "value": "5/6",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "17/6",
+          "value": "17/6",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "23/6",
+          "value": "23/6",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 1,
+      "explanation": "Evaluate 2/6 + 3/6 carefully. The exact result is 5/6; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g5-fractions-add-sub",
+      "id": "838a13cf91ef7763",
+      "check": "2/6 + 3/6 = 5/6",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Add these like fractions for Adding & Subtracting Fractions: 3/7 + 1/7 = ?",
+      "tier": "easy",
+      "expression": "3/7 + 1/7",
+      "options": [
+        {
+          "label": "11/7",
+          "value": "11/7",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "18/7",
+          "value": "18/7",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "4/7",
+          "value": "4/7",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "25/7",
+          "value": "25/7",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 2,
+      "explanation": "Evaluate 3/7 + 1/7 carefully. The exact result is 4/7; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g5-fractions-add-sub",
+      "id": "b983b90f0434a2a4",
+      "check": "3/7 + 1/7 = 4/7",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Add these like fractions for Adding & Subtracting Fractions: 1/8 + 2/8 = ?",
+      "tier": "easy",
+      "expression": "1/8 + 2/8",
+      "options": [
+        {
+          "label": "11/8",
+          "value": "11/8",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "19/8",
+          "value": "19/8",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "27/8",
+          "value": "27/8",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "3/8",
+          "value": "3/8",
+          "why": "This matches the exact calculation."
+        }
+      ],
+      "correctIndex": 3,
+      "explanation": "Evaluate 1/8 + 2/8 carefully. The exact result is 3/8; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g5-fractions-add-sub",
+      "id": "f20995c261f64913",
+      "check": "1/8 + 2/8 = 3/8",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Add these like fractions for Adding & Subtracting Fractions: 2/9 + 3/9 = ?",
+      "tier": "easy",
+      "expression": "2/9 + 3/9",
+      "options": [
+        {
+          "label": "5/9",
+          "value": "5/9",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "14/9",
+          "value": "14/9",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "23/9",
+          "value": "23/9",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "32/9",
+          "value": "32/9",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 0,
+      "explanation": "Evaluate 2/9 + 3/9 carefully. The exact result is 5/9; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g5-fractions-add-sub",
+      "id": "ea6c8f0e23041a69",
+      "check": "2/9 + 3/9 = 5/9",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Add these like fractions for Adding & Subtracting Fractions: 3/5 + 1/5 = ?",
+      "tier": "easy",
+      "expression": "3/5 + 1/5",
+      "options": [
+        {
+          "label": "9/5",
+          "value": "9/5",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "4/5",
+          "value": "4/5",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "14/5",
+          "value": "14/5",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "19/5",
+          "value": "19/5",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 1,
+      "explanation": "Evaluate 3/5 + 1/5 carefully. The exact result is 4/5; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g5-fractions-add-sub",
+      "id": "49c121b0dabdaa57",
+      "check": "3/5 + 1/5 = 4/5",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Add these like fractions for Adding & Subtracting Fractions: 1/6 + 2/6 = ?",
+      "tier": "medium",
+      "expression": "1/6 + 2/6",
+      "options": [
+        {
+          "label": "3/2",
+          "value": "3/2",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "5/2",
+          "value": "5/2",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "1/2",
+          "value": "1/2",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "7/2",
+          "value": "7/2",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 2,
+      "explanation": "Evaluate 1/6 + 2/6 carefully. The exact result is 1/2; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g5-fractions-add-sub",
+      "id": "9824598323ba9335",
+      "check": "1/6 + 2/6 = 1/2",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Add these like fractions for Adding & Subtracting Fractions: 2/7 + 3/7 = ?",
+      "tier": "medium",
+      "expression": "2/7 + 3/7",
+      "options": [
+        {
+          "label": "12/7",
+          "value": "12/7",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "19/7",
+          "value": "19/7",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "26/7",
+          "value": "26/7",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "5/7",
+          "value": "5/7",
+          "why": "This matches the exact calculation."
+        }
+      ],
+      "correctIndex": 3,
+      "explanation": "Evaluate 2/7 + 3/7 carefully. The exact result is 5/7; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g5-fractions-add-sub",
+      "id": "604c4eea2b3581aa",
+      "check": "2/7 + 3/7 = 5/7",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Add these like fractions for Adding & Subtracting Fractions: 3/8 + 1/8 = ?",
+      "tier": "medium",
+      "expression": "3/8 + 1/8",
+      "options": [
+        {
+          "label": "1/2",
+          "value": "1/2",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "3/2",
+          "value": "3/2",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "5/2",
+          "value": "5/2",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "7/2",
+          "value": "7/2",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 0,
+      "explanation": "Evaluate 3/8 + 1/8 carefully. The exact result is 1/2; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g5-fractions-add-sub",
+      "id": "90a7e7cf97c0435e",
+      "check": "3/8 + 1/8 = 1/2",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Add these like fractions for Adding & Subtracting Fractions: 1/9 + 2/9 = ?",
+      "tier": "medium",
+      "expression": "1/9 + 2/9",
+      "options": [
+        {
+          "label": "4/3",
+          "value": "4/3",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "1/3",
+          "value": "1/3",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "7/3",
+          "value": "7/3",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "10/3",
+          "value": "10/3",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 1,
+      "explanation": "Evaluate 1/9 + 2/9 carefully. The exact result is 1/3; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g5-fractions-add-sub",
+      "id": "3db0cd8225aefdf8",
+      "check": "1/9 + 2/9 = 1/3",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Add these like fractions for Adding & Subtracting Fractions: 2/5 + 3/5 = ?",
+      "tier": "medium",
+      "expression": "2/5 + 3/5",
+      "options": [
+        {
+          "label": "2",
+          "value": "2",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "3",
+          "value": "3",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "1",
+          "value": "1",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "4",
+          "value": "4",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 2,
+      "explanation": "Evaluate 2/5 + 3/5 carefully. The exact result is 1; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g5-fractions-add-sub",
+      "id": "59195c690b92f5b2",
+      "check": "2/5 + 3/5 = 1",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Add these like fractions for Adding & Subtracting Fractions: 3/6 + 1/6 = ?",
+      "tier": "medium",
+      "expression": "3/6 + 1/6",
+      "options": [
+        {
+          "label": "5/3",
+          "value": "5/3",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "8/3",
+          "value": "8/3",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "11/3",
+          "value": "11/3",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "2/3",
+          "value": "2/3",
+          "why": "This matches the exact calculation."
+        }
+      ],
+      "correctIndex": 3,
+      "explanation": "Evaluate 3/6 + 1/6 carefully. The exact result is 2/3; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g5-fractions-add-sub",
+      "id": "9663ef8d75471a88",
+      "check": "3/6 + 1/6 = 2/3",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Add these like fractions for Adding & Subtracting Fractions: 1/7 + 2/7 = ?",
+      "tier": "hard",
+      "expression": "1/7 + 2/7",
+      "options": [
+        {
+          "label": "3/7",
+          "value": "3/7",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "10/7",
+          "value": "10/7",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "17/7",
+          "value": "17/7",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "24/7",
+          "value": "24/7",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 0,
+      "explanation": "Evaluate 1/7 + 2/7 carefully. The exact result is 3/7; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g5-fractions-add-sub",
+      "id": "677db5e46ead9855",
+      "check": "1/7 + 2/7 = 3/7",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Add these like fractions for Adding & Subtracting Fractions: 2/8 + 3/8 = ?",
+      "tier": "hard",
+      "expression": "2/8 + 3/8",
+      "options": [
+        {
+          "label": "13/8",
+          "value": "13/8",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "5/8",
+          "value": "5/8",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "21/8",
+          "value": "21/8",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "29/8",
+          "value": "29/8",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 1,
+      "explanation": "Evaluate 2/8 + 3/8 carefully. The exact result is 5/8; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g5-fractions-add-sub",
+      "id": "ccd6ef5b53323756",
+      "check": "2/8 + 3/8 = 5/8",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Add these like fractions for Adding & Subtracting Fractions: 3/9 + 1/9 = ?",
+      "tier": "hard",
+      "expression": "3/9 + 1/9",
+      "options": [
+        {
+          "label": "13/9",
+          "value": "13/9",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "22/9",
+          "value": "22/9",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "4/9",
+          "value": "4/9",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "31/9",
+          "value": "31/9",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 2,
+      "explanation": "Evaluate 3/9 + 1/9 carefully. The exact result is 4/9; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g5-fractions-add-sub",
+      "id": "e7184c31f88b6e5d",
+      "check": "3/9 + 1/9 = 4/9",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Add these like fractions for Adding & Subtracting Fractions: 1/5 + 2/5 = ?",
+      "tier": "hard",
+      "expression": "1/5 + 2/5",
+      "options": [
+        {
+          "label": "8/5",
+          "value": "8/5",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "13/5",
+          "value": "13/5",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "18/5",
+          "value": "18/5",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "3/5",
+          "value": "3/5",
+          "why": "This matches the exact calculation."
+        }
+      ],
+      "correctIndex": 3,
+      "explanation": "Evaluate 1/5 + 2/5 carefully. The exact result is 3/5; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g5-fractions-add-sub",
+      "id": "b63e39805fcb66f6",
+      "check": "1/5 + 2/5 = 3/5",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Add these like fractions for Adding & Subtracting Fractions: 2/6 + 3/6 = ?",
+      "tier": "hard",
+      "expression": "2/6 + 3/6",
+      "options": [
+        {
+          "label": "5/6",
+          "value": "5/6",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "11/6",
+          "value": "11/6",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "17/6",
+          "value": "17/6",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "23/6",
+          "value": "23/6",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 0,
+      "explanation": "Evaluate 2/6 + 3/6 carefully. The exact result is 5/6; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g5-fractions-add-sub",
+      "id": "838a13cf91ef7763",
+      "check": "2/6 + 3/6 = 5/6",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Add these like fractions for Adding & Subtracting Fractions: 3/7 + 1/7 = ?",
+      "tier": "hard",
+      "expression": "3/7 + 1/7",
+      "options": [
+        {
+          "label": "11/7",
+          "value": "11/7",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "4/7",
+          "value": "4/7",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "18/7",
+          "value": "18/7",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "25/7",
+          "value": "25/7",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 1,
+      "explanation": "Evaluate 3/7 + 1/7 carefully. The exact result is 4/7; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g5-fractions-add-sub",
+      "id": "b983b90f0434a2a4",
+      "check": "3/7 + 1/7 = 4/7",
+      "correctedFromModel": false,
+      "source": "seed"
+    }
+  ],
+  "realmId": "g5-fractions",
+  "subSkillId": "g5-fractions-add-sub",
+  "source": "seed"
+}

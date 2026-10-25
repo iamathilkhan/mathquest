@@ -1,0 +1,77 @@
+{
+  "title": "Composite Volumes",
+  "hook": "Imagine using composite volumes to solve a puzzle in Volume Volcano.",
+  "bigIdea": "Composite Volumes helps you describe and solve number relationships. Choose the operation that matches the question, keep track of units, and check that your answer makes sense.",
+  "vocabulary": [
+    {
+      "term": "Expression",
+      "definition": "A number sentence that shows the operations in a problem."
+    },
+    {
+      "term": "Estimate",
+      "definition": "A nearby value used to decide whether an answer is reasonable."
+    }
+  ],
+  "workedExamples": [
+    {
+      "problem": "Two joined boxes have volumes 2 × 2 × 2 and 1 × 2 × 2 cubic units. Find the total.",
+      "expression": "(2 * 2 * 2) + (1 * 2 * 2)",
+      "answerValue": "12",
+      "steps": [
+        "Find the first box volume: 2 × 2 × 2 = 8.",
+        "Find the second box volume: 1 × 2 × 2 = 4.",
+        "Add 8 + 4 = 12 cubic units."
+      ]
+    },
+    {
+      "problem": "Two joined boxes have volumes 1 × 2 × 2 and 2 × 2 × 2 cubic units. Find the total.",
+      "expression": "(1 * 2 * 2) + (2 * 2 * 2)",
+      "answerValue": "12",
+      "steps": [
+        "Find the first box volume: 1 × 2 × 2 = 4.",
+        "Find the second box volume: 2 × 2 × 2 = 8.",
+        "Add 4 + 8 = 12 cubic units."
+      ]
+    }
+  ],
+  "commonMistakes": [
+    "Using the wrong operation for composite volumes.",
+    "Forgetting to label the answer with the correct units or simplify it when needed."
+  ],
+  "realWorld": "People use composite volumes when measuring, comparing, planning, and checking quantities in everyday tasks.",
+  "scenes": [
+    {
+      "narration": "Welcome to Volume Volcano. Today we are exploring Composite Volumes.",
+      "visual": "text"
+    },
+    {
+      "narration": "Look for the quantities and relationships described by Composite Volumes.",
+      "visual": "areaGrid",
+      "visualData": {
+        "rows": 4,
+        "cols": 4,
+        "shaded": 8
+      }
+    },
+    {
+      "narration": "Work carefully through each step, then check the result.",
+      "visual": "steps"
+    },
+    {
+      "narration": "You can use this idea in real measurements and comparisons.",
+      "visual": "text"
+    }
+  ],
+  "infographic": {
+    "headline": "Composite Volumes: the key idea",
+    "keyPoints": [
+      "Read the quantities and identify what is being asked.",
+      "Choose an operation that matches the relationship.",
+      "Check the calculation and include units in the answer."
+    ],
+    "diagram": "areaGrid"
+  },
+  "realmId": "g5-volume",
+  "subSkillId": "g5-volume-compose",
+  "source": "seed"
+}

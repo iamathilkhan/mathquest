@@ -1,0 +1,77 @@
+{
+  "title": "Surface Area & Nets",
+  "hook": "Imagine using surface area & nets to solve a puzzle in Area Atoll.",
+  "bigIdea": "Surface Area & Nets helps you describe and solve number relationships. Choose the operation that matches the question, keep track of units, and check that your answer makes sense.",
+  "vocabulary": [
+    {
+      "term": "Expression",
+      "definition": "A number sentence that shows the operations in a problem."
+    },
+    {
+      "term": "Estimate",
+      "definition": "A nearby value used to decide whether an answer is reasonable."
+    }
+  ],
+  "workedExamples": [
+    {
+      "problem": "Find the surface area of a prism with length 2, width 3, and height 4 units.",
+      "expression": "2 * (2 * 3 + 2 * 4 + 3 * 4)",
+      "answerValue": "52",
+      "steps": [
+        "Find the three different face areas: 6, 8, and 12.",
+        "Add them and multiply by 2 for opposite faces.",
+        "2 × (6 + 8 + 12) = 52 square units."
+      ]
+    },
+    {
+      "problem": "Find the surface area of a prism with length 1, width 2, and height 3 units.",
+      "expression": "2 * (1 * 2 + 1 * 3 + 2 * 3)",
+      "answerValue": "22",
+      "steps": [
+        "Find the three different face areas: 2, 3, and 6.",
+        "Add them and multiply by 2 for opposite faces.",
+        "2 × (2 + 3 + 6) = 22 square units."
+      ]
+    }
+  ],
+  "commonMistakes": [
+    "Using the wrong operation for surface area & nets.",
+    "Forgetting to label the answer with the correct units or simplify it when needed."
+  ],
+  "realWorld": "People use surface area & nets when measuring, comparing, planning, and checking quantities in everyday tasks.",
+  "scenes": [
+    {
+      "narration": "Welcome to Area Atoll. Today we are exploring Surface Area & Nets.",
+      "visual": "text"
+    },
+    {
+      "narration": "Look for the quantities and relationships described by Surface Area & Nets.",
+      "visual": "areaGrid",
+      "visualData": {
+        "rows": 4,
+        "cols": 4,
+        "shaded": 8
+      }
+    },
+    {
+      "narration": "Work carefully through each step, then check the result.",
+      "visual": "steps"
+    },
+    {
+      "narration": "You can use this idea in real measurements and comparisons.",
+      "visual": "text"
+    }
+  ],
+  "infographic": {
+    "headline": "Surface Area & Nets: the key idea",
+    "keyPoints": [
+      "Read the quantities and identify what is being asked.",
+      "Choose an operation that matches the relationship.",
+      "Check the calculation and include units in the answer."
+    ],
+    "diagram": "areaGrid"
+  },
+  "realmId": "g6-area",
+  "subSkillId": "g6-area-surface",
+  "source": "seed"
+}

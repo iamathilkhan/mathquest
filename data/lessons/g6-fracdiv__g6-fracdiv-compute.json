@@ -1,0 +1,76 @@
+{
+  "title": "Dividing Fractions by Fractions",
+  "hook": "Imagine using dividing fractions by fractions to solve a puzzle in Quotient Quarry.",
+  "bigIdea": "Dividing Fractions by Fractions helps you describe and solve number relationships. Choose the operation that matches the question, keep track of units, and check that your answer makes sense.",
+  "vocabulary": [
+    {
+      "term": "Expression",
+      "definition": "A number sentence that shows the operations in a problem."
+    },
+    {
+      "term": "Estimate",
+      "definition": "A nearby value used to decide whether an answer is reasonable."
+    }
+  ],
+  "workedExamples": [
+    {
+      "problem": "Divide 2/3 by 1/6.",
+      "expression": "(2/3) / (1/6)",
+      "answerValue": "4",
+      "steps": [
+        "Keep 2/3 and multiply by the reciprocal of 1/6.",
+        "Compute 2/3 × 6/1.",
+        "The quotient is 4."
+      ]
+    },
+    {
+      "problem": "Divide 3/4 by 1/8.",
+      "expression": "(3/4) / (1/8)",
+      "answerValue": "6",
+      "steps": [
+        "Keep 3/4 and multiply by the reciprocal of 1/8.",
+        "Compute 3/4 × 8/1.",
+        "The quotient is 6."
+      ]
+    }
+  ],
+  "commonMistakes": [
+    "Using the wrong operation for dividing fractions by fractions.",
+    "Forgetting to label the answer with the correct units or simplify it when needed."
+  ],
+  "realWorld": "People use dividing fractions by fractions when measuring, comparing, planning, and checking quantities in everyday tasks.",
+  "scenes": [
+    {
+      "narration": "Welcome to Quotient Quarry. Today we are exploring Dividing Fractions by Fractions.",
+      "visual": "text"
+    },
+    {
+      "narration": "Look for the quantities and relationships described by Dividing Fractions by Fractions.",
+      "visual": "fractionBar",
+      "visualData": {
+        "n": 3,
+        "d": 4
+      }
+    },
+    {
+      "narration": "Work carefully through each step, then check the result.",
+      "visual": "steps"
+    },
+    {
+      "narration": "You can use this idea in real measurements and comparisons.",
+      "visual": "text"
+    }
+  ],
+  "infographic": {
+    "headline": "Dividing Fractions by Fractions: the key idea",
+    "keyPoints": [
+      "Read the quantities and identify what is being asked.",
+      "Choose an operation that matches the relationship.",
+      "Check the calculation and include units in the answer."
+    ],
+    "diagram": "fractionBar"
+  },
+  "realmId": "g6-fracdiv",
+  "subSkillId": "g6-fracdiv-compute",
+  "source": "seed"
+}

@@ -11,10 +11,12 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "seed:build": "tsx scripts/build-seedbank.ts",
+    "seed:verified": "node --conditions=react-server --import tsx scripts/generate-verified-seeds.ts",
+    "seed:lessons": "node --conditions=react-server --import tsx scripts/generate-seed-lessons.ts",
     "art:gen": "tsx scripts/gen-images.ts",
     "art:process": "tsx scripts/art-process.ts",
-    "eval": "tsx scripts/eval-generation.ts",
-    "release-check": "tsx scripts/release-check.ts"
+    "eval": "node --conditions=react-server --import tsx scripts/eval-generation.ts",
+    "release-check": "node --conditions=react-server --import tsx scripts/release-check.ts"
   },
   "dependencies": {
     "@google/genai": "^2.31.0",

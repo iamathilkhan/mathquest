@@ -1,0 +1,637 @@
+{
+  "items": [
+    {
+      "stem": "Find the surface area of a 1 by 2 by 1 rectangular prism: 2 * (1 * 2 + 1 * 1 + 2 * 1) = ?",
+      "tier": "easy",
+      "expression": "2 * (1 * 2 + 1 * 1 + 2 * 1)",
+      "options": [
+        {
+          "label": "10",
+          "value": "10",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "11",
+          "value": "11",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "12",
+          "value": "12",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "13",
+          "value": "13",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 0,
+      "explanation": "Evaluate 2 * (1 * 2 + 1 * 1 + 2 * 1) carefully. The exact result is 10; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-area-surface",
+      "id": "42eb3261f4f223e5",
+      "check": "2 * (1 * 2 + 1 * 1 + 2 * 1) = 10",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Find the surface area of a 2 by 3 by 2 rectangular prism: 2 * (2 * 3 + 2 * 2 + 3 * 2) = ?",
+      "tier": "easy",
+      "expression": "2 * (2 * 3 + 2 * 2 + 3 * 2)",
+      "options": [
+        {
+          "label": "33",
+          "value": "33",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "32",
+          "value": "32",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "34",
+          "value": "34",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "35",
+          "value": "35",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 1,
+      "explanation": "Evaluate 2 * (2 * 3 + 2 * 2 + 3 * 2) carefully. The exact result is 32; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-area-surface",
+      "id": "956497050626a7c1",
+      "check": "2 * (2 * 3 + 2 * 2 + 3 * 2) = 32",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Find the surface area of a 3 by 1 by 3 rectangular prism: 2 * (3 * 1 + 3 * 3 + 1 * 3) = ?",
+      "tier": "easy",
+      "expression": "2 * (3 * 1 + 3 * 3 + 1 * 3)",
+      "options": [
+        {
+          "label": "31",
+          "value": "31",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "32",
+          "value": "32",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "30",
+          "value": "30",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "33",
+          "value": "33",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 2,
+      "explanation": "Evaluate 2 * (3 * 1 + 3 * 3 + 1 * 3) carefully. The exact result is 30; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-area-surface",
+      "id": "28b26c2f43914905",
+      "check": "2 * (3 * 1 + 3 * 3 + 1 * 3) = 30",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Find the surface area of a 1 by 2 by 4 rectangular prism: 2 * (1 * 2 + 1 * 4 + 2 * 4) = ?",
+      "tier": "easy",
+      "expression": "2 * (1 * 2 + 1 * 4 + 2 * 4)",
+      "options": [
+        {
+          "label": "29",
+          "value": "29",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "30",
+          "value": "30",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "31",
+          "value": "31",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "28",
+          "value": "28",
+          "why": "This matches the exact calculation."
+        }
+      ],
+      "correctIndex": 3,
+      "explanation": "Evaluate 2 * (1 * 2 + 1 * 4 + 2 * 4) carefully. The exact result is 28; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-area-surface",
+      "id": "b05c5349a9887799",
+      "check": "2 * (1 * 2 + 1 * 4 + 2 * 4) = 28",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Find the surface area of a 2 by 3 by 5 rectangular prism: 2 * (2 * 3 + 2 * 5 + 3 * 5) = ?",
+      "tier": "easy",
+      "expression": "2 * (2 * 3 + 2 * 5 + 3 * 5)",
+      "options": [
+        {
+          "label": "62",
+          "value": "62",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "63",
+          "value": "63",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "64",
+          "value": "64",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "65",
+          "value": "65",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 0,
+      "explanation": "Evaluate 2 * (2 * 3 + 2 * 5 + 3 * 5) carefully. The exact result is 62; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-area-surface",
+      "id": "97fcb929b95615a5",
+      "check": "2 * (2 * 3 + 2 * 5 + 3 * 5) = 62",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Find the surface area of a 3 by 1 by 6 rectangular prism: 2 * (3 * 1 + 3 * 6 + 1 * 6) = ?",
+      "tier": "easy",
+      "expression": "2 * (3 * 1 + 3 * 6 + 1 * 6)",
+      "options": [
+        {
+          "label": "55",
+          "value": "55",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "54",
+          "value": "54",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "56",
+          "value": "56",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "57",
+          "value": "57",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 1,
+      "explanation": "Evaluate 2 * (3 * 1 + 3 * 6 + 1 * 6) carefully. The exact result is 54; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-area-surface",
+      "id": "c755548556879199",
+      "check": "2 * (3 * 1 + 3 * 6 + 1 * 6) = 54",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Find the surface area of a 1 by 2 by 7 rectangular prism: 2 * (1 * 2 + 1 * 7 + 2 * 7) = ?",
+      "tier": "medium",
+      "expression": "2 * (1 * 2 + 1 * 7 + 2 * 7)",
+      "options": [
+        {
+          "label": "47",
+          "value": "47",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "48",
+          "value": "48",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "46",
+          "value": "46",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "49",
+          "value": "49",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 2,
+      "explanation": "Evaluate 2 * (1 * 2 + 1 * 7 + 2 * 7) carefully. The exact result is 46; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-area-surface",
+      "id": "d7f6f9eb124228f9",
+      "check": "2 * (1 * 2 + 1 * 7 + 2 * 7) = 46",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Find the surface area of a 2 by 3 by 8 rectangular prism: 2 * (2 * 3 + 2 * 8 + 3 * 8) = ?",
+      "tier": "medium",
+      "expression": "2 * (2 * 3 + 2 * 8 + 3 * 8)",
+      "options": [
+        {
+          "label": "93",
+          "value": "93",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "94",
+          "value": "94",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "95",
+          "value": "95",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "92",
+          "value": "92",
+          "why": "This matches the exact calculation."
+        }
+      ],
+      "correctIndex": 3,
+      "explanation": "Evaluate 2 * (2 * 3 + 2 * 8 + 3 * 8) carefully. The exact result is 92; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-area-surface",
+      "id": "00410ad79e3cb853",
+      "check": "2 * (2 * 3 + 2 * 8 + 3 * 8) = 92",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Find the surface area of a 3 by 1 by 9 rectangular prism: 2 * (3 * 1 + 3 * 9 + 1 * 9) = ?",
+      "tier": "medium",
+      "expression": "2 * (3 * 1 + 3 * 9 + 1 * 9)",
+      "options": [
+        {
+          "label": "78",
+          "value": "78",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "79",
+          "value": "79",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "80",
+          "value": "80",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "81",
+          "value": "81",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 0,
+      "explanation": "Evaluate 2 * (3 * 1 + 3 * 9 + 1 * 9) carefully. The exact result is 78; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-area-surface",
+      "id": "ca0191c08b7f326c",
+      "check": "2 * (3 * 1 + 3 * 9 + 1 * 9) = 78",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Find the surface area of a 1 by 2 by 10 rectangular prism: 2 * (1 * 2 + 1 * 10 + 2 * 10) = ?",
+      "tier": "medium",
+      "expression": "2 * (1 * 2 + 1 * 10 + 2 * 10)",
+      "options": [
+        {
+          "label": "65",
+          "value": "65",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "64",
+          "value": "64",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "66",
+          "value": "66",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "67",
+          "value": "67",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 1,
+      "explanation": "Evaluate 2 * (1 * 2 + 1 * 10 + 2 * 10) carefully. The exact result is 64; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-area-surface",
+      "id": "a3780c54b8fb63b5",
+      "check": "2 * (1 * 2 + 1 * 10 + 2 * 10) = 64",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Find the surface area of a 2 by 3 by 11 rectangular prism: 2 * (2 * 3 + 2 * 11 + 3 * 11) = ?",
+      "tier": "medium",
+      "expression": "2 * (2 * 3 + 2 * 11 + 3 * 11)",
+      "options": [
+        {
+          "label": "123",
+          "value": "123",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "124",
+          "value": "124",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "122",
+          "value": "122",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "125",
+          "value": "125",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 2,
+      "explanation": "Evaluate 2 * (2 * 3 + 2 * 11 + 3 * 11) carefully. The exact result is 122; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-area-surface",
+      "id": "c6e5b5ba134a6a95",
+      "check": "2 * (2 * 3 + 2 * 11 + 3 * 11) = 122",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Find the surface area of a 3 by 1 by 12 rectangular prism: 2 * (3 * 1 + 3 * 12 + 1 * 12) = ?",
+      "tier": "medium",
+      "expression": "2 * (3 * 1 + 3 * 12 + 1 * 12)",
+      "options": [
+        {
+          "label": "103",
+          "value": "103",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "104",
+          "value": "104",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "105",
+          "value": "105",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "102",
+          "value": "102",
+          "why": "This matches the exact calculation."
+        }
+      ],
+      "correctIndex": 3,
+      "explanation": "Evaluate 2 * (3 * 1 + 3 * 12 + 1 * 12) carefully. The exact result is 102; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-area-surface",
+      "id": "8e88a612355ad460",
+      "check": "2 * (3 * 1 + 3 * 12 + 1 * 12) = 102",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Find the surface area of a 1 by 2 by 13 rectangular prism: 2 * (1 * 2 + 1 * 13 + 2 * 13) = ?",
+      "tier": "hard",
+      "expression": "2 * (1 * 2 + 1 * 13 + 2 * 13)",
+      "options": [
+        {
+          "label": "82",
+          "value": "82",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "83",
+          "value": "83",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "84",
+          "value": "84",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "85",
+          "value": "85",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 0,
+      "explanation": "Evaluate 2 * (1 * 2 + 1 * 13 + 2 * 13) carefully. The exact result is 82; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-area-surface",
+      "id": "2f8850e30f03e530",
+      "check": "2 * (1 * 2 + 1 * 13 + 2 * 13) = 82",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Find the surface area of a 2 by 3 by 14 rectangular prism: 2 * (2 * 3 + 2 * 14 + 3 * 14) = ?",
+      "tier": "hard",
+      "expression": "2 * (2 * 3 + 2 * 14 + 3 * 14)",
+      "options": [
+        {
+          "label": "153",
+          "value": "153",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "152",
+          "value": "152",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "154",
+          "value": "154",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "155",
+          "value": "155",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 1,
+      "explanation": "Evaluate 2 * (2 * 3 + 2 * 14 + 3 * 14) carefully. The exact result is 152; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-area-surface",
+      "id": "0f7aa2ea34063cc1",
+      "check": "2 * (2 * 3 + 2 * 14 + 3 * 14) = 152",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Find the surface area of a 3 by 1 by 15 rectangular prism: 2 * (3 * 1 + 3 * 15 + 1 * 15) = ?",
+      "tier": "hard",
+      "expression": "2 * (3 * 1 + 3 * 15 + 1 * 15)",
+      "options": [
+        {
+          "label": "127",
+          "value": "127",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "128",
+          "value": "128",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "126",
+          "value": "126",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "129",
+          "value": "129",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 2,
+      "explanation": "Evaluate 2 * (3 * 1 + 3 * 15 + 1 * 15) carefully. The exact result is 126; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-area-surface",
+      "id": "588216d6a900e026",
+      "check": "2 * (3 * 1 + 3 * 15 + 1 * 15) = 126",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Find the surface area of a 1 by 2 by 16 rectangular prism: 2 * (1 * 2 + 1 * 16 + 2 * 16) = ?",
+      "tier": "hard",
+      "expression": "2 * (1 * 2 + 1 * 16 + 2 * 16)",
+      "options": [
+        {
+          "label": "101",
+          "value": "101",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "102",
+          "value": "102",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "103",
+          "value": "103",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "100",
+          "value": "100",
+          "why": "This matches the exact calculation."
+        }
+      ],
+      "correctIndex": 3,
+      "explanation": "Evaluate 2 * (1 * 2 + 1 * 16 + 2 * 16) carefully. The exact result is 100; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-area-surface",
+      "id": "580cacd8d1389bc2",
+      "check": "2 * (1 * 2 + 1 * 16 + 2 * 16) = 100",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Find the surface area of a 2 by 3 by 17 rectangular prism: 2 * (2 * 3 + 2 * 17 + 3 * 17) = ?",
+      "tier": "hard",
+      "expression": "2 * (2 * 3 + 2 * 17 + 3 * 17)",
+      "options": [
+        {
+          "label": "182",
+          "value": "182",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "183",
+          "value": "183",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "184",
+          "value": "184",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "185",
+          "value": "185",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 0,
+      "explanation": "Evaluate 2 * (2 * 3 + 2 * 17 + 3 * 17) carefully. The exact result is 182; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-area-surface",
+      "id": "ea97cae3272a9b56",
+      "check": "2 * (2 * 3 + 2 * 17 + 3 * 17) = 182",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Find the surface area of a 3 by 1 by 18 rectangular prism: 2 * (3 * 1 + 3 * 18 + 1 * 18) = ?",
+      "tier": "hard",
+      "expression": "2 * (3 * 1 + 3 * 18 + 1 * 18)",
+      "options": [
+        {
+          "label": "151",
+          "value": "151",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "150",
+          "value": "150",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "152",
+          "value": "152",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "153",
+          "value": "153",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 1,
+      "explanation": "Evaluate 2 * (3 * 1 + 3 * 18 + 1 * 18) carefully. The exact result is 150; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-area-surface",
+      "id": "e94f8114d8d77f65",
+      "check": "2 * (3 * 1 + 3 * 18 + 1 * 18) = 150",
+      "correctedFromModel": false,
+      "source": "seed"
+    }
+  ],
+  "realmId": "g6-area",
+  "subSkillId": "g6-area-surface",
+  "source": "seed"
+}

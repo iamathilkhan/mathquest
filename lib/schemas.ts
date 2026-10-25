@@ -99,6 +99,7 @@ export const StageResultSchema = z.object({
   wrongCount: z.number().int().min(0),
   isBoss: z.boolean(),
   history: z.array(AnswerRecordSchema),
+  endTier: TierSchema.optional(),
 });
 export type StageResult = z.infer<typeof StageResultSchema>;
 
@@ -187,14 +188,41 @@ export const RealmProgressSchema = z.object({
 export type RealmProgress = z.infer<typeof RealmProgressSchema>;
 
 export const PlayerSettingsSchema = z.object({
-  demoMode: z.boolean().default(false),
-  readableFont: z.boolean().default(false),
-  reducedMotion: z.boolean().default(false),
-  sfxEnabled: z.boolean().default(true),
+  sound: z.boolean().optional(),
+  music: z.boolean().optional(),
+  motion: z.enum(["system", "reduce", "full"]).optional(),
+  readable: z.boolean().optional(),
+  demoMode: z.boolean().optional().default(false),
+  readableFont: z.boolean().optional().default(false),
+  reducedMotion: z.boolean().optional().default(false),
+  sfxEnabled: z.boolean().optional().default(true),
 });
 export type PlayerSettings = z.infer<typeof PlayerSettingsSchema>;
 
+export const InventorySchema = z.object({
+  hint: z.number().int().min(0).default(0),
+  shield: z.number().int().min(0).default(1),
+  fifty: z.number().int().min(0).default(1),
+});
+export type Inventory = z.infer<typeof InventorySchema>;
+
+export const LifetimeStatsSchema = z.object({
+  answered: z.number().int().min(0).default(0),
+  correct: z.number().int().min(0).default(0),
+  stagesCleared: z.number().int().min(0).default(0),
+  bestCombo: z.number().int().min(0).default(0),
+});
+export type LifetimeStats = z.infer<typeof LifetimeStatsSchema>;
+
+export const ProfileSchema = z.object({
+  name: z.string().max(20).default(""),
+  grade: z.number().int().min(5).max(6).default(5),
+});
+export type Profile = z.infer<typeof ProfileSchema>;
+
 export const PlayerSchema = z.object({
+  profile: ProfileSchema.optional(),
+  grade: z.number().int().min(5).max(6).optional(),
   level: z.number().int().min(1).default(1),
   xp: z.number().int().min(0).default(0),
   coins: z.number().int().min(0).default(0),
@@ -209,12 +237,13 @@ export const PlayerSchema = z.object({
   streak: z.number().int().min(0).default(0),
   /** ISO date string of last played day */
   lastDay: z.string().optional(),
-  settings: PlayerSettingsSchema.default({
-    demoMode: false,
-    readableFont: false,
-    reducedMotion: false,
-    sfxEnabled: true,
-  }),
+  lastPlayed: z.string().optional(),
+  retreatedStages: z.array(z.string()).optional(),
+  inventory: InventorySchema.optional(),
+  lessonsFinished: z.array(z.string()).optional(),
+  retreats: z.number().int().min(0).optional(),
+  lifetime: LifetimeStatsSchema.optional(),
+  settings: PlayerSettingsSchema.optional(),
 });
 export type Player = z.infer<typeof PlayerSchema>;
 

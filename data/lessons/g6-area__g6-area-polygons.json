@@ -1,0 +1,77 @@
+{
+  "title": "Area of Triangles & Quadrilaterals",
+  "hook": "Imagine using area of triangles & quadrilaterals to solve a puzzle in Area Atoll.",
+  "bigIdea": "Area of Triangles & Quadrilaterals helps you describe and solve number relationships. Choose the operation that matches the question, keep track of units, and check that your answer makes sense.",
+  "vocabulary": [
+    {
+      "term": "Expression",
+      "definition": "A number sentence that shows the operations in a problem."
+    },
+    {
+      "term": "Estimate",
+      "definition": "A nearby value used to decide whether an answer is reasonable."
+    }
+  ],
+  "workedExamples": [
+    {
+      "problem": "Find the area of a triangle with base 6 units and height 4 units.",
+      "expression": "6 * 4 / 2",
+      "answerValue": "12",
+      "steps": [
+        "A triangle is half of a matching rectangle.",
+        "Multiply base × height: 6 × 4 = 24.",
+        "Take half: 24 ÷ 2 = 12 square units."
+      ]
+    },
+    {
+      "problem": "Find the area of a rectangle with side lengths 3 units and 5 units.",
+      "expression": "3 * 5",
+      "answerValue": "15",
+      "steps": [
+        "A rectangle's area is length × width.",
+        "Multiply 3 × 5.",
+        "The area is 15 square units."
+      ]
+    }
+  ],
+  "commonMistakes": [
+    "Using the wrong operation for area of triangles & quadrilaterals.",
+    "Forgetting to label the answer with the correct units or simplify it when needed."
+  ],
+  "realWorld": "People use area of triangles & quadrilaterals when measuring, comparing, planning, and checking quantities in everyday tasks.",
+  "scenes": [
+    {
+      "narration": "Welcome to Area Atoll. Today we are exploring Area of Triangles & Quadrilaterals.",
+      "visual": "text"
+    },
+    {
+      "narration": "Look for the quantities and relationships described by Area of Triangles & Quadrilaterals.",
+      "visual": "areaGrid",
+      "visualData": {
+        "rows": 4,
+        "cols": 4,
+        "shaded": 8
+      }
+    },
+    {
+      "narration": "Work carefully through each step, then check the result.",
+      "visual": "steps"
+    },
+    {
+      "narration": "You can use this idea in real measurements and comparisons.",
+      "visual": "text"
+    }
+  ],
+  "infographic": {
+    "headline": "Area of Triangles & Quadrilaterals: the key idea",
+    "keyPoints": [
+      "Read the quantities and identify what is being asked.",
+      "Choose an operation that matches the relationship.",
+      "Check the calculation and include units in the answer."
+    ],
+    "diagram": "areaGrid"
+  },
+  "realmId": "g6-area",
+  "subSkillId": "g6-area-polygons",
+  "source": "seed"
+}

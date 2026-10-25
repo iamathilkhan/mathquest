@@ -1,0 +1,77 @@
+{
+  "title": "Percentages",
+  "hook": "Imagine using percentages to solve a puzzle in Ratio Reef.",
+  "bigIdea": "Percentages helps you describe and solve number relationships. Choose the operation that matches the question, keep track of units, and check that your answer makes sense.",
+  "vocabulary": [
+    {
+      "term": "Expression",
+      "definition": "A number sentence that shows the operations in a problem."
+    },
+    {
+      "term": "Estimate",
+      "definition": "A nearby value used to decide whether an answer is reasonable."
+    }
+  ],
+  "workedExamples": [
+    {
+      "problem": "Find 25 percent of 20 points. Percent means per 100.",
+      "expression": "25 / 100 * 20",
+      "answerValue": "5",
+      "steps": [
+        "25 percent means 25 out of 100.",
+        "Multiply 25/100 by 20.",
+        "The result is 5 points."
+      ]
+    },
+    {
+      "problem": "Find 10 percent of 30 points. Percent means per 100.",
+      "expression": "10 / 100 * 30",
+      "answerValue": "3",
+      "steps": [
+        "10 percent means 10 out of 100.",
+        "Multiply 10/100 by 30.",
+        "The result is 3 points."
+      ]
+    }
+  ],
+  "commonMistakes": [
+    "Using the wrong operation for percentages.",
+    "Forgetting to label the answer with the correct units or simplify it when needed."
+  ],
+  "realWorld": "People use percentages when measuring, comparing, planning, and checking quantities in everyday tasks.",
+  "scenes": [
+    {
+      "narration": "Welcome to Ratio Reef. Today we are exploring Percentages.",
+      "visual": "text"
+    },
+    {
+      "narration": "Look for the quantities and relationships described by Percentages.",
+      "visual": "ratioTable",
+      "visualData": {
+        "a": 2,
+        "b": 3,
+        "mult": 2
+      }
+    },
+    {
+      "narration": "Work carefully through each step, then check the result.",
+      "visual": "steps"
+    },
+    {
+      "narration": "You can use this idea in real measurements and comparisons.",
+      "visual": "text"
+    }
+  ],
+  "infographic": {
+    "headline": "Percentages: the key idea",
+    "keyPoints": [
+      "Read the quantities and identify what is being asked.",
+      "Choose an operation that matches the relationship.",
+      "Check the calculation and include units in the answer."
+    ],
+    "diagram": "ratioTable"
+  },
+  "realmId": "g6-ratios",
+  "subSkillId": "g6-ratios-percent",
+  "source": "seed"
+}

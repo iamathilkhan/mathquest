@@ -1,0 +1,637 @@
+{
+  "items": [
+    {
+      "stem": "Write the ratio 2:1 as a quotient in simplest form: 2 / 1 = ?",
+      "tier": "easy",
+      "expression": "2 / 1",
+      "options": [
+        {
+          "label": "2",
+          "value": "2",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "3",
+          "value": "3",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "4",
+          "value": "4",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "5",
+          "value": "5",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 0,
+      "explanation": "Evaluate 2 / 1 carefully. The exact result is 2; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-ratios-concept",
+      "id": "d0337064bb6a2370",
+      "check": "2 / 1 = 2",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Write the ratio 4:2 as a quotient in simplest form: 4 / 2 = ?",
+      "tier": "easy",
+      "expression": "4 / 2",
+      "options": [
+        {
+          "label": "3",
+          "value": "3",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "2",
+          "value": "2",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "4",
+          "value": "4",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "5",
+          "value": "5",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 1,
+      "explanation": "Evaluate 4 / 2 carefully. The exact result is 2; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-ratios-concept",
+      "id": "e114ef8b39189c8c",
+      "check": "4 / 2 = 2",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Write the ratio 6:3 as a quotient in simplest form: 6 / 3 = ?",
+      "tier": "easy",
+      "expression": "6 / 3",
+      "options": [
+        {
+          "label": "3",
+          "value": "3",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "4",
+          "value": "4",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "2",
+          "value": "2",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "5",
+          "value": "5",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 2,
+      "explanation": "Evaluate 6 / 3 carefully. The exact result is 2; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-ratios-concept",
+      "id": "f4b05ea62b31223d",
+      "check": "6 / 3 = 2",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Write the ratio 8:4 as a quotient in simplest form: 8 / 4 = ?",
+      "tier": "easy",
+      "expression": "8 / 4",
+      "options": [
+        {
+          "label": "3",
+          "value": "3",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "4",
+          "value": "4",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "5",
+          "value": "5",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "2",
+          "value": "2",
+          "why": "This matches the exact calculation."
+        }
+      ],
+      "correctIndex": 3,
+      "explanation": "Evaluate 8 / 4 carefully. The exact result is 2; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-ratios-concept",
+      "id": "18c9b6eed85775d4",
+      "check": "8 / 4 = 2",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Write the ratio 10:5 as a quotient in simplest form: 10 / 5 = ?",
+      "tier": "easy",
+      "expression": "10 / 5",
+      "options": [
+        {
+          "label": "2",
+          "value": "2",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "3",
+          "value": "3",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "4",
+          "value": "4",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "5",
+          "value": "5",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 0,
+      "explanation": "Evaluate 10 / 5 carefully. The exact result is 2; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-ratios-concept",
+      "id": "ed86b6430651c929",
+      "check": "10 / 5 = 2",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Write the ratio 12:6 as a quotient in simplest form: 12 / 6 = ?",
+      "tier": "easy",
+      "expression": "12 / 6",
+      "options": [
+        {
+          "label": "3",
+          "value": "3",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "2",
+          "value": "2",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "4",
+          "value": "4",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "5",
+          "value": "5",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 1,
+      "explanation": "Evaluate 12 / 6 carefully. The exact result is 2; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-ratios-concept",
+      "id": "153534a3b758950c",
+      "check": "12 / 6 = 2",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Write the ratio 14:7 as a quotient in simplest form: 14 / 7 = ?",
+      "tier": "medium",
+      "expression": "14 / 7",
+      "options": [
+        {
+          "label": "3",
+          "value": "3",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "4",
+          "value": "4",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "2",
+          "value": "2",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "5",
+          "value": "5",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 2,
+      "explanation": "Evaluate 14 / 7 carefully. The exact result is 2; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-ratios-concept",
+      "id": "da11c2804dea18be",
+      "check": "14 / 7 = 2",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Write the ratio 16:8 as a quotient in simplest form: 16 / 8 = ?",
+      "tier": "medium",
+      "expression": "16 / 8",
+      "options": [
+        {
+          "label": "3",
+          "value": "3",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "4",
+          "value": "4",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "5",
+          "value": "5",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "2",
+          "value": "2",
+          "why": "This matches the exact calculation."
+        }
+      ],
+      "correctIndex": 3,
+      "explanation": "Evaluate 16 / 8 carefully. The exact result is 2; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-ratios-concept",
+      "id": "f7614287b8e7c81e",
+      "check": "16 / 8 = 2",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Write the ratio 18:9 as a quotient in simplest form: 18 / 9 = ?",
+      "tier": "medium",
+      "expression": "18 / 9",
+      "options": [
+        {
+          "label": "2",
+          "value": "2",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "3",
+          "value": "3",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "4",
+          "value": "4",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "5",
+          "value": "5",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 0,
+      "explanation": "Evaluate 18 / 9 carefully. The exact result is 2; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-ratios-concept",
+      "id": "ed229de996e23f04",
+      "check": "18 / 9 = 2",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Write the ratio 20:10 as a quotient in simplest form: 20 / 10 = ?",
+      "tier": "medium",
+      "expression": "20 / 10",
+      "options": [
+        {
+          "label": "3",
+          "value": "3",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "2",
+          "value": "2",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "4",
+          "value": "4",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "5",
+          "value": "5",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 1,
+      "explanation": "Evaluate 20 / 10 carefully. The exact result is 2; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-ratios-concept",
+      "id": "e4f4cc6d3f94db0d",
+      "check": "20 / 10 = 2",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Write the ratio 22:11 as a quotient in simplest form: 22 / 11 = ?",
+      "tier": "medium",
+      "expression": "22 / 11",
+      "options": [
+        {
+          "label": "3",
+          "value": "3",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "4",
+          "value": "4",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "2",
+          "value": "2",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "5",
+          "value": "5",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 2,
+      "explanation": "Evaluate 22 / 11 carefully. The exact result is 2; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-ratios-concept",
+      "id": "01583372dae5561f",
+      "check": "22 / 11 = 2",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Write the ratio 24:12 as a quotient in simplest form: 24 / 12 = ?",
+      "tier": "medium",
+      "expression": "24 / 12",
+      "options": [
+        {
+          "label": "3",
+          "value": "3",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "4",
+          "value": "4",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "5",
+          "value": "5",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "2",
+          "value": "2",
+          "why": "This matches the exact calculation."
+        }
+      ],
+      "correctIndex": 3,
+      "explanation": "Evaluate 24 / 12 carefully. The exact result is 2; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-ratios-concept",
+      "id": "769ebe4b322775e9",
+      "check": "24 / 12 = 2",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Write the ratio 26:13 as a quotient in simplest form: 26 / 13 = ?",
+      "tier": "hard",
+      "expression": "26 / 13",
+      "options": [
+        {
+          "label": "2",
+          "value": "2",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "3",
+          "value": "3",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "4",
+          "value": "4",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "5",
+          "value": "5",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 0,
+      "explanation": "Evaluate 26 / 13 carefully. The exact result is 2; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-ratios-concept",
+      "id": "19eb6c46331eb949",
+      "check": "26 / 13 = 2",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Write the ratio 28:14 as a quotient in simplest form: 28 / 14 = ?",
+      "tier": "hard",
+      "expression": "28 / 14",
+      "options": [
+        {
+          "label": "3",
+          "value": "3",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "2",
+          "value": "2",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "4",
+          "value": "4",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "5",
+          "value": "5",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 1,
+      "explanation": "Evaluate 28 / 14 carefully. The exact result is 2; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-ratios-concept",
+      "id": "361a67b0119a2e0c",
+      "check": "28 / 14 = 2",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Write the ratio 30:15 as a quotient in simplest form: 30 / 15 = ?",
+      "tier": "hard",
+      "expression": "30 / 15",
+      "options": [
+        {
+          "label": "3",
+          "value": "3",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "4",
+          "value": "4",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "2",
+          "value": "2",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "5",
+          "value": "5",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 2,
+      "explanation": "Evaluate 30 / 15 carefully. The exact result is 2; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-ratios-concept",
+      "id": "9b63ec9594564817",
+      "check": "30 / 15 = 2",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Write the ratio 32:16 as a quotient in simplest form: 32 / 16 = ?",
+      "tier": "hard",
+      "expression": "32 / 16",
+      "options": [
+        {
+          "label": "3",
+          "value": "3",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "4",
+          "value": "4",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "5",
+          "value": "5",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "2",
+          "value": "2",
+          "why": "This matches the exact calculation."
+        }
+      ],
+      "correctIndex": 3,
+      "explanation": "Evaluate 32 / 16 carefully. The exact result is 2; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-ratios-concept",
+      "id": "21b5ab1a00abf658",
+      "check": "32 / 16 = 2",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Write the ratio 34:17 as a quotient in simplest form: 34 / 17 = ?",
+      "tier": "hard",
+      "expression": "34 / 17",
+      "options": [
+        {
+          "label": "2",
+          "value": "2",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "3",
+          "value": "3",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "4",
+          "value": "4",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "5",
+          "value": "5",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 0,
+      "explanation": "Evaluate 34 / 17 carefully. The exact result is 2; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-ratios-concept",
+      "id": "4b087233ae775ca4",
+      "check": "34 / 17 = 2",
+      "correctedFromModel": false,
+      "source": "seed"
+    },
+    {
+      "stem": "Write the ratio 36:18 as a quotient in simplest form: 36 / 18 = ?",
+      "tier": "hard",
+      "expression": "36 / 18",
+      "options": [
+        {
+          "label": "3",
+          "value": "3",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "2",
+          "value": "2",
+          "why": "This matches the exact calculation."
+        },
+        {
+          "label": "4",
+          "value": "4",
+          "why": "Check the operation and calculate again."
+        },
+        {
+          "label": "5",
+          "value": "5",
+          "why": "Check the operation and calculate again."
+        }
+      ],
+      "correctIndex": 1,
+      "explanation": "Evaluate 36 / 18 carefully. The exact result is 2; check each operation and unit in the problem.",
+      "hint": "Work through one operation at a time, then check the result.",
+      "subSkillId": "g6-ratios-concept",
+      "id": "e2e5929058ff8e28",
+      "check": "36 / 18 = 2",
+      "correctedFromModel": false,
+      "source": "seed"
+    }
+  ],
+  "realmId": "g6-ratios",
+  "subSkillId": "g6-ratios-concept",
+  "source": "seed"
+}
