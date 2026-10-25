@@ -17,4 +17,14 @@ describe("seed lesson loaders", () => {
     expect(lessons.every(Boolean)).toBe(true);
     for (const lesson of lessons) expect(verifyLesson(lesson!).ok).toBe(true);
   });
+
+  it("loads each sub-skill's own lesson file with matching title", async () => {
+    for (const skill of ALL_SUBSKILLS) {
+      const loader = getLessonLoader(skill.id);
+      expect(loader).toBeDefined();
+      const lesson = await loader!();
+      expect(lesson).not.toBeNull();
+      expect(lesson?.title).toBe(skill.title);
+    }
+  });
 });

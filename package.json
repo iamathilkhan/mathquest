@@ -18,7 +18,9 @@
     "eval": "node --conditions=react-server --import tsx scripts/eval-generation.ts",
     "diagnose:art": "node --conditions=react-server --import tsx scripts/diagnose-art.ts",
     "balance": "node --import tsx scripts/balance-sim.ts",
-    "release-check": "node --conditions=react-server --import tsx scripts/release-check.ts"
+    "release-check": "node --conditions=react-server --import tsx scripts/release-check.ts",
+    "smoke:gemini": "node --import tsx scripts/smoke-gemini.ts",
+    "audit:content": "node --import tsx scripts/audit-content.ts"
   },
   "dependencies": {
     "@google/genai": "^2.31.0",

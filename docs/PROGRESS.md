@@ -23,7 +23,7 @@ Status values: `UNKNOWN` | `FAIL` | `PASS`.
 | Stage | Name | Status | Evidence / Notes |
 |---|---|:---:|---|
 | **S0** | Baseline & Safety Tag | **PASS** | `git tag pre-finish`; branch `finish`; typecheck: PASS; lint: PASS; test: 206/206 PASS; build: PASS; release-check: 12/12 PASS |
-| **S1** | Deep Audit & Provenance | UNKNOWN | Next step: scripts/smoke-gemini.ts & scripts/audit-content.ts |
+| **S1** | Deep Audit & Provenance | **PASS** | `docs/AUDIT_BEFORE.md` generated with real probe outputs, template analysis, similarity metrics, and honesty claims |
 | **S2** | Live LLM Wiring [P0] | UNKNOWN | HUMAN GATE A required for API key & models |
 | **S3** | Standards Alignment [P0] | UNKNOWN | HUMAN GATE B required for official GSE text |
 | **S4** | Content Diversity (Lessons) [P0] | UNKNOWN | Pending S2/S3 |
