@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 
 import { ArtImage } from "@/components/ArtImage";
+import { HeroPortrait } from "@/components/HeroPortrait";
 import { generateIsland, renderIsland } from "@/lib/map/island";
 import { MAP_GRAPH } from "@/data/layout";
 import { shortestPath } from "@/lib/map/pathfinding";
@@ -22,7 +23,7 @@ interface RealmMarkerProps {
   isTraveling: boolean;
 }
 
-function IslandFallback({ realmId, size = 80 }: { realmId: string; size?: number }) {
+function IslandFallback({ realmId, size = 88 }: { realmId: string; size?: number }) {
   // Extract theme color from realm
   const themeColors: Record<string, string> = {
     "g5-fractions": "#c97f4a",
@@ -115,10 +116,12 @@ function RealmMarker({
           fallback={realm.name}
           onAssetState={setArtLoaded}
         />
-        {!artLoaded && <IslandFallback realmId={realmId} size={80} />}
+        {!artLoaded && <IslandFallback realmId={realmId} size={88} />}
+        <span className={`marker-status-badge badge-${completed ? "completed" : unlocked && inGrade ? "unlocked" : "locked"}`}>
+          {completed ? "★" : unlocked && inGrade ? "◇" : "⌑"}
+        </span>
       </div>
       <div className="marker-info">
-        <span className="marker-icon">{completed ? "✦" : unlocked && inGrade ? "◇" : "⌑"}</span>
         <span className="marker-name">{realm.name}</span>
         <small>{!inGrade ? reason : completed ? "Guardian defeated" : unlocked ? realm.subSkills[0].title : reason}</small>
         {progress && <span className="marker-stars">{progress.stars.filter((value: number) => value > 0).reduce((a: number, b: number) => a + b, 0)} / 15 ★</span>}
@@ -127,7 +130,7 @@ function RealmMarker({
   );
 }
 
-function TravelingHero({ route, startTime, duration, onComplete }: { route: ReturnType<typeof buildRoute>; startTime: number; duration: number; onComplete: () => void }) {
+function TravelingHero({ route, startTime, duration, onComplete, player }: { route: ReturnType<typeof buildRoute>; startTime: number; duration: number; onComplete: () => void; player: Player }) {
   const [position, setPosition] = useState<{ x: number; y: number; facing: "left" | "right" }>({ x: 0, y: 0, facing: "right" });
   const animationRef = useRef<number | null>(null);
   const prefersReducedMotion = typeof window !== "undefined" && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -183,7 +186,7 @@ function TravelingHero({ route, startTime, duration, onComplete }: { route: Retu
       }}
       aria-label="Traveling hero"
     >
-      ✦
+      <HeroPortrait hero={player.hero} playerLevel={player.level} size="sm" />
     </div>
   );
 }
@@ -258,11 +261,13 @@ export function WorldMapView({ player }: { player: Player }) {
           startTime={travelState.startTime}
           duration={travelState.duration}
           onComplete={handleTravelComplete}
+          player={player}
         />
       )}
       {!travelState && (
         <div className="map-player" aria-label="Your hero">
-          ✦<small>{player.profile?.name || "YOU"}</small>
+          <HeroPortrait hero={player.hero} playerLevel={player.level} size="sm" />
+          <small>{player.profile?.name || "YOU"}</small>
         </div>
       )}
       <div className="map-legend">

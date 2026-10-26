@@ -350,30 +350,189 @@ function drawLibrary(c: Canvas, p: Palette): void {
 }
 
 // ── characters ───────────────────────────────────────────────────────────────
-function hero(c: Canvas, portrait: boolean): void {
-  const p = HERO;
-  const cx = c.w / 2;
-  const baseY = portrait ? c.h - 6 : c.h - 8;
+// ── characters ───────────────────────────────────────────────────────────────
+function drawHero(c: Canvas, name: string, portrait: boolean): void {
+  const isMage = name.includes("mage");
+  const isRanger = name.includes("ranger");
+  const isKnight = !isMage && !isRanger;
+  const isGirl = name.includes("girl");
+
+  const cx = Math.floor(c.w / 2);
+
+  // Palettes per class
+  const classPal = isKnight
+    ? { primary: [218, 165, 32] as RGB, highlight: [255, 215, 80] as RGB, dark: [70, 75, 95] as RGB, accent: [185, 45, 45] as RGB, trim: [242, 195, 65] as RGB }
+    : isMage
+    ? { primary: [115, 80, 165] as RGB, highlight: [165, 130, 225] as RGB, dark: [45, 25, 75] as RGB, accent: [80, 210, 255] as RGB, trim: [242, 185, 47] as RGB }
+    : { primary: [45, 130, 80] as RGB, highlight: [75, 180, 115] as RGB, dark: [25, 70, 45] as RGB, accent: [140, 85, 45] as RGB, trim: [230, 190, 60] as RGB };
+
+  const hairColor: RGB = isKnight
+    ? (isGirl ? [220, 180, 80] : [55, 38, 25])
+    : isMage
+    ? (isGirl ? [110, 60, 140] : [35, 40, 70])
+    : (isGirl ? [165, 85, 45] : [120, 65, 35]);
+
   if (portrait) {
-    c.disc(cx, c.h / 2, c.h / 2, [16, 20, 38]); // vignette backdrop
-    c.disc(cx, c.h / 2, c.h / 2 - 4, [26, 32, 58]);
+    const cy = Math.floor(c.h / 2);
+    const r = Math.floor(c.h / 2) - 4;
+
+    // Portrait frame / background vignette
+    c.disc(cx, cy, r + 2, classPal.primary);
+    c.disc(cx, cy, r, [15, 20, 38]);
+    c.disc(cx, cy, r - 3, [24, 32, 58]);
+
+    // Shoulders & Chest (bust)
+    const bustY = cy + 10;
+    c.ellipse(cx, bustY + 12, 22, 16, classPal.primary);
+    c.ellipse(cx, bustY + 10, 16, 12, classPal.highlight);
+
+    if (isKnight) {
+      // Golden cuirass emblem
+      c.rect(cx - 3, bustY + 4, 6, 8, classPal.trim);
+      c.rect(cx - 6, bustY + 6, 12, 3, classPal.trim);
+      // Pauldrons
+      c.disc(cx - 16, bustY + 4, 5, classPal.highlight);
+      c.disc(cx + 16, bustY + 4, 5, classPal.highlight);
+    } else if (isMage) {
+      // Mystical collar & gem brooch
+      c.triangle(cx, bustY + 8, 8, bustY - 2, classPal.dark);
+      c.disc(cx, bustY + 6, 3, classPal.accent); // Glowing gem
+    } else {
+      // Ranger tunic collar & leather strap
+      c.line(cx - 14, bustY + 16, cx + 12, bustY - 2, classPal.accent);
+      c.line(cx - 14, bustY + 17, cx + 12, bustY - 1, classPal.accent);
+    }
+
+    // Neck
+    c.rect(cx - 4, cy + 2, 8, 6, SKIN);
+
+    // Head
+    const headY = cy - 6;
+    c.disc(cx, headY, 11, SKIN);
+
+    // Hair
+    if (isGirl) {
+      // Flowing hair on sides
+      c.rect(cx - 13, headY - 8, 4, 22, hairColor);
+      c.rect(cx + 10, headY - 8, 4, 22, hairColor);
+      c.disc(cx, headY - 10, 11, hairColor);
+    } else {
+      // Short hair / trimmed
+      c.disc(cx, headY - 10, 11, hairColor);
+    }
+
+    // Headgear / class hat
+    if (isKnight) {
+      // Knight helmet / winged circlet
+      c.rect(cx - 12, headY - 11, 24, 4, classPal.highlight);
+      c.rect(cx - 2, headY - 16, 4, 6, classPal.accent); // Red plume
+      c.rect(cx - 1, headY - 18, 2, 4, classPal.accent);
+    } else if (isMage) {
+      // Wizard pointed hat
+      c.triangle(cx, headY - 8, 14, headY - 26, classPal.primary);
+      c.disc(cx, headY - 26, 3, classPal.accent); // Glowing star tip
+      c.rect(cx - 13, headY - 8, 26, 3, classPal.trim);
+    } else {
+      // Ranger cowl / feathered headband
+      c.rect(cx - 11, headY - 9, 22, 3, classPal.dark);
+      c.rect(cx + 8, headY - 15, 3, 7, [220, 60, 60]); // Red feather
+    }
+
+    // Face details: eyes
+    c.rect(cx - 5, headY - 1, 3, 3, [30, 35, 50]);
+    c.px(cx - 5, headY - 1, [255, 255, 255]); // Sparkle
+    c.rect(cx + 3, headY - 1, 3, 3, [30, 35, 50]);
+    c.px(cx + 3, headY - 1, [255, 255, 255]); // Sparkle
+
+    // Smile / expression
+    c.rect(cx - 2, headY + 5, 5, 1, [180, 110, 90]);
+
+    // Cheeks blush
+    c.px(cx - 7, headY + 2, [240, 160, 150]);
+    c.px(cx + 7, headY + 2, [240, 160, 150]);
+
+    // Weapon peek at bottom-right of portrait
+    if (isKnight) {
+      c.line(cx + 18, cy + 18, cx + 24, cy - 8, [210, 220, 240]);
+      c.disc(cx + 20, cy + 12, 2, classPal.trim);
+    } else if (isMage) {
+      c.rect(cx + 18, cy - 4, 3, 24, [110, 75, 45]);
+      c.disc(cx + 19, cy - 8, 5, classPal.accent);
+    } else {
+      c.line(cx + 18, cy - 10, cx + 24, cy + 8, [140, 85, 45]);
+      c.line(cx + 24, cy + 8, cx + 18, cy + 24, [140, 85, 45]);
+    }
+  } else {
+    // Full body character sprite
+    const baseY = c.h - 10;
+
+    // Legs / Boots
+    c.rect(cx - 6, baseY - 10, 4, 10, classPal.dark);
+    c.rect(cx + 2, baseY - 10, 4, 10, classPal.dark);
+    c.rect(cx - 7, baseY - 3, 5, 3, [40, 30, 20]); // Boots
+    c.rect(cx + 2, baseY - 3, 5, 3, [40, 30, 20]);
+
+    // Torso / Tunic / Robe
+    if (isMage) {
+      c.triangle(cx, baseY - 4, 12, baseY - 26, classPal.primary);
+      c.rect(cx - 8, baseY - 24, 16, 2, classPal.trim); // Belt
+    } else {
+      c.rect(cx - 8, baseY - 24, 16, 16, classPal.primary);
+      c.rect(cx - 8, baseY - 12, 16, 3, classPal.accent); // Belt
+      c.rect(cx - 6, baseY - 23, 12, 9, classPal.highlight); // Chestpiece
+    }
+
+    // Arms
+    c.rect(cx - 11, baseY - 24, 3, 12, classPal.primary);
+    c.rect(cx + 8, baseY - 24, 3, 12, classPal.primary);
+
+    // Hands
+    c.disc(cx - 10, baseY - 11, 2, SKIN);
+    c.disc(cx + 9, baseY - 11, 2, SKIN);
+
+    // Head & Hair
+    const headY = baseY - 32;
+    c.disc(cx, headY, 6, SKIN);
+
+    if (isGirl) {
+      c.disc(cx, headY - 3, 7, hairColor);
+      c.rect(cx - 8, headY - 2, 2, 10, hairColor);
+      c.rect(cx + 6, headY - 2, 2, 10, hairColor);
+    } else {
+      c.disc(cx, headY - 3, 6, hairColor);
+    }
+
+    // Headgear
+    if (isKnight) {
+      c.rect(cx - 6, headY - 7, 12, 3, classPal.highlight);
+      c.rect(cx - 1, headY - 11, 2, 4, classPal.accent);
+    } else if (isMage) {
+      c.triangle(cx, headY - 4, 8, headY - 16, classPal.primary);
+      c.disc(cx, headY - 16, 2, classPal.accent);
+    } else {
+      c.rect(cx - 6, headY - 6, 12, 2, classPal.dark);
+      c.rect(cx + 4, headY - 10, 2, 4, [220, 50, 50]);
+    }
+
+    // Face eyes
+    c.px(cx - 3, headY, [30, 35, 50]);
+    c.px(cx + 2, headY, [30, 35, 50]);
+
+    // Weapon in hand
+    if (isKnight) {
+      // Sword in right hand
+      c.rect(cx + 12, baseY - 30, 2, 20, [210, 220, 240]);
+      c.rect(cx + 10, baseY - 12, 6, 2, classPal.trim);
+    } else if (isMage) {
+      // Staff in left hand
+      c.rect(cx - 14, baseY - 32, 2, 28, [110, 75, 45]);
+      c.disc(cx - 13, baseY - 33, 4, classPal.accent);
+    } else {
+      // Bow in left hand
+      c.line(cx - 14, baseY - 30, cx - 12, baseY - 10, [140, 85, 45]);
+      c.line(cx - 12, baseY - 10, cx - 14, baseY + 6, [140, 85, 45]);
+    }
   }
-  // legs
-  c.rect(cx - 5, baseY - 8, 4, 8, p.dark);
-  c.rect(cx + 1, baseY - 8, 4, 8, p.dark);
-  // body (blue tunic)
-  c.rect(cx - 7, baseY - 22, 14, 16, p.mid);
-  c.rect(cx - 7, baseY - 22, 14, 2, p.accent); // belt
-  // chest plate
-  c.rect(cx - 4, baseY - 20, 8, 8, p.highlight);
-  // head + helmet
-  c.disc(cx, baseY - 28, 5, SKIN);
-  c.rect(cx - 6, baseY - 32, 12, 3, p.highlight); // helmet
-  c.rect(cx - 6, baseY - 30, 2, 4, p.highlight);
-  c.rect(cx + 4, baseY - 30, 2, 4, p.highlight);
-  // sword
-  c.rect(cx + 10, baseY - 26, 2, 18, p.highlight);
-  c.rect(cx + 8, baseY - 10, 6, 2, p.accent);
 }
 
 function mentor(c: Canvas, portrait: boolean): void {
@@ -523,6 +682,16 @@ function buildSlots(): Slot[] {
   slots.push({ name: "hero-portrait", category: "character", themeId: "forest", transparent: false, portrait: true });
   slots.push({ name: "mentor-full", category: "character", themeId: "forest", transparent: true, portrait: false });
   slots.push({ name: "mentor-portrait", category: "character", themeId: "forest", transparent: false, portrait: true });
+
+  const heroClasses = ["knight", "mage", "ranger"] as const;
+  const heroVariants = ["boy", "girl"] as const;
+  for (const cls of heroClasses) {
+    for (const v of heroVariants) {
+      slots.push({ name: `hero-${cls}-${v}`, category: "character", themeId: "forest", transparent: true, portrait: false });
+      slots.push({ name: `hero-${cls}-${v}-portrait`, category: "character", themeId: "forest", transparent: false, portrait: true });
+    }
+  }
+
   for (const id of ENABLED_REALMS) slots.push({ name: `minion-${id}`, category: "character", themeId: REALM_THEME_ID[id], transparent: true, portrait: false });
   for (const id of ENABLED_REALMS) slots.push({ name: `boss-${id}`, category: "character", themeId: REALM_THEME_ID[id], transparent: true, portrait: false });
 
@@ -544,7 +713,7 @@ async function renderSlot(slot: Slot, artSrc: string): Promise<Buffer> {
   const c = new Canvas(LW, LH);
   if (slot.category === "scene") scene(c, slot.name, slot.themeId);
   else if (slot.category === "plate") plate(c, slot.name.replace(/^plate-/, "") as RealmId);
-  else if (slot.name.startsWith("hero")) hero(c, slot.portrait);
+  else if (slot.name.startsWith("hero")) drawHero(c, slot.name, slot.portrait);
   else if (slot.name.startsWith("mentor")) mentor(c, slot.portrait);
   else creature(c, THEME[slot.themeId], slot.name.startsWith("boss"));
   return toPng(c, !slot.transparent);

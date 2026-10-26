@@ -127,21 +127,7 @@ h2 { font-size: 22px; }
 .grade-card-copy h2 { margin: 0 0 12px; color: var(--gold-light); font-size: 30px; }
 .grade-card-copy p:not(.eyebrow) { min-height: 50px; color: #c3cbe0; font-family: var(--font-readable); line-height: 1.5; }
 
-.realm-map { position: relative; min-height: 620px; overflow: hidden; border: 2px solid var(--gold-dark); background: radial-gradient(ellipse at 52% 56%, #2c664b, #153850 55%, #10213c 100%); }
-.realm-map:before { position: absolute; inset: 0; content: ""; opacity: .17; background-image: radial-gradient(#f1d77c 1px, transparent 1.5px); background-size: 32px 32px; }
-.map-route { position: absolute; inset: 12% 8% 15%; opacity: .6; border: 3px dashed #e7c85f; clip-path: polygon(12% 18%, 45% 38%, 74% 22%, 84% 60%, 52% 74%, 30% 50%, 8% 72%); }
-.realm-marker { position: absolute; z-index: 1; display: flex; flex-direction: column; align-items: center; width: 180px; min-height: 112px; padding: 8px; border: 0; background: transparent; color: white; transform: translate(-50%, -50%); text-align: center; }
-.marker-icon { display: grid; place-items: center; width: 48px; height: 48px; margin-bottom: 4px; border: 3px solid var(--gold); background: #122348; color: var(--gold-light); font-size: 24px; box-shadow: 3px 3px #081022; clip-path: polygon(16% 0,84% 0,100% 16%,100% 84%,84% 100%,16% 100%,0 84%,0 16%); }
-.marker-name { padding: 3px 6px; background: #0c1731e8; font-size: 12px; color: var(--gold-light); }
-.realm-marker small { max-width: 180px; padding: 2px 5px; color: #e0e4ee; background: #0c1731d9; font-family: var(--font-readable); font-size: 11px; }
-.marker-stars { color: #ffe487; font-size: 10px; }
-.realm-marker.dimmed { opacity: .42; filter: grayscale(.75); }
-.realm-marker.locked { opacity: .55; }
-.realm-marker.completed .marker-icon { background: #27633b; }
-.realm-marker.current .marker-icon { box-shadow: 0 0 0 4px #f2b92f45, 3px 3px #081022; }
-.map-player { position: absolute; bottom: 23%; left: 48%; z-index: 2; display: grid; place-items: center; width: 46px; height: 46px; border-radius: 50%; background: var(--gold); color: #382812; border: 3px solid #fff1b2; }
-.map-player small { position: absolute; top: 45px; color: white; font-size: 10px; }
-.map-legend { position: absolute; bottom: 14px; left: 16px; display: flex; gap: 16px; color: #e5e9f1; font-size: 11px; }
+/* (Old map styles removed; consolidated into Phase 5A World Map section) */
 
 .realm-title { display: flex; align-items: center; justify-content: space-between; gap: 18px; padding: 26px; border: 2px solid var(--gold-dark); background: linear-gradient(100deg, var(--scene-tint), #111b39 70%); }
 .theme-forest { --scene-tint: #1d503a; --accent: #84c878; }
@@ -223,6 +209,11 @@ h2 { font-size: 22px; }
 .fighter small { color: var(--gold-light); font-size: 11px; }
 .fighter strong { max-width: 100%; font-size: 12px; }
 .fighter-art { display: grid; place-items: center; width: 82px; height: 98px; border: 3px solid var(--gold-dark); background: #203552; color: var(--gold-light); font-size: 48px; clip-path: polygon(15% 0,85% 0,100% 15%,100% 85%,85% 100%,15% 100%,0 85%,0 15%); }
+.hero-portrait-wrap { position: relative; display: inline-flex; align-items: center; justify-content: center; overflow: hidden; border-radius: 6px; background: #141c30; border: 2px solid var(--gold-dark); }
+.hero-portrait-wrap.fighter-art { width: 84px !important; height: 98px !important; border-radius: 0; }
+.hero-portrait-img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.hero-portrait-weapon { z-index: 2; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.6); }
+.results-hero { display: flex; flex-direction: column; align-items: center; gap: 8px; margin: 12px auto; }
 .enemy-art { background: #563b42; color: #f09d71; }
 .arena-center { text-align: center; }
 .arena-center .eyebrow { margin-bottom: 5px; }
@@ -438,34 +429,41 @@ h2 { font-size: 22px; }
 /* ──────────────────────────────────────────────────────────────────────────── */
 /* World Map (Phase 5A) */
 /* ──────────────────────────────────────────────────────────────────────────── */
-.realm-map { position: relative; width: 100%; aspect-ratio: 1 / 0.75; background: linear-gradient(135deg, #1a4d5c 0%, #0f3a47 50%, #1a5c4d 100%); border: 3px solid var(--gold-dark); box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.6), 6px 6px 0 #070c19; }
-.scene-map { min-height: 360px; }
+.realm-map { position: relative; width: 100%; aspect-ratio: 1 / 0.75; min-height: 520px; background: radial-gradient(ellipse at 50% 50%, #1a4d5c 0%, #0f3a47 45%, #0d2836 100%); border: 3px solid var(--gold-dark); box-shadow: inset 0 0 24px rgba(0, 0, 0, 0.7), 6px 6px 0 #070c19; overflow: hidden; }
+.realm-map:before { position: absolute; inset: 0; content: ""; opacity: 0.18; background-image: radial-gradient(#f1d77c 1.5px, transparent 1.5px); background-size: 32px 32px; pointer-events: none; }
+.scene-map { min-height: 500px; }
 
-.realm-marker { position: absolute; transform: translate(-50%, -50%); padding: 0; border: none; background: none; width: 100px; height: 120px; cursor: pointer; opacity: 1; transition: opacity 0.2s, transform 0.2s; }
+.realm-marker { position: absolute; transform: translate(-50%, -50%); padding: 0; border: none; background: none; width: 120px; min-height: 145px; display: flex; flex-direction: column; align-items: center; cursor: pointer; opacity: 1; transition: opacity 0.2s, transform 0.2s; z-index: 2; }
 .realm-marker:disabled { cursor: not-allowed; }
-.realm-marker:not(:disabled):hover { transform: translate(-50%, -50%) scale(1.08); }
+.realm-marker:not(:disabled):hover { transform: translate(-50%, -50%) scale(1.08); z-index: 4; }
 .realm-marker:not(:disabled):active { transform: translate(-50%, -50%) scale(0.98); }
-.realm-marker.dimmed { opacity: 0.5; filter: grayscale(1); }
+.realm-marker.dimmed { opacity: 0.45; filter: grayscale(0.8); }
 .realm-marker.locked { opacity: 0.7; }
-.realm-marker.completed { opacity: 0.8; }
-.realm-marker.current { animation: marker-pulse 2s ease-in-out infinite; }
+.realm-marker.completed { opacity: 0.95; }
+.realm-marker.current .marker-thumbnail { box-shadow: 0 0 0 3px var(--gold), 0 0 16px rgba(242, 185, 47, 0.7); animation: marker-pulse 2s ease-in-out infinite; }
 
 @keyframes marker-pulse {
   0%, 100% { filter: drop-shadow(0 0 0 rgba(242, 185, 47, 0)); }
-  50% { filter: drop-shadow(0 0 8px rgba(242, 185, 47, 0.8)); }
+  50% { filter: drop-shadow(0 0 10px rgba(242, 185, 47, 0.85)); }
 }
 
-.marker-thumbnail { position: relative; width: 80px; height: 80px; margin: 0 auto 8px; border: 2px solid var(--gold-dark); background: #162749; overflow: hidden; display: flex; align-items: center; justify-content: center; }
-.marker-art { width: 100%; height: 100%; object-fit: cover; }
-.marker-info { text-align: center; font-size: 11px; }
-.marker-icon { display: block; font-size: 16px; margin-bottom: 4px; }
-.marker-name { display: block; color: var(--gold-light); font-size: 12px; font-weight: bold; text-shadow: 1px 1px #0d1732; }
-.marker-stars { display: block; color: #d4af37; font-size: 10px; margin-top: 4px; }
+.marker-thumbnail { position: relative; width: 88px; height: 88px; margin: 0 auto 6px; border: 2px solid var(--gold); border-radius: 6px; background: #101c38; overflow: hidden; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6), 0 0 8px rgba(242, 185, 47, 0.25); }
+.marker-art { width: 100%; height: 100%; object-fit: cover; display: block; border-radius: 4px; }
 
-.map-player { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); padding: 4px 8px; text-align: center; font-size: 14px; opacity: 0.8; }
-.map-player small { display: block; font-size: 10px; color: var(--gold-light); }
+.marker-status-badge { position: absolute; top: 4px; right: 4px; width: 22px; height: 22px; border-radius: 4px; display: grid; place-items: center; font-size: 13px; line-height: 1; font-weight: bold; border: 1px solid var(--gold); box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6); }
+.marker-status-badge.badge-completed { background: #1b5e32; color: #ffe066; border-color: #ffe066; }
+.marker-status-badge.badge-unlocked { background: #142a54; color: var(--gold-light); border-color: var(--gold); }
+.marker-status-badge.badge-locked { background: #20222a; color: #7a8298; border-color: #4a5065; }
 
-.map-traveling-hero { position: absolute; transform: translate(-50%, -50%); font-size: 20px; animation: hero-bob 0.4s ease-in-out infinite; }
+.marker-info { text-align: center; font-size: 11px; display: flex; flex-direction: column; align-items: center; gap: 2px; max-width: 130px; }
+.marker-name { display: inline-block; color: var(--gold-light); font-size: 12px; font-weight: bold; background: rgba(12, 23, 49, 0.92); padding: 2px 8px; border-radius: 3px; border: 1px solid rgba(242, 185, 47, 0.3); text-shadow: 1px 1px #070c19; white-space: nowrap; }
+.marker-info small { display: inline-block; color: #c8d0e5; background: rgba(12, 23, 49, 0.85); padding: 1px 6px; border-radius: 2px; font-family: var(--font-readable); font-size: 10px; max-width: 120px; line-height: 1.25; }
+.marker-stars { display: block; color: #ffd700; font-size: 10px; text-shadow: 0 0 4px rgba(255, 215, 0, 0.5); }
+
+.map-player { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); display: flex; flex-direction: column; align-items: center; gap: 4px; z-index: 3; }
+.map-player small { display: inline-block; font-size: 11px; font-weight: bold; color: var(--gold-light); background: rgba(12, 23, 49, 0.92); padding: 2px 8px; border-radius: 3px; border: 1px solid var(--gold-dark); text-shadow: 1px 1px #0d1732; }
+
+.map-traveling-hero { position: absolute; transform: translate(-50%, -50%); z-index: 5; animation: hero-bob 0.4s ease-in-out infinite; }
 
 @keyframes hero-bob {
   0%, 100% { transform: translate(-50%, -50%) translateY(0); }
@@ -474,7 +472,7 @@ h2 { font-size: 22px; }
 
 .map-route { position: absolute; inset: 0; pointer-events: none; }
 
-.map-legend { position: absolute; bottom: 12px; left: 12px; display: flex; flex-direction: column; gap: 6px; font-size: 11px; background: rgba(16, 26, 58, 0.8); padding: 8px 12px; border: 1px solid var(--gold-dark); }
+.map-legend { position: absolute; bottom: 12px; left: 12px; display: flex; flex-direction: column; gap: 6px; font-size: 11px; background: rgba(16, 26, 58, 0.9); padding: 8px 12px; border: 1px solid var(--gold-dark); z-index: 3; }
 .map-legend span { white-space: nowrap; }
 
 .art-slot-fallback { display: flex; flex-direction: column; align-items: center; justify-content: center; width: 100%; height: 100%; background: #0f2a35; border: 1px dashed #3a5a6a; }
@@ -482,9 +480,9 @@ h2 { font-size: 22px; }
 .art-slot-fallback small { font-size: 9px; text-align: center; color: #6fa8b8; }
 
 @media (max-width: 600px) {
-  .realm-map { aspect-ratio: 1 / 1.2; min-height: 300px; }
-  .realm-marker { width: 80px; height: 100px; }
-  .marker-thumbnail { width: 60px; height: 60px; }
+  .realm-map { aspect-ratio: 1 / 1.2; min-height: 380px; }
+  .realm-marker { width: 90px; min-height: 120px; }
+  .marker-thumbnail { width: 68px; height: 68px; }
   .map-legend { font-size: 10px; }
 }
 

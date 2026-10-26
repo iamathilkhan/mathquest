@@ -8,6 +8,8 @@
  * journal — always shows the player's chosen hero, never a generic placeholder.
  */
 
+import { useState } from "react";
+
 import { ArtImage } from "@/components/ArtImage";
 import { WeaponIcon } from "@/components/pixel/WeaponIcon";
 import { heroPortraitSlotId, HERO_CLASSES } from "@/data/heroes";
@@ -32,6 +34,7 @@ const SIZE_PX: Record<string, number> = { sm: 40, md: 64, lg: 96 };
 
 export function HeroPortrait({ hero, playerLevel = 1, size = "md", className = "" }: HeroPortraitProps) {
   const px = SIZE_PX[size] ?? 64;
+  const [artFailed, setArtFailed] = useState(false);
 
   if (!hero) {
     // No hero chosen yet — show a neutral silhouette.
@@ -54,11 +57,21 @@ export function HeroPortrait({ hero, playerLevel = 1, size = "md", className = "
 
   return (
     <div className={`hero-portrait-wrap hero-portrait-${size} ${className}`} style={{ position: "relative", width: px, height: px }}>
-      <ArtImage
-        slot={portraitSlot}
-        className="hero-portrait-img"
-        fallback={heroClass.displayName}
-      />
+      {!artFailed ? (
+        <ArtImage
+          slot={portraitSlot}
+          className="hero-portrait-img"
+          fallback={heroClass.displayName}
+          onAssetState={(loaded) => { if (!loaded) setArtFailed(true); }}
+        />
+      ) : (
+        <div
+          className="hero-portrait-fallback"
+          style={{ width: "100%", height: "100%", background: `radial-gradient(circle, ${color}44 0%, #101a30 75%)`, display: "flex", alignItems: "center", justifyContent: "center" }}
+        >
+          <span style={{ fontSize: px * 0.5, color }} aria-hidden="true">✦</span>
+        </div>
+      )}
       {/* Weapon icon overlay — bottom-right corner */}
       <div
         className="hero-portrait-weapon"
