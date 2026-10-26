@@ -8,14 +8,22 @@ function sentences(text: string): string[] {
   return text.match(/[^.!?]+[.!?]+|[^.!?]+$/g)?.map((item) => item.trim()).filter(Boolean) ?? [];
 }
 
-export function useNarration(text: string, rate = 1) {
+export function useNarration(text: string, rate = 1, onSentenceStart?: (i: number) => void) {
   const parts = useMemo(() => sentences(text), [text]);
   const voice = useRef<SpeechSynthesisVoice | null>(null);
   const cancelled = useRef(false);
+  const timerRef = useRef<number | null>(null);
+  const onSentenceStartRef = useRef(onSentenceStart);
+
   const [sentenceIndex, setSentenceIndex] = useState(0);
   const [state, setState] = useState<NarrationState>("idle");
   const [fallback, setFallback] = useState(false);
   const [voiceReady, setVoiceReady] = useState(false);
+
+  // Sync the callback ref
+  useEffect(() => {
+    onSentenceStartRef.current = onSentenceStart;
+  }, [onSentenceStart]);
 
   useEffect(() => {
     if (!("speechSynthesis" in window)) {
@@ -45,9 +53,17 @@ export function useNarration(text: string, rate = 1) {
     };
   }, []);
 
+  const clearTimer = useCallback(() => {
+    if (timerRef.current !== null) {
+      window.clearTimeout(timerRef.current);
+      timerRef.current = null;
+    }
+  }, []);
+
   const speakFrom = useCallback((startIndex: number) => {
     if (fallback || !voice.current || !("speechSynthesis" in window)) return;
     cancelled.current = false;
+    clearTimer();
     const synthesis = window.speechSynthesis;
     synthesis.cancel();
     const speakNext = (currentIndex: number) => {
@@ -56,6 +72,7 @@ export function useNarration(text: string, rate = 1) {
         return;
       }
       setSentenceIndex(currentIndex);
+      onSentenceStartRef.current?.(currentIndex);
       const utterance = new SpeechSynthesisUtterance(parts[currentIndex]);
       utterance.voice = voice.current;
       utterance.rate = rate;
@@ -68,33 +85,56 @@ export function useNarration(text: string, rate = 1) {
     };
     setState("speaking");
     speakNext(startIndex);
-  }, [fallback, parts, rate]);
+  }, [clearTimer, fallback, parts, rate]);
+
+  const runTimerFrom = useCallback((startIndex: number) => {
+    cancelled.current = false;
+    clearTimer();
+    setState("timer");
+
+    const stepSentence = (currentIndex: number) => {
+      if (cancelled.current || currentIndex >= parts.length) {
+        if (!cancelled.current) setState("idle");
+        return;
+      }
+      setSentenceIndex(currentIndex);
+      onSentenceStartRef.current?.(currentIndex);
+
+      const words = parts[currentIndex].split(/\s+/).filter(Boolean).length;
+      // Timer mode (no voice): advance every max(2000, words*380) ms
+      const duration = Math.max(2000, Math.round(words * 380));
+
+      timerRef.current = window.setTimeout(() => {
+        stepSentence(currentIndex + 1);
+      }, duration);
+    };
+
+    stepSentence(startIndex);
+  }, [clearTimer, parts]);
 
   const play = useCallback(() => {
     if (!voiceReady) return;
     if (fallback || !voice.current || !("speechSynthesis" in window)) {
-      const remaining = parts.slice(sentenceIndex).join(" ");
-      const words = remaining.split(/\s+/).filter(Boolean).length;
-      setState("timer");
-      window.setTimeout(() => setState("idle"), Math.max(3000, words * 420));
+      runTimerFrom(sentenceIndex);
       return;
     }
     speakFrom(sentenceIndex);
-  }, [fallback, parts, sentenceIndex, speakFrom, voiceReady]);
+  }, [fallback, runTimerFrom, sentenceIndex, speakFrom, voiceReady]);
 
   const pause = useCallback(() => {
-    if (state !== "speaking") return;
     cancelled.current = true;
+    clearTimer();
     if ("speechSynthesis" in window) window.speechSynthesis.cancel();
     setState("paused");
-  }, [state]);
+  }, [clearTimer]);
 
   const stop = useCallback(() => {
     cancelled.current = true;
+    clearTimer();
     if ("speechSynthesis" in window) window.speechSynthesis.cancel();
     setSentenceIndex(0);
     setState("idle");
-  }, []);
+  }, [clearTimer]);
 
   useEffect(() => {
     const onVisibility = () => {
@@ -107,5 +147,14 @@ export function useNarration(text: string, rate = 1) {
     };
   }, [stop]);
 
-  return { state, fallback, voiceReady, play, pause, stop, sentenceIndex, sentenceCount: parts.length };
+  return {
+    state,
+    fallback,
+    voiceReady,
+    play,
+    pause,
+    stop,
+    sentenceIndex,
+    sentenceCount: parts.length,
+  };
 }
