@@ -20,7 +20,8 @@
     "balance": "node --import tsx scripts/balance-sim.ts",
     "release-check": "node --conditions=react-server --import tsx scripts/release-check.ts",
     "smoke:gemini": "node --import tsx scripts/smoke-gemini.ts",
-    "audit:content": "node --import tsx scripts/audit-content.ts"
+    "audit:content": "node --import tsx scripts/audit-content.ts",
+    "models:list": "node --import tsx scripts/list-models.ts"
   },
   "dependencies": {
     "@google/genai": "^2.31.0",

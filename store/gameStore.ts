@@ -74,6 +74,8 @@ function normalizePlayer(raw: unknown): Player {
       retreats: player.retreats ?? 0,
       lifetime: player.lifetime ?? { answered: 0, correct: 0, stagesCleared: 0, bestCombo: 0 },
       settings: { ...DEFAULT_SETTINGS, ...player.settings },
+      heartsLostAt: player.heartsLostAt ?? undefined,
+      currentHearts: player.currentHearts ?? undefined,
     };
   } catch {
     return createFreshPlayer("");
@@ -97,6 +99,10 @@ interface GameStoreState {
   markRedirectedToCreate: () => void;
   resetAll: () => void;
   hydrate: () => void;
+  /** Save that the player just lost all hearts (starts regen timer). */
+  loseAllHearts: (heartsLostAt: string) => void;
+  /** Restore hearts to full (called when regen completes or manually). */
+  restoreHearts: () => void;
 }
 
 export const useGameStore = create<GameStoreState>()(
@@ -182,6 +188,26 @@ export const useGameStore = create<GameStoreState>()(
       },
       resetAll: () => {
         set({ player: createFreshPlayer(""), saveExists: false });
+      },
+      loseAllHearts: (heartsLostAt: string) => {
+        set((state) => ({
+          saveExists: true,
+          player: {
+            ...state.player,
+            heartsLostAt,
+            currentHearts: 0,
+          },
+        }));
+      },
+      restoreHearts: () => {
+        set((state) => ({
+          saveExists: true,
+          player: {
+            ...state.player,
+            heartsLostAt: undefined,
+            currentHearts: undefined,
+          },
+        }));
       },
     }),
     {

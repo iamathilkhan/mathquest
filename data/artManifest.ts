@@ -25,7 +25,11 @@ export const ART_MANIFEST: Readonly<Record<ArtSlot, ArtManifestEntry>> = Object.
   "grade-6": entry("grade-6", "scene", "Grade 6 realm scene"),
   "world-map": entry("world-map", "scene", "World map"),
   library: entry("library", "scene", "Learning library"),
-  ...Object.fromEntries(ENABLED_REALMS.map((id) => [`realm-${id}`, entry(`realm-${id}`, "scene", `${id} realm scene`)])),
+  // Realm scene slots: use .jpg (AI pixel-art images generated offline)
+  ...Object.fromEntries(ENABLED_REALMS.map((id) => [
+    `realm-${id}`,
+    { path: `/art/realm-${id}.jpg`, category: "scene" as const, alt: `${id} realm scene`, fallbackLabel: `${id} realm art unavailable` },
+  ])),
   "hero-full": entry("hero-full", "character", "MathQuest hero"),
   "hero-portrait": entry("hero-portrait", "character", "Hero portrait"),
   "mentor-full": entry("mentor-full", "character", "MathQuest mentor"),
@@ -46,6 +50,7 @@ export const ART_MANIFEST: Readonly<Record<ArtSlot, ArtManifestEntry>> = Object.
   ...Object.fromEntries(ENABLED_REALMS.map((id) => [`boss-${id}`, entry(`boss-${id}`, "character", `${id} Guardian`)])),
   ...Object.fromEntries(ENABLED_REALMS.map((id) => [`plate-${id}`, entry(`plate-${id}`, "plate", `AI-generated math illustration for ${id}`)])),
 } as Record<ArtSlot, ArtManifestEntry>);
+
 
 export function artFor(slot: ArtSlot): ArtManifestEntry {
   return ART_MANIFEST[slot];

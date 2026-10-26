@@ -23,6 +23,7 @@ import { WorldMapView } from "@/components/WorldMapView";
 import { HeroPortrait, HeroHudChip } from "@/components/HeroPortrait";
 import { WeaponIcon } from "@/components/pixel/WeaponIcon";
 import { heroDisplayName, weaponTier, weaponName, favouredMultiplier } from "@/lib/game/heroes";
+import { computeHeartsStatus } from "@/lib/game/hearts";
 import type { Player, Pools, VerifiedQuestion } from "@/lib/schemas";
 import type { BattleMode } from "@/lib/game/battle";
 
@@ -30,14 +31,17 @@ export type Screen = "home" | "grade" | "map" | "realm" | "battle" | "profile" |
 
 function PlayerHud({ player }: { player: Player }) {
   const level = levelFromXp(player.xp ?? 0);
-  const hearts = heartsFor(player.level);
+  const heartsStatus = computeHeartsStatus(player.heartsLostAt, player.currentHearts, player.level ?? 1);
   const displayName = heroDisplayName(player.profile?.name, player.hero ?? null);
   return (
     <div className="hud panel" aria-label="Player status">
       <span className="hud-level">LV {player.level}</span>
       <span className="hud-xp"><span>XP</span><i><b style={{ width: `${Math.round((level.intoLevel / level.needed) * 100)}%` }} /></i></span>
       <HeroHudChip hero={player.hero} name={displayName} level={player.level} />
-      <span aria-label={`${hearts} maximum hearts`}>♥ {hearts}</span>
+      <span aria-label={`${heartsStatus.current} of ${heartsStatus.max} hearts`} className={heartsStatus.full ? "" : "hearts-depleted"}>
+        {"♥".repeat(Math.max(0, heartsStatus.current))}{"♡".repeat(Math.max(0, heartsStatus.max - heartsStatus.current))}
+        {!heartsStatus.full && <small className="heart-regen-timer"> {heartsStatus.nextHeartIn}</small>}
+      </span>
       <span>◈ {player.coins}</span>
       <Link className="icon-link" href="/settings" aria-label="Settings">⚙</Link>
     </div>
@@ -255,13 +259,26 @@ function toPools(questions: VerifiedQuestion[]): Pools {
 }
 
 function BattleScreen({ realmId, stageIndex, player }: { realmId: string; stageIndex: number; player: Player }) {
+  const heartsStatus = computeHeartsStatus(player.heartsLostAt, player.currentHearts, player.level ?? 1);
+
+  // Guard: show locked screen if player has no hearts (hooks-safe wrapper)
+  if (!heartsStatus.full && heartsStatus.current === 0) {
+    return <HeartsLockedScreen heartsStatus={heartsStatus} realmId={realmId} />;
+  }
+
+  return <BattleInner realmId={realmId} stageIndex={stageIndex} player={player} heartsStatus={heartsStatus} />;
+}
+
+function BattleInner({ realmId, stageIndex, player, heartsStatus }: { realmId: string; stageIndex: number; player: Player; heartsStatus: ReturnType<typeof computeHeartsStatus> }) {
   const router = useRouter();
   const realm = getRealm(realmId as (typeof ENABLED_REALMS)[number]);
   const spec = stageSpec(realm, stageIndex);
+  const loseAllHearts = useGameStore((store) => store.loseAllHearts);
   const unlocked = isStageUnlocked(player, realmId, stageIndex);
   const { questions, loading, error, source } = useQuestions(realmId, stageIndex);
   const pools = useMemo(() => toPools(questions), [questions]);
   const { state, dispatch } = useBattle({ player, realmId, stageIndex, pools, mode: spec.kind as BattleMode });
+
   const sfx = useSfx();
   const [pickedIndex, setPickedIndex] = useState<number | null>(null);
   const [answerProtection, setAnswerProtection] = useState<{ hearts: number; shield: boolean } | null>(null);
@@ -318,6 +335,19 @@ function BattleScreen({ realmId, stageIndex, player }: { realmId: string; stageI
       commitItems(resultUsedItems);
       if (useGameStore.getState().player.level > player.level) sfx("level-up");
       if (won) sfx("victory");
+
+      // Heart depletion: save timestamp and navigate to learning page
+      if (!won && resultReason === "out_of_hearts") {
+        loseAllHearts(new Date().toISOString());
+        // Find a lesson to send the player to so they can review
+        const realmData = getRealm(realmId as (typeof ENABLED_REALMS)[number]);
+        const spec2 = stageSpec(realmData, stageIndex);
+        const lessonTarget = spec2.subSkillIds[0];
+        if (lessonTarget) {
+          setTimeout(() => router.push(`/realm/${realmId}/learn/${lessonTarget}`), 1800);
+        }
+      }
+
       try {
         const seenKey = `mq:seen:${realmId}`;
         const prior = JSON.parse(localStorage.getItem(seenKey) ?? "[]") as string[];
@@ -328,7 +358,7 @@ function BattleScreen({ realmId, stageIndex, player }: { realmId: string; stageI
         // Storage can be disabled; finishing the battle must still work.
       }
     }
-  }, [applyResult, commitItems, ending, loading, player.level, questions, realmId, resultAdaptiveTier, resultCorrect, resultHistory, resultReason, resultUsedItems, resultWon, resultWrong, resultXp, sfx, spec.kind, stageIndex]);
+  }, [applyResult, commitItems, ending, loading, loseAllHearts, player.level, questions, realmId, resultAdaptiveTier, resultCorrect, resultHistory, resultReason, resultUsedItems, resultWon, resultWrong, resultXp, router, sfx, spec.kind, stageIndex]);
 
   if (loading) return <main className="battle-loading">Preparing verified questions…</main>;
   if (!unlocked) return <main className="battle-loading"><p>This quest is locked. Clear the previous quest to continue.</p><button className="button button-secondary" onClick={() => router.push(`/realm/${realmId}`)}>Back to realm</button></main>;
@@ -436,4 +466,67 @@ function BattleScreen({ realmId, stageIndex, player }: { realmId: string; stageI
     <span className="sr-only" aria-live="polite">{state.phase === "won" || state.phase === "lost" ? "Stage results saved." : ""}</span>
     {(state.phase === "won" || state.phase === "lost") && <BottomNav active="map" />}
   </main>;
+}
+
+/**
+ * HeartsLockedScreen — shown when player has 0 hearts.
+ * Displays live countdown to next heart and full restore.
+ * Tick updates every second via useEffect.
+ */
+function HeartsLockedScreen({ heartsStatus: initial, realmId }: { heartsStatus: ReturnType<typeof computeHeartsStatus>; realmId: string }) {
+  const router = useRouter();
+  const player = useGameStore((state) => state.player);
+  const restoreHearts = useGameStore((state) => state.restoreHearts);
+  const [status, setStatus] = useState(initial);
+
+  // Live countdown tick
+  useEffect(() => {
+    const id = setInterval(() => {
+      const updated = computeHeartsStatus(player.heartsLostAt, player.currentHearts, player.level ?? 1);
+      setStatus(updated);
+      if (updated.full) {
+        restoreHearts();
+        clearInterval(id);
+      }
+    }, 1000);
+    return () => clearInterval(id);
+  }, [player.heartsLostAt, player.currentHearts, player.level, restoreHearts]);
+
+  const realm = getRealm(realmId as (typeof ENABLED_REALMS)[number]);
+  const firstSubSkill = realm.subSkills[0];
+
+  return (
+    <main className="battle-loading hearts-locked" aria-live="polite">
+      <div className="hearts-locked-inner panel">
+        <p className="eyebrow">Out of hearts</p>
+        <h1 className="hearts-locked-title">
+          {"♥".repeat(status.current)}{"♡".repeat(Math.max(0, status.max - status.current))}
+        </h1>
+        <p className="hearts-locked-msg">
+          You ran out of hearts! Take a break and review the lesson while your hearts recover.
+        </p>
+        <div className="hearts-regen-box">
+          <div className="hearts-regen-row">
+            <span>Next heart in:</span>
+            <strong className="hearts-timer">{status.nextHeartIn || "Restoring…"}</strong>
+          </div>
+          <div className="hearts-regen-row">
+            <span>Full restore in:</span>
+            <strong className="hearts-timer">{status.fullIn || "Ready!"}</strong>
+          </div>
+          <div className="hearts-regen-bar">
+            <div className="hearts-regen-fill" style={{ width: `${Math.min(100, ((status.max - status.current) > 0 ? (1 - status.msUntilFull / (status.max * 5 * 60 * 1000)) * 100 : 100))}%` }} />
+          </div>
+        </div>
+        <div className="button-row">
+          {firstSubSkill && (
+            <button className="button button-primary" onClick={() => router.push(`/realm/${realmId}/learn/${firstSubSkill.id}`)}>
+              Review lesson ↗
+            </button>
+          )}
+          <button className="button button-secondary" onClick={() => router.push("/map")}>World map</button>
+        </div>
+      </div>
+    </main>
+  );
 }

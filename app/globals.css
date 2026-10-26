@@ -687,3 +687,74 @@ h2 { font-size: 22px; }
   }
 }
 
+/* ── Hearts system ─────────────────────────────────────────────── */
+
+/* HUD hearts: empty hearts are dimmed */
+.hearts-depleted { color: #e05252; }
+.hud .hearts-depleted ♥ { color: #e05252; }
+.heart-regen-timer { font-size: 10px; opacity: 0.8; letter-spacing: 0.02em; }
+
+/* Hearts locked screen */
+.hearts-locked {
+  display: grid;
+  place-content: center;
+  min-height: 100dvh;
+  padding: 24px;
+  background: radial-gradient(ellipse at 60% 40%, #2a0a0a 0%, #0d0d0d 100%);
+}
+.hearts-locked-inner {
+  max-width: 420px;
+  width: 100%;
+  text-align: center;
+  padding: 36px 28px;
+  border-color: #5a1a1a;
+}
+.hearts-locked-title {
+  font-size: clamp(40px, 10vw, 68px);
+  letter-spacing: 0.12em;
+  color: #e05252;
+  margin: 12px 0 8px;
+  line-height: 1;
+  text-shadow: 0 0 18px rgba(224, 82, 82, 0.5);
+}
+.hearts-locked-msg {
+  font-family: var(--font-readable);
+  color: #b0a090;
+  margin: 0 0 24px;
+  line-height: 1.5;
+}
+.hearts-regen-box {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid #3a2a2a;
+  border-radius: 8px;
+  padding: 16px 20px;
+  margin-bottom: 24px;
+  text-align: left;
+}
+.hearts-regen-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #b0a090;
+}
+.hearts-regen-row:last-of-type { margin-bottom: 12px; }
+.hearts-timer {
+  font-size: 20px;
+  font-variant-numeric: tabular-nums;
+  color: var(--gold-light);
+  letter-spacing: 0.05em;
+}
+.hearts-regen-bar {
+  height: 6px;
+  background: rgba(255,255,255,0.08);
+  border-radius: 3px;
+  overflow: hidden;
+}
+.hearts-regen-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #e05252, #f2b92f);
+  border-radius: 3px;
+  transition: width 1s linear;
+}

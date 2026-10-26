@@ -253,6 +253,14 @@ export const PlayerSchema = z.object({
       variant: z.enum(["boy", "girl"]),
     })
     .optional(),
+  /**
+   * ISO timestamp of when the player ran out of hearts (all hearts lost).
+   * Used to compute timed heart regeneration: 1 heart every 5 minutes, full (3) in 15 min.
+   * Null/undefined = player has full hearts.
+   */
+  heartsLostAt: z.string().optional(),
+  /** Current active hearts (0-5). When undefined, player has full hearts. */
+  currentHearts: z.number().int().min(0).max(5).optional(),
 });
 export type Player = z.infer<typeof PlayerSchema>;
 
